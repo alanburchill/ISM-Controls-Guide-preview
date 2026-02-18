@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Credential Guard functionality is enabled. - Essential 8 Guide</title>
+  <!-- Canonical URL -->
+<link rel="canonical" href="https://e8guide.com/controls/ISM-1686.html">
+
+<!-- Meta description --><meta name="description" content="Credential Guard functionality is enabled.">
+
+<!-- Google Search Console ownership verification -->
+
+<meta name="google-site-verification" content="">
+
+
+<!-- Open Graph / Social sharing -->
+<meta property="og:title" content="Credential Guard functionality is enabled. - Essential 8 Guide">
+<meta property="og:description" content="Credential Guard functionality is enabled.">
+<meta property="og:url" content="https://e8guide.com/controls/ISM-1686.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Essential 8 Guide">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Credential Guard functionality is enabled. - Essential 8 Guide">
+<meta name="twitter:description" content="Credential Guard functionality is enabled.">
+
+<!-- Emoji favicon — no image file required -->
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>&#x1F6E1;&#xFE0F;</text></svg>">
+
+  
+<!-- Google Analytics (GA4) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id="></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', '');
+</script>
+
+
+  <link rel="stylesheet" href="/ISM-Controls-Guide-preview/assets/css/main.css">
+  <style>
+    /* Page-specific styles */
+    .container {
+      max-width: 900px;
+    }
+    .content-card {
+      padding: 40px;
+    }
+    .content-card h1 {
+      padding-bottom: 15px;
+      border-bottom: 1px solid #30363d;
+    }
+    /* Footnotes styling */
+    .footnotes {
+      margin-top: 40px;
+      padding-top: 20px;
+      border-top: 1px solid #30363d;
+      font-size: 0.9rem;
+    }
+    .footnotes ol { color: #8b949e; }
+    .footnote { color: #58a6ff; font-size: 0.85em; vertical-align: super; }
+    .reversefootnote { color: #58a6ff; }
+    /* GitHub-style alerts/callouts */
+    .callout {
+      padding: 16px 20px;
+      margin: 20px 0;
+      border-radius: 6px;
+      border-left: 4px solid;
+    }
+    .callout-title {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+    .callout-title svg { flex-shrink: 0; }
+    .callout p { margin: 0; color: #e6edf3; }
+    .callout-note {
+      background: rgba(88, 166, 255, 0.1);
+      border-color: #58a6ff;
+    }
+    .callout-note .callout-title { color: #58a6ff; }
+    .callout-warning {
+      background: rgba(210, 153, 34, 0.1);
+      border-color: #d29922;
+    }
+    .callout-warning .callout-title { color: #d29922; }
+    .callout-tip {
+      background: rgba(63, 185, 80, 0.1);
+      border-color: #3fb950;
+    }
+    .callout-tip .callout-title { color: #3fb950; }
+    .callout-important {
+      background: rgba(168, 113, 255, 0.1);
+      border-color: #a371f7;
+    }
+    .callout-important .callout-title { color: #a371f7; }
+    .callout-caution {
+      background: rgba(248, 81, 73, 0.1);
+      border-color: #f85149;
+    }
+    .callout-caution .callout-title { color: #f85149; }
+  </style>
+  <!-- JSON-LD structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "TechArticle",
+    "name": "ISM-1686",
+    "headline": "Credential Guard functionality is enabled.",
+    "description": "Credential Guard functionality is enabled.",
+    "url": "https://e8guide.com/controls/ISM-1686.html",
+    "dateModified": "2026-02-13",
+    "inLanguage": "en-AU",
+    "author": {
+      "@type": "Organization",
+      "name": "Essential 8 Guide",
+      "url": "https://e8guide.com"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Essential 8 Guide",
+      "url": "https://e8guide.com"
+    },
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": "Essential 8 Guide",
+      "url": "https://e8guide.com"
+    }
+  }
+  </script>
+</head>
+<body><div style="background:#d29922;color:#0d1117;padding:6px 16px;font-size:0.85rem;text-align:center;position:sticky;top:0;z-index:9999;">⚠️ PREVIEW — branch: research-review-controls — <a href="https://e8guide.com" style="color:#0d1117;font-weight:bold;">production site</a></div>
+  <div class="header">
+  <div class="header-content">
+    <h1>🛡️ Essential 8 Guide</h1>
+    <p>Implementation guidance for Australian Essential Eight controls in Microsoft environments - ISM controls with PSPF mappings</p>
+  </div>
+  <a href="/ISM-Controls-Guide-preview/about" class="about-link">About</a>
+</div>
+
+  <div class="container">
+    <div style="margin-bottom:20px; display:flex; justify-content:space-between; align-items:center;">
+      <div style="display:flex; gap:12px; align-items:center;">
+      <a href="/ISM-Controls-Guide-preview/" class="back-btn">HOME</a>
+
+      
+      
+      
+      
+
+
+      
+      
+      
+      
+      
+
+      
+        
+        
+        <a class="prev-control back-btn" href="/ISM-Controls-Guide-preview/controls/ISM-1685.html" aria-label="Previous control">← ISM-1685</a>
+      
+    </div>
+
+    <div style="display:flex; gap:12px; align-items:center;">
+      
+        
+        
+        <a class="next-control back-btn" href="/ISM-Controls-Guide-preview/controls/ISM-1690.html" aria-label="Next control">ISM-1690 →</a>
+      
+    </div>
+  </div>
+    <div class="content-card">
+      <h2 id="credential-guard-functionality-is-enabled">Credential Guard functionality is enabled.</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Property</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>ISM Control</strong></td>
+      <td>ISM-1686</td>
+    </tr>
+    <tr>
+      <td><strong>Revision</strong></td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td><strong>Updated</strong></td>
+      <td>Dec-23</td>
+    </tr>
+    <tr>
+      <td><strong>Guideline</strong></td>
+      <td>Not provided</td>
+    </tr>
+    <tr>
+      <td><strong>Section</strong></td>
+      <td>Authentication hardening</td>
+    </tr>
+    <tr>
+      <td><strong>Topic</strong></td>
+      <td>Protecting credentials</td>
+    </tr>
+    <tr>
+      <td><strong>Essential Eight</strong></td>
+      <td>ML3</td>
+    </tr>
+    <tr>
+      <td><strong>PSPF Levels</strong></td>
+      <td>NC, OS, P, S, TS</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="summary">Summary</h2>
+
+<p><strong>Credential Guard</strong> protects credentials by isolating secrets with virtualization-based security, reducing the risk of credential theft. Enable <strong>Credential Guard</strong> via an Intune device configuration profile to ensure consistent deployment across devices.<sup id="fnref:1"><a href="#fn:1" class="footnote" rel="footnote" role="doc-noteref">1</a></sup><sup id="fnref:6"><a href="#fn:6" class="footnote" rel="footnote" role="doc-noteref">2</a></sup></p>
+
+<h3 id="justification">Justification</h3>
+
+<p><strong>What Credential Guard protects against:</strong></p>
+
+<p>Credential Guard uses Virtualization-Based Security (VBS) to isolate the Local Security Authority (LSA) process. It splits <code class="language-plaintext highlighter-rouge">lsass.exe</code> into a host process and a protected companion (<code class="language-plaintext highlighter-rouge">LSAIso.exe</code>) running inside a hypervisor-enforced Virtual Secure Mode (VSM) kernel. Credentials such as NTLM hashes and Kerberos TGTs are stored only within the VSM memory, which the host OS cannot access even with <code class="language-plaintext highlighter-rouge">SYSTEM</code> privileges.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Attack technique</th>
+      <th>Protected?</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Pass-the-Hash (PtH)</strong></td>
+      <td>Yes</td>
+      <td>LSASS memory is isolated; Mimikatz-style tools cannot read hashes<sup id="fnref:8"><a href="#fn:8" class="footnote" rel="footnote" role="doc-noteref">3</a></sup></td>
+    </tr>
+    <tr>
+      <td><strong>Pass-the-Ticket (PtT)</strong></td>
+      <td>Yes</td>
+      <td>Kerberos TGTs stored in protected VSM enclave</td>
+    </tr>
+    <tr>
+      <td><strong>Golden Ticket</strong></td>
+      <td>Partial</td>
+      <td>Protects TGTs on endpoints, but KRBTGT compromise at the DC is still possible</td>
+    </tr>
+    <tr>
+      <td><strong>Credential dumping (Mimikatz, procdump)</strong></td>
+      <td>Yes</td>
+      <td>Direct LSASS memory reads are blocked</td>
+    </tr>
+    <tr>
+      <td><strong>Unconstrained Kerberos delegation</strong></td>
+      <td>Blocked</td>
+      <td>Credential Guard disables unconstrained delegation; switch to constrained</td>
+    </tr>
+    <tr>
+      <td><strong>Application-level credential storage</strong></td>
+      <td>Protected</td>
+      <td>Credential Manager entries encrypted within VSM</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Hardware requirements beyond TPM + Secure Boot:</strong></p>
+
+<ul>
+  <li><strong>CPU virtualization extensions</strong> — Intel VT-x or AMD-V with SLAT (Second-Level Address Translation) to run the Hyper-V-based VSM.</li>
+  <li><strong>UEFI firmware ≥ 2.3.1</strong> with UEFI-based memory attributes (MAT) enabled.</li>
+  <li><strong>64-bit architecture</strong> (x64 only; Hyper-V and VSM are 64-bit only).</li>
+  <li><strong>IOMMU (optional)</strong> — provides DMA protection against PCIe-based direct memory attacks; required if “Secure Boot + DMA protection” is selected.</li>
+</ul>
+
+<p><strong>Known incompatibilities:</strong></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Component</th>
+      <th>Issue</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Third-party Security Support Providers (SSPs/APs)</strong> that request password hashes</td>
+      <td>Blocked; must be replaced with Microsoft-signed SSPs</td>
+    </tr>
+    <tr>
+      <td><strong>Kerberos unconstrained delegation and DES encryption</strong></td>
+      <td>Disabled by Credential Guard; migrate to constrained delegation</td>
+    </tr>
+    <tr>
+      <td><strong>MS-CHAPv2, Digest, CredSSP</strong></td>
+      <td>Legacy auth protocols may be blocked; migrate to EAP-TLS/PEAP</td>
+    </tr>
+    <tr>
+      <td><strong>VMware Workstation</strong> (when VBS is enabled on host)</td>
+      <td>Incompatible; use a compatible hypervisor or disable Credential Guard on the workstation</td>
+    </tr>
+    <tr>
+      <td><strong>Java GSS API / JDK Kerberos</strong></td>
+      <td>TGT session keys not exposed; breaks Java Kerberos auth</td>
+    </tr>
+    <tr>
+      <td><strong>TPM reset / clear</strong></td>
+      <td>Credential Manager backups protected by Credential Guard cannot be restored after TPM clear</td>
+    </tr>
+  </tbody>
+</table>
+
+<blockquote>
+  <p>[!NOTE]
+<strong>Default enablement:</strong> Credential Guard is enabled by default on Windows 11 22H2 and later on eligible hardware. On earlier versions it must be explicitly enabled. Verify with: <code class="language-plaintext highlighter-rouge">Get-WinEvent -FilterHashtable @{LogName='System';Id=6}</code> or check <code class="language-plaintext highlighter-rouge">HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\DeviceGuard\Scenarios\CredentialGuard\Enabled</code>.</p>
+</blockquote>
+
+<h2 id="design-decision">Design Decision</h2>
+
+<blockquote>
+  <p>[!NOTE]
+The <strong>Credential Guard</strong> configuration will be applied via an <strong>Intune Settings Catalog policy</strong> to configure the <strong>Device Guard</strong> category’s <strong>Credential Guard</strong> setting to <strong>Enabled with UEFI lock</strong> or <strong>Enabled without lock</strong>.</p>
+</blockquote>
+
+<h2 id="prerequisites">Prerequisites</h2>
+
+<ul>
+  <li><strong>Permissions/Roles</strong>
+    <ul>
+      <li>Access to configure Credential Guard using one of the supported deployment methods: <strong>Intune/MDM</strong>, <strong>Group Policy</strong>, or <strong>Registry</strong>.<sup id="fnref:1:1"><a href="#fn:1" class="footnote" rel="footnote" role="doc-noteref">1</a></sup></li>
+      <li>Ability to assign the policy to a target group of devices or users for Intune, or to create/edit and link a Group Policy Object (GPO) for Group Policy deployment.<sup id="fnref:1:2"><a href="#fn:1" class="footnote" rel="footnote" role="doc-noteref">1</a></sup></li>
+    </ul>
+  </li>
+  <li><strong>Dependencies</strong>
+    <ul>
+      <li>The device must run <strong>Windows 11, 22H2 or later</strong>, or <strong>Windows Server 2025 or later</strong>.<sup id="fnref:6:1"><a href="#fn:6" class="footnote" rel="footnote" role="doc-noteref">2</a></sup></li>
+      <li>Hardware and firmware must support and have <strong>Virtualization Based Security (VBS)</strong> and <strong>Secure Boot</strong> enabled.<sup id="fnref:5"><a href="#fn:5" class="footnote" rel="footnote" role="doc-noteref">4</a></sup></li>
+      <li>If using <strong>Intune</strong> deployment, devices must be managed by Intune and enrolled in <strong>Entra ID</strong> (Azure AD) or hybrid Azure AD joined.<sup id="fnref:5:1"><a href="#fn:5" class="footnote" rel="footnote" role="doc-noteref">4</a></sup></li>
+      <li>If using <strong>Group Policy</strong> deployment, devices must be joined to an <strong>Active Directory domain</strong> and/or <strong>hybrid Azure AD joined</strong>.<sup id="fnref:4"><a href="#fn:4" class="footnote" rel="footnote" role="doc-noteref">5</a></sup></li>
+      <li>Credential Guard should be configured before a device is joined to a domain, or before a domain user signs in for the first time.<sup id="fnref:1:3"><a href="#fn:1" class="footnote" rel="footnote" role="doc-noteref">1</a></sup></li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="implementation-steps">Implementation Steps</h2>
+
+<ul>
+  <li>Credential Guard has been enabled by default starting with Windows 11, 22H2 and Windows Server 2025 <a href="https://learn.microsoft.com/en-us/windows/security/identity-protection/credential-guard/">Credential Guard overview</a>.</li>
+</ul>
+
+<h3 id="configure-credential-guard-with-intune">Configure Credential Guard with Intune</h3>
+
+<ol>
+  <li>In Microsoft Intune, create a Settings catalog policy.</li>
+  <li>In the policy, under the category <strong>Device Guard</strong>, set the <strong>Credential Guard</strong> setting to one of the options:
+    <ul>
+      <li><strong>Enabled with UEFI lock</strong></li>
+      <li><strong>Enabled without lock</strong></li>
+    </ul>
+
+    <p>Note: If you want to be able to turn off Credential Guard remotely, choose <strong>Enabled without lock</strong>.</p>
+  </li>
+  <li>Assign the policy to a group that contains the devices or users you want to configure.</li>
+  <li>After the policy is applied, restart the device.</li>
+  <li>Optional: You can also configure Credential Guard by using an account protection policy in endpoint security. For more information, see <a href="https://learn.microsoft.com/en-us/intune/intune-service/protect/endpoint-security-account-protection-profile-settings">Account protection policy settings for endpoint security in Microsoft Intune</a>.</li>
+</ol>
+
+<h2 id="additional-related-information">Additional related information</h2>
+
+<ul>
+  <li>Remote Credential Guard guidance explains enabling delegation of nonexportable credentials on remote hosts via Intune, Group Policy, or Registry <a href="https://learn.microsoft.com/en-us/windows/security/identity-protection/remote-credential-guard">Remote Credential Guard</a> <sup id="fnref:2"><a href="#fn:2" class="footnote" rel="footnote" role="doc-noteref">6</a></sup></li>
+  <li>Essential Eight ML3 guidance describes enabling Credential Guard and Remote Credential Guard to mitigate credential theft, with Intune deployment considerations <a href="https://learn.microsoft.com/en-us/compliance/anz/e8-admin">Essential Eight restrict administrative privileges</a> <sup id="fnref:3"><a href="#fn:3" class="footnote" rel="footnote" role="doc-noteref">7</a></sup></li>
+  <li>Credential Guard protected machine accounts describes machine identity isolation and relocation of machine account secrets into Credential Guard <a href="https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/manage/delegated-managed-service-accounts/credential-guard-protected-machine-accounts">Credential Guard protected machine accounts</a> <sup id="fnref:4:1"><a href="#fn:4" class="footnote" rel="footnote" role="doc-noteref">5</a></sup></li>
+  <li>Windows settings you can manage through an Intune Endpoint Protection profile covers Defender Credential Guard settings and remote management behaviors <a href="https://learn.microsoft.com/en-us/intune/intune-service/protect/endpoint-protection-windows-10">Windows settings you can manage through an Intune Endpoint Protection profile</a> <sup id="fnref:5:2"><a href="#fn:5" class="footnote" rel="footnote" role="doc-noteref">4</a></sup></li>
+  <li>Considerations and known issues outline upgrade considerations and default enablement behavior for Credential Guard <a href="https://learn.microsoft.com/en-us/windows/security/identity-protection/credential-guard/considerations-known-issues">Considerations and known issues</a> <sup id="fnref:7"><a href="#fn:7" class="footnote" rel="footnote" role="doc-noteref">8</a></sup></li>
+  <li>Microsoft <strong>Mitigating Pass-the-Hash (PtH) Attacks and Other Credential Theft</strong> (Version 1 and 2) is the foundational whitepaper series covering PtH attack anatomy, credential theft techniques (including lateral movement and overpass-the-hash), and the defence-in-depth strategies that Credential Guard directly addresses. Required baseline reading for architects designing a credential theft mitigation programme. <a href="https://www.microsoft.com/en-us/download/details.aspx?id=36036">Mitigating Pass-the-Hash (PtH) Attacks and Other Credential Theft, Version 1 and 2</a> <sup id="fnref:8:1"><a href="#fn:8" class="footnote" rel="footnote" role="doc-noteref">3</a></sup></li>
+</ul>
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:1">
+      <p>Configure Credential Guard (<a href="https://learn.microsoft.com/en-us/windows/security/identity-protection/credential-guard/configure">https://learn.microsoft.com/en-us/windows/security/identity-protection/credential-guard/configure</a>) <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a> <a href="#fnref:1:1" class="reversefootnote" role="doc-backlink">&#8617;<sup>2</sup></a> <a href="#fnref:1:2" class="reversefootnote" role="doc-backlink">&#8617;<sup>3</sup></a> <a href="#fnref:1:3" class="reversefootnote" role="doc-backlink">&#8617;<sup>4</sup></a></p>
+    </li>
+    <li id="fn:6">
+      <p>Credential Guard requirements — hardware and firmware prerequisites for VBS/VSM (<a href="https://learn.microsoft.com/en-us/windows/security/identity-protection/credential-guard/credential-guard-requirements">https://learn.microsoft.com/en-us/windows/security/identity-protection/credential-guard/credential-guard-requirements</a>) <a href="#fnref:6" class="reversefootnote" role="doc-backlink">&#8617;</a> <a href="#fnref:6:1" class="reversefootnote" role="doc-backlink">&#8617;<sup>2</sup></a></p>
+    </li>
+    <li id="fn:8">
+      <p>Mitigating Pass-the-Hash (PtH) Attacks and Other Credential Theft, Version 1 and 2 — Microsoft baseline whitepaper covering attack anatomy, credential isolation architecture, and enterprise mitigation strategies (<a href="https://www.microsoft.com/en-us/download/details.aspx?id=36036">https://www.microsoft.com/en-us/download/details.aspx?id=36036</a>) <a href="#fnref:8" class="reversefootnote" role="doc-backlink">&#8617;</a> <a href="#fnref:8:1" class="reversefootnote" role="doc-backlink">&#8617;<sup>2</sup></a></p>
+    </li>
+    <li id="fn:5">
+      <p>Credential Guard overview (<a href="https://learn.microsoft.com/en-us/windows/security/identity-protection/credential-guard/">https://learn.microsoft.com/en-us/windows/security/identity-protection/credential-guard/</a>) <a href="#fnref:5" class="reversefootnote" role="doc-backlink">&#8617;</a> <a href="#fnref:5:1" class="reversefootnote" role="doc-backlink">&#8617;<sup>2</sup></a> <a href="#fnref:5:2" class="reversefootnote" role="doc-backlink">&#8617;<sup>3</sup></a></p>
+    </li>
+    <li id="fn:4">
+      <p>Windows settings you can manage through an Intune Endpoint Protection profile (<a href="https://learn.microsoft.com/en-us/intune/intune-service/protect/endpoint-protection-windows-10">https://learn.microsoft.com/en-us/intune/intune-service/protect/endpoint-protection-windows-10</a>) <a href="#fnref:4" class="reversefootnote" role="doc-backlink">&#8617;</a> <a href="#fnref:4:1" class="reversefootnote" role="doc-backlink">&#8617;<sup>2</sup></a></p>
+    </li>
+    <li id="fn:2">
+      <p>Remote Credential Guard (<a href="https://learn.microsoft.com/en-us/windows/security/identity-protection/remote-credential-guard">https://learn.microsoft.com/en-us/windows/security/identity-protection/remote-credential-guard</a>) <a href="#fnref:2" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:3">
+      <p>Credential Guard protected machine accounts (<a href="https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/manage/delegated-managed-service-accounts/credential-guard-protected-machine-accounts">https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/manage/delegated-managed-service-accounts/credential-guard-protected-machine-accounts</a>) <a href="#fnref:3" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:7">
+      <p>Credential Guard — considerations and known issues (<a href="https://learn.microsoft.com/en-us/windows/security/identity-protection/credential-guard/considerations-known-issues">https://learn.microsoft.com/en-us/windows/security/identity-protection/credential-guard/considerations-known-issues</a>) <a href="#fnref:7" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+
+    </div>
+
+    <div style="margin-bottom:20px; display:flex; justify-content:space-between; align-items:center;">
+      <div style="display:flex; gap:12px; align-items:center;">
+        <a href="/ISM-Controls-Guide-preview/" class="back-btn">HOME</a>
+
+        
+          <a class="prev-control back-btn" href="/ISM-Controls-Guide-preview/controls/ISM-1685.html" aria-label="Previous control">← ISM-1685</a>
+        
+      </div>
+
+      <div style="display:flex; gap:12px; align-items:center;">
+        
+          <a class="next-control back-btn" href="/ISM-Controls-Guide-preview/controls/ISM-1690.html" aria-label="Next control">ISM-1690 →</a>
+        
+      </div>
+    </div>
+  </div>
+  <script>
+    // Convert GitHub-style alerts [!NOTE], [!WARNING], etc. to styled callouts
+    document.querySelectorAll('blockquote').forEach(bq => {
+      const text = bq.innerHTML;
+      const match = text.match(/\[!(NOTE|WARNING|TIP|IMPORTANT|CAUTION)\]/i);
+      if (match) {
+        const type = match[1].toLowerCase();
+        const icons = { note: '📝', warning: '⚠️', tip: '💡', important: '📢', caution: '🚨' };
+        const titles = { note: 'Note', warning: 'Warning', tip: 'Tip', important: 'Important', caution: 'Caution' };
+        const content = text.replace(/\[!(NOTE|WARNING|TIP|IMPORTANT|CAUTION)\]\s*/i, '');
+        bq.className = 'callout callout-' + type;
+        bq.innerHTML = '<div class="callout-title">' + icons[type] + ' ' + titles[type] + '</div>' + content;
+      }
+    });
+  </script>
+  <footer class="site-footer" role="contentinfo" aria-label="Site footer" style="background:#161b22;border-top:1px solid #30363d;padding:20px 40px;margin-top:40px;">
+    <div style="max-width:900px;margin:0 auto;display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:space-between;">
+      <div style="color:#94a3b8;font-size:0.9rem;">
+        
+          Last updated: 2026-02-18 21:33 UTC
+        
+      </div>
+      <div style="color:#94a3b8;font-size:0.9rem;text-align:right;max-width:620px;">
+        <strong style="color:#e6edf3;">AI-generated content:</strong> This site contains AI-assisted content created from primary sources and may contain errors or be out of date. Always verify with official documentation. See <a href="https://e8guide.com/about" style="color:#58a6ff;text-decoration:none;">About</a> for details.
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

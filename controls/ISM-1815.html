@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event logs are protected from unauthorised modification and deletion. - Essential 8 Guide</title>
+  <!-- Canonical URL -->
+<link rel="canonical" href="https://e8guide.com/controls/ISM-1815.html">
+
+<!-- Meta description --><meta name="description" content="Event logs are protected from unauthorised modification and deletion.">
+
+<!-- Google Search Console ownership verification -->
+
+<meta name="google-site-verification" content="">
+
+
+<!-- Open Graph / Social sharing -->
+<meta property="og:title" content="Event logs are protected from unauthorised modification and deletion. - Essential 8 Guide">
+<meta property="og:description" content="Event logs are protected from unauthorised modification and deletion.">
+<meta property="og:url" content="https://e8guide.com/controls/ISM-1815.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Essential 8 Guide">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Event logs are protected from unauthorised modification and deletion. - Essential 8 Guide">
+<meta name="twitter:description" content="Event logs are protected from unauthorised modification and deletion.">
+
+<!-- Emoji favicon — no image file required -->
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>&#x1F6E1;&#xFE0F;</text></svg>">
+
+  
+<!-- Google Analytics (GA4) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id="></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', '');
+</script>
+
+
+  <link rel="stylesheet" href="/ISM-Controls-Guide-preview/assets/css/main.css">
+  <style>
+    /* Page-specific styles */
+    .container {
+      max-width: 900px;
+    }
+    .content-card {
+      padding: 40px;
+    }
+    .content-card h1 {
+      padding-bottom: 15px;
+      border-bottom: 1px solid #30363d;
+    }
+    /* Footnotes styling */
+    .footnotes {
+      margin-top: 40px;
+      padding-top: 20px;
+      border-top: 1px solid #30363d;
+      font-size: 0.9rem;
+    }
+    .footnotes ol { color: #8b949e; }
+    .footnote { color: #58a6ff; font-size: 0.85em; vertical-align: super; }
+    .reversefootnote { color: #58a6ff; }
+    /* GitHub-style alerts/callouts */
+    .callout {
+      padding: 16px 20px;
+      margin: 20px 0;
+      border-radius: 6px;
+      border-left: 4px solid;
+    }
+    .callout-title {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+    .callout-title svg { flex-shrink: 0; }
+    .callout p { margin: 0; color: #e6edf3; }
+    .callout-note {
+      background: rgba(88, 166, 255, 0.1);
+      border-color: #58a6ff;
+    }
+    .callout-note .callout-title { color: #58a6ff; }
+    .callout-warning {
+      background: rgba(210, 153, 34, 0.1);
+      border-color: #d29922;
+    }
+    .callout-warning .callout-title { color: #d29922; }
+    .callout-tip {
+      background: rgba(63, 185, 80, 0.1);
+      border-color: #3fb950;
+    }
+    .callout-tip .callout-title { color: #3fb950; }
+    .callout-important {
+      background: rgba(168, 113, 255, 0.1);
+      border-color: #a371f7;
+    }
+    .callout-important .callout-title { color: #a371f7; }
+    .callout-caution {
+      background: rgba(248, 81, 73, 0.1);
+      border-color: #f85149;
+    }
+    .callout-caution .callout-title { color: #f85149; }
+  </style>
+  <!-- JSON-LD structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "TechArticle",
+    "name": "ISM-1815",
+    "headline": "Event logs are protected from unauthorised modification and deletion.",
+    "description": "Event logs are protected from unauthorised modification and deletion.",
+    "url": "https://e8guide.com/controls/ISM-1815.html",
+    "dateModified": "2026-02-13",
+    "inLanguage": "en-AU",
+    "author": {
+      "@type": "Organization",
+      "name": "Essential 8 Guide",
+      "url": "https://e8guide.com"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Essential 8 Guide",
+      "url": "https://e8guide.com"
+    },
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": "Essential 8 Guide",
+      "url": "https://e8guide.com"
+    }
+  }
+  </script>
+</head>
+<body><div style="background:#d29922;color:#0d1117;padding:6px 16px;font-size:0.85rem;text-align:center;position:sticky;top:0;z-index:9999;">⚠️ PREVIEW — branch: research-review-controls — <a href="https://e8guide.com" style="color:#0d1117;font-weight:bold;">production site</a></div>
+  <div class="header">
+  <div class="header-content">
+    <h1>🛡️ Essential 8 Guide</h1>
+    <p>Implementation guidance for Australian Essential Eight controls in Microsoft environments - ISM controls with PSPF mappings</p>
+  </div>
+  <a href="/ISM-Controls-Guide-preview/about" class="about-link">About</a>
+</div>
+
+  <div class="container">
+    <div style="margin-bottom:20px; display:flex; justify-content:space-between; align-items:center;">
+      <div style="display:flex; gap:12px; align-items:center;">
+      <a href="/ISM-Controls-Guide-preview/" class="back-btn">HOME</a>
+
+      
+      
+      
+      
+
+
+      
+      
+      
+      
+      
+
+      
+        
+        
+        <a class="prev-control back-btn" href="/ISM-Controls-Guide-preview/controls/ISM-1811.html" aria-label="Previous control">← ISM-1811</a>
+      
+    </div>
+
+    <div style="display:flex; gap:12px; align-items:center;">
+      
+        
+        
+        <a class="next-control back-btn" href="/ISM-Controls-Guide-preview/controls/ISM-1823.html" aria-label="Next control">ISM-1823 →</a>
+      
+    </div>
+  </div>
+    <div class="content-card">
+      <h2 id="event-logs-are-protected-from-unauthorised-modification-and-deletion">Event logs are protected from unauthorised modification and deletion.</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Property</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>ISM Control</strong></td>
+      <td>ISM-1815</td>
+    </tr>
+    <tr>
+      <td><strong>Revision</strong></td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td><strong>Updated</strong></td>
+      <td>Dec-23</td>
+    </tr>
+    <tr>
+      <td><strong>Guideline</strong></td>
+      <td>Not provided</td>
+    </tr>
+    <tr>
+      <td><strong>Section</strong></td>
+      <td>Event logging and monitoring</td>
+    </tr>
+    <tr>
+      <td><strong>Topic</strong></td>
+      <td>Centralised event logging facility</td>
+    </tr>
+    <tr>
+      <td><strong>Essential Eight</strong></td>
+      <td>ML2, ML3</td>
+    </tr>
+    <tr>
+      <td><strong>PSPF Levels</strong></td>
+      <td>NC, OS, P, S, TS</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="summary">Summary</h2>
+
+<p>Event logs are protected from unauthorized modification and deletion to preserve logs for incident response and compliance. RBAC in Microsoft Defender XDR and Microsoft Sentinel restricts access to event logs, preventing tampering and enabling centralized protection and monitoring.<sup id="fnref:1"><a href="#fn:1" class="footnote" rel="footnote" role="doc-noteref">1</a></sup></p>
+
+<h3 id="justification">Justification</h3>
+
+<p>Event logs are a primary forensic artefact during incident response. Without tamper protection, an attacker with local admin or Domain Admin privileges can clear Windows Security/System/Application event logs (using <code class="language-plaintext highlighter-rouge">wevtutil cl</code>) or delete Log Analytics workspace data — effectively destroying the evidence trail needed to determine breach scope, dwell time, and lateral movement paths.</p>
+
+<p>Centralising logs to a Log Analytics workspace with RBAC and an immutable delete lock decouples the log store from the endpoint, so even a fully compromised endpoint cannot retroactively erase its own audit trail. This is a core requirement of the ASD ISM and PSPF audit logging expectations.</p>
+
+<p>Protected Event Logging (PowerShell) adds an additional layer: script block logs are encrypted with a public key before being written to the event log, meaning even a local administrator cannot read sensitive credential or token data captured during script execution without the corresponding private key.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Protection layer</th>
+      <th>Mechanism</th>
+      <th>Threat mitigated</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Log Analytics RBAC</td>
+      <td>Azure role assignment on workspace</td>
+      <td>Unauthorised read/write/delete of log data</td>
+    </tr>
+    <tr>
+      <td>Workspace delete lock</td>
+      <td>Azure Resource Lock (CanNotDelete)</td>
+      <td>Accidental or malicious workspace deletion</td>
+    </tr>
+    <tr>
+      <td>Immutable blob export</td>
+      <td>Azure Immutable Storage (WORM)</td>
+      <td>Tamper/delete of exported log archive</td>
+    </tr>
+    <tr>
+      <td>Windows Event Log ACL</td>
+      <td>Group Policy / ADMX_EventLog</td>
+      <td>Local log modification by non-admin</td>
+    </tr>
+    <tr>
+      <td>Protected Event Logging</td>
+      <td>PowerShell Group Policy</td>
+      <td>Credential exposure in script block logs</td>
+    </tr>
+    <tr>
+      <td>Sentinel Analytics Rules</td>
+      <td>Scheduled rule: detect log purge events</td>
+      <td>Early detection of log tampering attempt</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>A Microsoft Sentinel analytics rule alerting on Windows Security Event ID 1102 (Windows audit log cleared) and ID 1100 (Event logging service stopped) provides near-real-time detection of log tampering attempts — closing the gap between action and response.</p>
+
+<h2 id="design-decision">Design Decision</h2>
+
+<blockquote>
+  <p>[!NOTE]
+The RBAC configuration will be applied in <strong>Microsoft Defender XDR</strong> and <strong>Microsoft Sentinel</strong> to protect event logs from tampering. Access controls will be enforced to restrict modification and deletion of event logs to authorized personnel.</p>
+</blockquote>
+
+<h2 id="prerequisites">Prerequisites</h2>
+
+<ul>
+  <li><strong>Permissions/Roles:</strong>
+    <ul>
+      <li>Centralized log management requires RBAC on the log analytics / monitoring platform to restrict access and monitor for log modifications or deletions. <sup id="fnref:1:1"><a href="#fn:1" class="footnote" rel="footnote" role="doc-noteref">1</a></sup></li>
+      <li>Enforce access controls in security tooling to protect event logs from tampering, such as Defender XDR and Microsoft Sentinel. <sup id="fnref:6"><a href="#fn:6" class="footnote" rel="footnote" role="doc-noteref">2</a></sup></li>
+      <li>Onboard a SIEM to centralize security telemetry and enable centralized analysis (e.g., Microsoft Sentinel). <sup id="fnref:9"><a href="#fn:9" class="footnote" rel="footnote" role="doc-noteref">3</a></sup></li>
+      <li>Configure log access restrictions using Group Policy for Windows event logs where applicable. <sup id="fnref:1:2"><a href="#fn:1" class="footnote" rel="footnote" role="doc-noteref">1</a></sup></li>
+      <li>Use ADMX backed policies to enforce event log access restrictions (examples include ADMX_EventLog policies). <sup id="fnref:3"><a href="#fn:3" class="footnote" rel="footnote" role="doc-noteref">4</a></sup></li>
+      <li>Enable Protected Event Logging to encrypt potentially sensitive event log data where supported. <sup id="fnref:5"><a href="#fn:5" class="footnote" rel="footnote" role="doc-noteref">5</a></sup></li>
+    </ul>
+  </li>
+  <li><strong>Dependencies:</strong>
+    <ul>
+      <li>Centralized log infrastructure (Azure Monitor / Log Analytics) to collect logs from all relevant sources. <sup id="fnref:1:3"><a href="#fn:1" class="footnote" rel="footnote" role="doc-noteref">1</a></sup></li>
+      <li>Consider exporting logs to immutable storage to prevent tampering. <sup id="fnref:1:4"><a href="#fn:1" class="footnote" rel="footnote" role="doc-noteref">1</a></sup></li>
+      <li>Windows Event Forwarding to route event logs to the central store. <sup id="fnref:4"><a href="#fn:4" class="footnote" rel="footnote" role="doc-noteref">6</a></sup></li>
+      <li>Microsoft Sentinel onboarding to provide SIEM capabilities for centralized monitoring. <sup id="fnref:9:1"><a href="#fn:9" class="footnote" rel="footnote" role="doc-noteref">3</a></sup></li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="implementation-steps">Implementation Steps</h2>
+
+<h3 id="rbac-protection-of-event-logs-in-defender-xdr-and-sentinel">RBAC protection of event logs in Defender XDR and Sentinel</h3>
+
+<ol>
+  <li>
+    <p>Centralize event logs from Azure services into a <strong>Log Analytics workspace</strong> to enable <strong>RBAC</strong> enforcement and tamper protection.<sup id="fnref:1:5"><a href="#fn:1" class="footnote" rel="footnote" role="doc-noteref">1</a></sup></p>
+  </li>
+  <li>
+    <p>Apply <strong>role-based access controls</strong> to the <strong>Log Analytics workspace</strong> to restrict write, read, and delete actions on event logs and related configuration.<sup id="fnref:1:6"><a href="#fn:1" class="footnote" rel="footnote" role="doc-noteref">1</a></sup></p>
+  </li>
+  <li>
+    <p>Enable a lock on the <strong>Log Analytics workspace</strong> to block deletion, purge, and retention configuration changes.<sup id="fnref:1:7"><a href="#fn:1" class="footnote" rel="footnote" role="doc-noteref">1</a></sup></p>
+  </li>
+  <li>
+    <p>Configure automated exports of log data to immutable storage (such as Immutable Storage for Azure Blob Storage) to prevent tampering.<sup id="fnref:1:8"><a href="#fn:1" class="footnote" rel="footnote" role="doc-noteref">1</a></sup></p>
+  </li>
+  <li>
+    <p>Ensure privileged activity logs are stored with <strong>RBAC protections</strong> and monitored for modify and delete activities. Integrate with <strong>Defender XDR</strong> and <strong>Sentinel</strong> for centralized analysis.<sup id="fnref:1:9"><a href="#fn:1" class="footnote" rel="footnote" role="doc-noteref">1</a></sup></p>
+  </li>
+</ol>
+
+<h3 id="windows-11-security-event-log--built-in-access-controls-and-hardening">Windows 11 Security Event Log — Built-in Access Controls and Hardening</h3>
+
+<p>Windows 11 enforces access controls on the Security event log at the operating system level, providing a baseline of protection before any additional Group Policy or SIEM hardening is applied.</p>
+
+<p><strong>Default access control behaviour:</strong></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Principal</th>
+      <th>Default permission</th>
+      <th>Can clear Security log?</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>SYSTEM</td>
+      <td>Read, Write</td>
+      <td>No (clearing requires SeSecurityPrivilege)</td>
+    </tr>
+    <tr>
+      <td>BUILTIN\Administrators</td>
+      <td>Read, Write, Clear</td>
+      <td>Yes (requires elevated token — UAC prompt)</td>
+    </tr>
+    <tr>
+      <td>Standard Users</td>
+      <td><strong>No access</strong></td>
+      <td>No (Access is denied)</td>
+    </tr>
+    <tr>
+      <td>Network Service / Local Service</td>
+      <td>Read only</td>
+      <td>No</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>The <strong>Security</strong> event log channel is unique among Windows event logs: standard users receive no read access at all. Access to other channels (Application, System) is granted to standard users for read purposes, but the Security log is restricted exclusively to <code class="language-plaintext highlighter-rouge">BUILTIN\Administrators</code> and <code class="language-plaintext highlighter-rouge">NT AUTHORITY\SYSTEM</code>. This is enforced by the Windows Security Descriptor on the event log channel itself.</p>
+
+<p><strong>Clearing the Security event log requires privilege escalation:</strong></p>
+
+<p>Clearing the Security event log (<code class="language-plaintext highlighter-rouge">wevtutil cl Security</code> or via Event Viewer) requires the <strong>“Manage auditing and security log”</strong> user right (<code class="language-plaintext highlighter-rouge">SeSecurityPrivilege</code>), which is assigned by default only to <code class="language-plaintext highlighter-rouge">BUILTIN\Administrators</code>. Running this command without elevation produces <code class="language-plaintext highlighter-rouge">Access is denied</code> — even for users in the local Administrators group if UAC is active and the process is not elevated. Standard users cannot clear the log under any circumstances without first being granted the privilege explicitly.</p>
+
+<p><strong>Detection — Event IDs to monitor:</strong></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Event ID</th>
+      <th>Channel</th>
+      <th>Description</th>
+      <th>Severity</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>1102</strong></td>
+      <td>Security</td>
+      <td>The audit log was cleared — includes the account name, domain, and logon ID of the user who cleared it</td>
+      <td>Critical</td>
+    </tr>
+    <tr>
+      <td><strong>1100</strong></td>
+      <td>Security</td>
+      <td>The Windows Event Log service was shut down — may indicate an attempt to suppress logging</td>
+      <td>High</td>
+    </tr>
+    <tr>
+      <td><strong>517</strong></td>
+      <td>Security</td>
+      <td>Legacy equivalent of 1102 on older systems</td>
+      <td>Medium</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>These events should be forwarded to Microsoft Sentinel via Windows Event Forwarding or the Log Analytics agent and should trigger an immediate analytics alert, as log clearing during an active session is a strong indicator of attacker anti-forensics activity.<sup id="fnref:8"><a href="#fn:8" class="footnote" rel="footnote" role="doc-noteref">7</a></sup></p>
+
+<p><strong>Further hardening via Group Policy (Intune Settings Catalog):</strong></p>
+
+<p>The default ACL on the Security log can be explicitly enforced or further restricted using the <code class="language-plaintext highlighter-rouge">Channel_Log_FilePermissions_1</code> ADMX-backed policy to define an SDDL string on the Security channel.<sup id="fnref:3:1"><a href="#fn:3" class="footnote" rel="footnote" role="doc-noteref">4</a></sup></p>
+
+<ol>
+  <li>In <strong>Intune</strong> &gt; <strong>Devices</strong> &gt; <strong>Configuration</strong> &gt; <strong>+ Create policy</strong> &gt; <strong>Settings Catalog</strong>.</li>
+  <li>Search for <strong>Event Log Service</strong> and locate <strong>Security: Control Event Log Access</strong>.</li>
+  <li>Set the SDDL value to restrict access. The default Windows SDDL grants Administrators full control and denies all others:</li>
+</ol>
+
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>O:BAG:SYD:(A;;0xf0007;;;SY)(A;;0x7;;;BA)(A;;0x3;;;BO)(A;;0x5;;;SO)(A;;0x1;;;IU)(A;;0x3;;;SU)(A;;0x1;;;S-1-5-3)(A;;0x2;;;S-1-5-33)(A;;0x2;;;S-1-5-32-573)
+</code></pre></div></div>
+
+<ol>
+  <li>To alert on any changes to this policy, enable <strong>Audit Policy Change</strong> (Event ID 4719) in the audit policy and forward those events to Sentinel.<sup id="fnref:3:2"><a href="#fn:3" class="footnote" rel="footnote" role="doc-noteref">4</a></sup></li>
+</ol>
+
+<blockquote>
+  <p>[!NOTE]
+Removing the “Manage auditing and security log” user right from Administrators entirely (<code class="language-plaintext highlighter-rouge">SeSecurityPrivilege</code> via User Rights Assignment GPO) will prevent all local log clearing — including by helpdesk and IT administrators. This is the highest-assurance configuration but can complicate legitimate incident response activities. Consider using this setting only on high-value or classified workloads, or as a compensating control on machines where log clearing should never be required.</p>
+</blockquote>
+
+<h3 id="lock-a-retention-policy-to-prevent-removal-preservation-lock">Lock a Retention Policy to Prevent Removal (Preservation Lock)</h3>
+
+<p>Microsoft Purview retention policies can be made permanently immutable by applying a <strong>Preservation Lock</strong>. Once locked, <strong>no administrator — including a Global Administrator — can disable, delete, or make the policy less restrictive</strong>. The retention duration can only be extended, never shortened.<sup id="fnref:7"><a href="#fn:7" class="footnote" rel="footnote" role="doc-noteref">8</a></sup></p>
+
+<blockquote>
+  <p>[!WARNING]
+<strong>Applying a Preservation Lock is irreversible through normal administrative means.</strong> Once enabled, the policy is permanently bound to its retention duration and scope. The only mechanism for removal is a formal written request submitted to Microsoft by an <strong>authorised legal representative of the organisation</strong>, confirming the regulatory basis for the change. This cannot be performed by IT administrators or even Microsoft Support without that legal authorisation. Only apply a Preservation Lock after the retention policy has been fully reviewed, tested, and confirmed correct.</p>
+</blockquote>
+
+<p><strong>When to apply Preservation Lock:</strong></p>
+
+<ul>
+  <li>The organisation is subject to regulatory requirements that mandate tamper-proof retention records — such as AFDA records disposal obligations, PSPF protective security requirements, or ISM audit log retention at ML3.</li>
+  <li>Legal or compliance counsel has reviewed and approved the retention duration and scope.</li>
+  <li>The policy has been validated in a test environment and confirmed to cover the correct locations and users.</li>
+</ul>
+
+<p><strong>To apply a Preservation Lock to an existing retention policy:</strong></p>
+
+<p>Preservation Lock is intentionally unavailable in the Purview portal UI to prevent accidental activation. It must be applied via PowerShell only.</p>
+
+<ol>
+  <li>Connect to Security &amp; Compliance PowerShell:</li>
+</ol>
+
+<div class="language-powershell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">Connect-IPPSSession</span><span class="w">
+</span></code></pre></div></div>
+
+<ol>
+  <li>Apply Preservation Lock to the target policy by name:</li>
+</ol>
+
+<div class="language-powershell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">Set-RetentionCompliancePolicy</span><span class="w"> </span><span class="nt">-Identity</span><span class="w"> </span><span class="s2">"Your-Policy-Name"</span><span class="w"> </span><span class="nt">-RestrictiveRetention</span><span class="w"> </span><span class="bp">$true</span><span class="w">
+</span></code></pre></div></div>
+
+<ol>
+  <li>Confirm the lock has been applied:</li>
+</ol>
+
+<div class="language-powershell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">Get-RetentionCompliancePolicy</span><span class="w"> </span><span class="nt">-Identity</span><span class="w"> </span><span class="s2">"Your-Policy-Name"</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="n">Select-Object</span><span class="w"> </span><span class="nx">Name</span><span class="p">,</span><span class="w"> </span><span class="nx">RestrictiveRetention</span><span class="w">
+</span></code></pre></div></div>
+
+<p>The <code class="language-plaintext highlighter-rouge">RestrictiveRetention</code> property must return <code class="language-plaintext highlighter-rouge">True</code> to confirm the lock is active.<sup id="fnref:7:1"><a href="#fn:7" class="footnote" rel="footnote" role="doc-noteref">8</a></sup></p>
+
+<blockquote>
+  <p>[!NOTE]
+Once locked, <code class="language-plaintext highlighter-rouge">Set-RetentionCompliancePolicy</code> will reject any attempt to shorten the retention period, narrow the scope, or delete the policy. Only extending the retention duration is permitted. Any modification or removal of the lock requires a formal legal request from the organisation’s authorised legal representative submitted directly to Microsoft. This process is specifically designed for regulatory compliance scenarios where the organisation must demonstrate to an external auditor or regulator that records cannot be altered or deleted by any internal party.</p>
+</blockquote>
+
+<h2 id="additional-related-information">Additional related information</h2>
+
+<ul>
+  <li>How to set event log security locally or by using Group Policy provides step-by-step instructions to configure log access permissions <a href="https://learn.microsoft.com/en-us/troubleshoot/windows-server/group-policy/set-event-log-security-locally-or-via-group-policy">How to set event log security locally or by using Group Policy</a></li>
+  <li>Policy CSP - ADMX_EventLog describes the ADMX-backed policy for configuring per-log access controls <a href="https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-admx-eventlog">Policy CSP - ADMX_EventLog</a></li>
+  <li>Policy CSP - ADMX_EventLogging covers enabling and configuring event log logging protections, including Protected Event Logging <a href="https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-admx-eventlogging">Policy CSP - ADMX_EventLogging</a></li>
+  <li>Centralize security log management and enable SIEM/SOAR capabilities for cross-service threat detection <a href="https://learn.microsoft.com/en-us/security/benchmark/azure/mcsb-v2-logging-threat-detection">Logging and Threat Detection</a></li>
+  <li>Use Preservation Lock to restrict changes to retention policies and retention label policies explains how to apply an irreversible lock to Purview retention policies via PowerShell, and the Microsoft legal process required for any subsequent modification or removal <a href="https://learn.microsoft.com/en-us/purview/retention-preservation-lock">Use Preservation Lock — Microsoft Purview</a></li>
+  <li>Event 1102 — The audit log was cleared details the Windows security audit event generated whenever the Security event log is cleared, including the account responsible, and is the primary detection signal for log tampering <a href="https://learn.microsoft.com/en-us/windows/security/threat-protection/auditing/event-1102">Event 1102 — Windows Security auditing</a></li>
+</ul>
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:1">
+      <p><a href="https://learn.microsoft.com/en-us/compliance/anz/e8-admin">Essential Eight restrict administrative privileges</a> <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a> <a href="#fnref:1:1" class="reversefootnote" role="doc-backlink">&#8617;<sup>2</sup></a> <a href="#fnref:1:2" class="reversefootnote" role="doc-backlink">&#8617;<sup>3</sup></a> <a href="#fnref:1:3" class="reversefootnote" role="doc-backlink">&#8617;<sup>4</sup></a> <a href="#fnref:1:4" class="reversefootnote" role="doc-backlink">&#8617;<sup>5</sup></a> <a href="#fnref:1:5" class="reversefootnote" role="doc-backlink">&#8617;<sup>6</sup></a> <a href="#fnref:1:6" class="reversefootnote" role="doc-backlink">&#8617;<sup>7</sup></a> <a href="#fnref:1:7" class="reversefootnote" role="doc-backlink">&#8617;<sup>8</sup></a> <a href="#fnref:1:8" class="reversefootnote" role="doc-backlink">&#8617;<sup>9</sup></a> <a href="#fnref:1:9" class="reversefootnote" role="doc-backlink">&#8617;<sup>10</sup></a></p>
+    </li>
+    <li id="fn:6">
+      <p><a href="https://learn.microsoft.com/en-us/compliance/anz/e8-app-control">Essential Eight application control</a> <a href="#fnref:6" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:9">
+      <p><a href="https://learn.microsoft.com/en-us/security/benchmark/azure/mcsb-v2-logging-threat-detection">Logging and Threat Detection</a> <a href="#fnref:9" class="reversefootnote" role="doc-backlink">&#8617;</a> <a href="#fnref:9:1" class="reversefootnote" role="doc-backlink">&#8617;<sup>2</sup></a></p>
+    </li>
+    <li id="fn:3">
+      <p><a href="https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-admx-eventlog">Policy CSP - ADMX_EventLog</a> <a href="#fnref:3" class="reversefootnote" role="doc-backlink">&#8617;</a> <a href="#fnref:3:1" class="reversefootnote" role="doc-backlink">&#8617;<sup>2</sup></a> <a href="#fnref:3:2" class="reversefootnote" role="doc-backlink">&#8617;<sup>3</sup></a></p>
+    </li>
+    <li id="fn:5">
+      <p><a href="https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-admx-eventlogging">Policy CSP - ADMX_EventLogging</a> <a href="#fnref:5" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:4">
+      <p><a href="https://learn.microsoft.com/en-us/windows/security/operating-system-security/device-management/use-windows-event-forwarding-to-assist-in-intrusion-detection">Use Windows Event Forwarding to help with intrusion detection</a> <a href="#fnref:4" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:8">
+      <p><a href="https://learn.microsoft.com/en-us/windows/security/threat-protection/auditing/event-1102">Event 1102 — The audit log was cleared (Windows Security auditing)</a> <a href="#fnref:8" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:7">
+      <p><a href="https://learn.microsoft.com/en-us/purview/retention-preservation-lock">Use Preservation Lock to restrict changes to retention policies and retention label policies — Microsoft Purview</a> <a href="#fnref:7" class="reversefootnote" role="doc-backlink">&#8617;</a> <a href="#fnref:7:1" class="reversefootnote" role="doc-backlink">&#8617;<sup>2</sup></a></p>
+    </li>
+  </ol>
+</div>
+
+    </div>
+
+    <div style="margin-bottom:20px; display:flex; justify-content:space-between; align-items:center;">
+      <div style="display:flex; gap:12px; align-items:center;">
+        <a href="/ISM-Controls-Guide-preview/" class="back-btn">HOME</a>
+
+        
+          <a class="prev-control back-btn" href="/ISM-Controls-Guide-preview/controls/ISM-1811.html" aria-label="Previous control">← ISM-1811</a>
+        
+      </div>
+
+      <div style="display:flex; gap:12px; align-items:center;">
+        
+          <a class="next-control back-btn" href="/ISM-Controls-Guide-preview/controls/ISM-1823.html" aria-label="Next control">ISM-1823 →</a>
+        
+      </div>
+    </div>
+  </div>
+  <script>
+    // Convert GitHub-style alerts [!NOTE], [!WARNING], etc. to styled callouts
+    document.querySelectorAll('blockquote').forEach(bq => {
+      const text = bq.innerHTML;
+      const match = text.match(/\[!(NOTE|WARNING|TIP|IMPORTANT|CAUTION)\]/i);
+      if (match) {
+        const type = match[1].toLowerCase();
+        const icons = { note: '📝', warning: '⚠️', tip: '💡', important: '📢', caution: '🚨' };
+        const titles = { note: 'Note', warning: 'Warning', tip: 'Tip', important: 'Important', caution: 'Caution' };
+        const content = text.replace(/\[!(NOTE|WARNING|TIP|IMPORTANT|CAUTION)\]\s*/i, '');
+        bq.className = 'callout callout-' + type;
+        bq.innerHTML = '<div class="callout-title">' + icons[type] + ' ' + titles[type] + '</div>' + content;
+      }
+    });
+  </script>
+  <footer class="site-footer" role="contentinfo" aria-label="Site footer" style="background:#161b22;border-top:1px solid #30363d;padding:20px 40px;margin-top:40px;">
+    <div style="max-width:900px;margin:0 auto;display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:space-between;">
+      <div style="color:#94a3b8;font-size:0.9rem;">
+        
+          Last updated: 2026-02-18 21:49 UTC
+        
+      </div>
+      <div style="color:#94a3b8;font-size:0.9rem;text-align:right;max-width:620px;">
+        <strong style="color:#e6edf3;">AI-generated content:</strong> This site contains AI-assisted content created from primary sources and may contain errors or be out of date. Always verify with official documentation. See <a href="https://e8guide.com/about" style="color:#58a6ff;text-decoration:none;">About</a> for details.
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Patches, updates or other vendor mitigations for vulnerabilities in online services are applied within two weeks of release when vulnerabilities are assessed as non-critical by vendors and no working exploits exist. - Essential 8 Guide</title>
+  <!-- Canonical URL -->
+<link rel="canonical" href="https://e8guide.com/controls/ISM-1690.html">
+
+<!-- Meta description --><meta name="description" content="Patches, updates or other vendor mitigations for vulnerabilities in online services are applied within two weeks of release when vulnerabilities are ass...">
+
+<!-- Google Search Console ownership verification -->
+
+<meta name="google-site-verification" content="">
+
+
+<!-- Open Graph / Social sharing -->
+<meta property="og:title" content="Patches, updates or other vendor mitigations for vulnerabilities in online services are applied within two weeks of release when vulnerabilities are assessed as non-critical by vendors and no working exploits exist. - Essential 8 Guide">
+<meta property="og:description" content="Patches, updates or other vendor mitigations for vulnerabilities in online services are applied within two weeks of release when vulnerabilities are ass...">
+<meta property="og:url" content="https://e8guide.com/controls/ISM-1690.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Essential 8 Guide">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Patches, updates or other vendor mitigations for vulnerabilities in online services are applied within two weeks of release when vulnerabilities are assessed as non-critical by vendors and no working exploits exist. - Essential 8 Guide">
+<meta name="twitter:description" content="Patches, updates or other vendor mitigations for vulnerabilities in online services are applied within two weeks of release when vulnerabilities are ass...">
+
+<!-- Emoji favicon — no image file required -->
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>&#x1F6E1;&#xFE0F;</text></svg>">
+
+  
+<!-- Google Analytics (GA4) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id="></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', '');
+</script>
+
+
+  <link rel="stylesheet" href="/ISM-Controls-Guide-preview/assets/css/main.css">
+  <style>
+    /* Page-specific styles */
+    .container {
+      max-width: 900px;
+    }
+    .content-card {
+      padding: 40px;
+    }
+    .content-card h1 {
+      padding-bottom: 15px;
+      border-bottom: 1px solid #30363d;
+    }
+    /* Footnotes styling */
+    .footnotes {
+      margin-top: 40px;
+      padding-top: 20px;
+      border-top: 1px solid #30363d;
+      font-size: 0.9rem;
+    }
+    .footnotes ol { color: #8b949e; }
+    .footnote { color: #58a6ff; font-size: 0.85em; vertical-align: super; }
+    .reversefootnote { color: #58a6ff; }
+    /* GitHub-style alerts/callouts */
+    .callout {
+      padding: 16px 20px;
+      margin: 20px 0;
+      border-radius: 6px;
+      border-left: 4px solid;
+    }
+    .callout-title {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+    .callout-title svg { flex-shrink: 0; }
+    .callout p { margin: 0; color: #e6edf3; }
+    .callout-note {
+      background: rgba(88, 166, 255, 0.1);
+      border-color: #58a6ff;
+    }
+    .callout-note .callout-title { color: #58a6ff; }
+    .callout-warning {
+      background: rgba(210, 153, 34, 0.1);
+      border-color: #d29922;
+    }
+    .callout-warning .callout-title { color: #d29922; }
+    .callout-tip {
+      background: rgba(63, 185, 80, 0.1);
+      border-color: #3fb950;
+    }
+    .callout-tip .callout-title { color: #3fb950; }
+    .callout-important {
+      background: rgba(168, 113, 255, 0.1);
+      border-color: #a371f7;
+    }
+    .callout-important .callout-title { color: #a371f7; }
+    .callout-caution {
+      background: rgba(248, 81, 73, 0.1);
+      border-color: #f85149;
+    }
+    .callout-caution .callout-title { color: #f85149; }
+  </style>
+  <!-- JSON-LD structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "TechArticle",
+    "name": "ISM-1690",
+    "headline": "Patches, updates or other vendor mitigations for vulnerabilities in online services are applied within two ...",
+    "description": "Patches, updates or other vendor mitigations for vulnerabilities in online services are applied within two weeks of release when vulnerabilities are ass...",
+    "url": "https://e8guide.com/controls/ISM-1690.html",
+    "dateModified": "2026-02-13",
+    "inLanguage": "en-AU",
+    "author": {
+      "@type": "Organization",
+      "name": "Essential 8 Guide",
+      "url": "https://e8guide.com"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Essential 8 Guide",
+      "url": "https://e8guide.com"
+    },
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": "Essential 8 Guide",
+      "url": "https://e8guide.com"
+    }
+  }
+  </script>
+</head>
+<body><div style="background:#d29922;color:#0d1117;padding:6px 16px;font-size:0.85rem;text-align:center;position:sticky;top:0;z-index:9999;">⚠️ PREVIEW — branch: research-review-controls — <a href="https://e8guide.com" style="color:#0d1117;font-weight:bold;">production site</a></div>
+  <div class="header">
+  <div class="header-content">
+    <h1>🛡️ Essential 8 Guide</h1>
+    <p>Implementation guidance for Australian Essential Eight controls in Microsoft environments - ISM controls with PSPF mappings</p>
+  </div>
+  <a href="/ISM-Controls-Guide-preview/about" class="about-link">About</a>
+</div>
+
+  <div class="container">
+    <div style="margin-bottom:20px; display:flex; justify-content:space-between; align-items:center;">
+      <div style="display:flex; gap:12px; align-items:center;">
+      <a href="/ISM-Controls-Guide-preview/" class="back-btn">HOME</a>
+
+      
+      
+      
+      
+
+
+      
+      
+      
+      
+      
+
+      
+        
+        
+        <a class="prev-control back-btn" href="/ISM-Controls-Guide-preview/controls/ISM-1686.html" aria-label="Previous control">← ISM-1686</a>
+      
+    </div>
+
+    <div style="display:flex; gap:12px; align-items:center;">
+      
+        
+        
+        <a class="next-control back-btn" href="/ISM-Controls-Guide-preview/controls/ISM-1692.html" aria-label="Next control">ISM-1692 →</a>
+      
+    </div>
+  </div>
+    <div class="content-card">
+      <h2 id="patches-updates-or-other-vendor-mitigations-for-vulnerabilities-in-online-services-are-applied-within-two-weeks-of-release-when-vulnerabilities-are-assessed-as-non-critical-by-vendors-and-no-working-exploits-exist">Patches, updates or other vendor mitigations for vulnerabilities in online services are applied within two weeks of release when vulnerabilities are assessed as non-critical by vendors and no working exploits exist.</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Property</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>ISM Control</strong></td>
+      <td>ISM-1690</td>
+    </tr>
+    <tr>
+      <td><strong>Revision</strong></td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td><strong>Updated</strong></td>
+      <td>Dec-23</td>
+    </tr>
+    <tr>
+      <td><strong>Guideline</strong></td>
+      <td>Not provided</td>
+    </tr>
+    <tr>
+      <td><strong>Section</strong></td>
+      <td>System patching</td>
+    </tr>
+    <tr>
+      <td><strong>Topic</strong></td>
+      <td>Mitigating known vulnerabilities</td>
+    </tr>
+    <tr>
+      <td><strong>Essential Eight</strong></td>
+      <td>ML1, ML2, ML3</td>
+    </tr>
+    <tr>
+      <td><strong>PSPF Levels</strong></td>
+      <td>NC, OS, P, S, TS</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="summary">Summary</h2>
+
+<p>Patch management ensures vulnerabilities are mitigated by applying vendor updates within two weeks of release when advisories are noncritical and no working exploits exist<sup id="fnref:1"><a href="#fn:1" class="footnote" rel="footnote" role="doc-noteref">1</a></sup>. This control requires configuring and enabling <strong>Windows Autopatch</strong> for all workstations via the Intune admin portal to automate timely patch deployment and reduce security risk<sup id="fnref:2"><a href="#fn:2" class="footnote" rel="footnote" role="doc-noteref">2</a></sup>.</p>
+
+<h3 id="justification">Justification</h3>
+
+<p>The Essential Eight requires that <strong>non-critical patches for online services be applied within two weeks</strong> of release. Windows Autopatch implements this through <strong>deployment rings</strong> that progressively roll out updates:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Ring</th>
+      <th>Description</th>
+      <th>Approximate coverage</th>
+      <th>Deployment cadence</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Test</strong></td>
+      <td>A small set of devices used to validate the update</td>
+      <td>~1%</td>
+      <td>First available</td>
+    </tr>
+    <tr>
+      <td><strong>First</strong></td>
+      <td>Early-adopter devices (power users, IT)</td>
+      <td>~1%</td>
+      <td>1 week after Test</td>
+    </tr>
+    <tr>
+      <td><strong>Fast</strong></td>
+      <td>Broader early majority</td>
+      <td>~9%</td>
+      <td>1 week after First</td>
+    </tr>
+    <tr>
+      <td><strong>Broad</strong></td>
+      <td>Remaining production devices</td>
+      <td>~90%</td>
+      <td>2 weeks after Fast</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>By default, all devices in the <strong>Broad</strong> ring receive updates <strong>within two weeks of release</strong>, satisfying the Essential Eight ML1/ML2/ML3 cadence requirement for non-critical patches. For critical patches (zero-day or CVSS ≥ 9.0), Autopatch accelerates deployment to within 48 hours using an Expedited deployment policy.</p>
+
+<p>Windows Autopatch covers four update types: Windows OS quality updates, Microsoft 365 Apps for enterprise, Microsoft Edge, and Microsoft Teams. This consolidates patching of the most commonly exploited Microsoft software surfaces into a single managed workflow.</p>
+
+<p><strong>Licensing:</strong> Windows Autopatch requires <strong>Windows 10/11 Enterprise E3</strong> or higher (included in Microsoft 365 E3+). It is not available on Windows Pro or Business editions.</p>
+
+<h2 id="design-decision">Design Decision</h2>
+
+<blockquote>
+  <p>[!NOTE]
+The <strong>Windows Autopatch</strong> configuration will be configured and enabled for all workstations via the <strong>Intune</strong> admin portal. It will ensure patching occurs within two weeks of release for vulnerabilities deemed noncritical by vendors.</p>
+</blockquote>
+
+<h2 id="prerequisites">Prerequisites</h2>
+
+<h3 id="permissionsroles">Permissions/Roles</h3>
+
+<ul>
+  <li><strong>Global Administrator</strong> role required to perform Windows Autopatch readiness assessment.<sup id="fnref:2:1"><a href="#fn:2" class="footnote" rel="footnote" role="doc-noteref">2</a></sup></li>
+  <li>Admin contacts must be defined for each area of focus during enrollment to facilitate support and communications.<sup id="fnref:2:2"><a href="#fn:2" class="footnote" rel="footnote" role="doc-noteref">2</a></sup></li>
+</ul>
+
+<h3 id="dependencies">Dependencies</h3>
+
+<ul>
+  <li><strong>Microsoft Entra ID</strong> is required for co-management; devices must be enrolled in Entra ID and be either hybrid joined or Entra joined.<sup id="fnref:1:1"><a href="#fn:1" class="footnote" rel="footnote" role="doc-noteref">1</a></sup></li>
+  <li><strong>Microsoft Intune</strong> is required to enable Windows Autopatch enrollment; readiness checks involve Intune settings and Entra ID configuration. If co-management with Configuration Manager is used, include that integration.<sup id="fnref:1:2"><a href="#fn:1" class="footnote" rel="footnote" role="doc-noteref">1</a></sup></li>
+  <li>If using <strong>Configuration Manager</strong> for co-management, ensure co-management requirements are met and a supported version is in place; plan to transition workloads to Intune as appropriate (pilot recommended).<sup id="fnref:1:3"><a href="#fn:1" class="footnote" rel="footnote" role="doc-noteref">1</a></sup></li>
+  <li>Windows Autopatch device registration prerequisites must be reviewed prior to registering devices with Windows Autopatch.<sup id="fnref:2:3"><a href="#fn:2" class="footnote" rel="footnote" role="doc-noteref">2</a></sup></li>
+</ul>
+
+<h2 id="implementation-steps">Implementation Steps</h2>
+
+<h3 id="configured-and-enable-windows-autopatch-for-all-workstations-via-the-intune-admin-portal">Configured and enable Windows Autopatch for all workstations via the Intune admin portal</h3>
+
+<ol>
+  <li>Verify prerequisites for Windows Autopatch
+    <ul>
+      <li>Microsoft Entra ID for co-management</li>
+      <li>Microsoft Entra hybrid joined devices or Microsoft Entra joined devices</li>
+      <li>Microsoft Intune (include Configuration Manager via co-management)</li>
+      <li>For devices managed by Configuration Manager, ensure a supported Configuration Manager version is in place and switch workloads for device configuration, Windows Update and Microsoft 365 Apps from Configuration Manager to Intune (minimum Pilot Intune). Pilot collection must contain the devices you want to register into Autopatch. <sup id="fnref:1:4"><a href="#fn:1" class="footnote" rel="footnote" role="doc-noteref">1</a></sup></li>
+    </ul>
+  </li>
+  <li>Run the Readiness assessment
+    <ul>
+      <li>As a Global Administrator, go to Intune, then Tenant administration, and navigate to Windows Autopatch &gt; Tenant enrollment. <sup id="fnref:2:4"><a href="#fn:2" class="footnote" rel="footnote" role="doc-noteref">2</a></sup></li>
+      <li>The Readiness assessment checks Intune settings to confirm deployment rings for Windows 10 or later and minimum administrator requirements and unlicensed administrators. <sup id="fnref:2:5"><a href="#fn:2" class="footnote" rel="footnote" role="doc-noteref">2</a></sup></li>
+      <li>The assessment provides a report and what steps are needed to be performed to get to a ready state. Once issues are resolved, move to the next step. <sup id="fnref:2:6"><a href="#fn:2" class="footnote" rel="footnote" role="doc-noteref">2</a></sup></li>
+      <li>If issues are present, follow the steps documented in the readiness guidance to resolve them (link: what steps are needed to be performed) [here]. <sup id="fnref:2:7"><a href="#fn:2" class="footnote" rel="footnote" role="doc-noteref">2</a></sup></li>
+    </ul>
+  </li>
+  <li>Verify admin contacts
+    <ul>
+      <li>Sign into Intune.</li>
+      <li>Under Tenant administration in the Windows Autopatch section, select Admin contacts.</li>
+      <li>Select Add.</li>
+      <li>Enter the contact details including name, email, phone number and preferred language. For a support ticket, the ticket’s primary contact’s preferred language determines the language used for email communications.</li>
+      <li>Select an Area of focus and enter details of the contact’s knowledge and authority in the specified area of focus.</li>
+      <li>Select Save to add the contact.</li>
+      <li>Repeat for each area of focus. <sup id="fnref:2:8"><a href="#fn:2" class="footnote" rel="footnote" role="doc-noteref">2</a></sup></li>
+    </ul>
+  </li>
+  <li>Register devices with Windows Autopatch
+    <ul>
+      <li>IT admin reviews Windows Autopatch device registration prerequisites prior to register devices with Windows Autopatch. <a href="https://learn.microsoft.com/en-us/windows/deployment/windows-autopatch/deploy/windows-autopatch-register-devices#prerequisites-for-device-registration">Windows Autopatch device registration prerequisites</a> <sup id="fnref:2:9"><a href="#fn:2" class="footnote" rel="footnote" role="doc-noteref">2</a></sup></li>
+      <li>IT admin identifies devices to be managed by Windows Autopatch and adds them into the Windows Autopatch Device Registration Microsoft Entra group.</li>
+      <li>Windows Autopatch then:
+        <ul>
+          <li>Performs device readiness prior registration (prerequisite checks)</li>
+          <li>Calculates the deployment ring distribution</li>
+          <li>Assigns devices to a deployment ring, based on the previous calculation</li>
+          <li>Assigns devices to other Microsoft Entra groups required for management</li>
+          <li>Marks devices as active for management so it can apply its update deployment policies</li>
+        </ul>
+      </li>
+      <li>IT admin then monitors the device registration trends and the update deployment reports. The detailed device registration workflow can be found in the <a href="https://learn.microsoft.com/en-us/windows/deployment/windows-autopatch/deploy/windows-autopatch-device-registration-overview#detailed-device-registration-workflow-diagram">Windows Autopatch device registration overview</a>. <sup id="fnref:2:10"><a href="#fn:2" class="footnote" rel="footnote" role="doc-noteref">2</a></sup></li>
+    </ul>
+  </li>
+</ol>
+
+<h3 id="ring-based-patch-deployment-using-group-policy-on-premises-and-hybrid-environments">Ring-Based Patch Deployment Using Group Policy (on-premises and hybrid environments)</h3>
+
+<p>For organisations that cannot use Windows Autopatch (e.g., those without Windows Enterprise E3+ licensing, those using on-premises WSUS, or hybrid environments in transition), ring-based update deployment can be achieved using <strong>WSUS + Group Policy</strong> or <strong>Windows Update for Business (WUfB) + Group Policy</strong>. Both approaches implement the same progressive ring model as Autopatch, using GPO security filtering to stage update rollout across waves.</p>
+
+<blockquote>
+  <p>[!NOTE]
+The approach documented below is based on the best-practice model published by Group Policy MVP Alan Burchill at <a href="https://www.grouppolicy.biz/2011/06/best-practices-group-policy-for-wsus/">grouppolicy.biz/2011/06/best-practices-group-policy-for-wsus/</a><sup id="fnref:3"><a href="#fn:3" class="footnote" rel="footnote" role="doc-noteref">3</a></sup> and the Microsoft WSUS ring deployment guide.<sup id="fnref:4"><a href="#fn:4" class="footnote" rel="footnote" role="doc-noteref">4</a></sup></p>
+</blockquote>
+
+<h4 id="approach-1--wsus-with-group-policy-client-side-targeting">Approach 1 — WSUS with Group Policy client-side targeting</h4>
+
+<p>This is the traditional on-premises model. WSUS manages update approvals; Group Policy assigns devices to WSUS target groups and controls the deployment schedule for each ring.</p>
+
+<p><strong>Ring model:</strong></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Ring</th>
+      <th>WSUS target group</th>
+      <th>AD security group</th>
+      <th>Deployment schedule</th>
+      <th>Coverage</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Ring 1 — Test / Pilot IT</strong></td>
+      <td><code class="language-plaintext highlighter-rouge">Ring 1 - Pilot IT</code></td>
+      <td><code class="language-plaintext highlighter-rouge">WSUS-Ring1-PilotIT</code></td>
+      <td>First available after approval</td>
+      <td>~1–5% (IT staff, test devices)</td>
+    </tr>
+    <tr>
+      <td><strong>Ring 2 — Broad IT</strong></td>
+      <td><code class="language-plaintext highlighter-rouge">Ring 2 - Broad IT</code></td>
+      <td><code class="language-plaintext highlighter-rouge">WSUS-Ring2-BroadIT</code></td>
+      <td>+3–5 days after Ring 1</td>
+      <td>~5–10% (technical users)</td>
+    </tr>
+    <tr>
+      <td><strong>Ring 3 — Broad Business (workstations)</strong></td>
+      <td><code class="language-plaintext highlighter-rouge">Ring 3 - Broad Business</code></td>
+      <td><code class="language-plaintext highlighter-rouge">WSUS-Ring3-BroadBusiness</code></td>
+      <td>+7 days after Ring 1</td>
+      <td>~80–85% (standard users)</td>
+    </tr>
+    <tr>
+      <td><strong>Ring 4 — Servers</strong></td>
+      <td><code class="language-plaintext highlighter-rouge">Ring 4 - Servers</code></td>
+      <td><code class="language-plaintext highlighter-rouge">WSUS-Ring4-Servers</code></td>
+      <td>Separate maintenance window</td>
+      <td>All servers</td>
+    </tr>
+  </tbody>
+</table>
+
+<blockquote>
+  <p>[!IMPORTANT]
+Servers should always be in a separate ring with a distinct maintenance window, scheduled well after workstation rings have validated stability. A typical schedule is: workstations Friday night → Ring 1 servers Saturday midday → Ring 2 servers Sunday midday.<sup id="fnref:3:1"><a href="#fn:3" class="footnote" rel="footnote" role="doc-noteref">3</a></sup></p>
+</blockquote>
+
+<h5 id="step-1--configure-wsus-computer-target-groups">Step 1 — Configure WSUS computer target groups</h5>
+
+<ol>
+  <li>Open the WSUS Administration Console.</li>
+  <li>Under <strong>Computers</strong> &gt; <strong>All Computers</strong>, select <strong>Add Computer Group</strong>.</li>
+  <li>Create groups matching the ring names above (e.g., <code class="language-plaintext highlighter-rouge">Ring 1 - Pilot IT</code>, <code class="language-plaintext highlighter-rouge">Ring 2 - Broad IT</code>, <code class="language-plaintext highlighter-rouge">Ring 3 - Broad Business</code>, <code class="language-plaintext highlighter-rouge">Ring 4 - Servers</code>).</li>
+  <li>In WSUS <strong>Options</strong> &gt; <strong>Computers</strong>, set computer assignment to <strong>Use Group Policy or registry settings on computers</strong> to enable client-side targeting.<sup id="fnref:4:1"><a href="#fn:4" class="footnote" rel="footnote" role="doc-noteref">4</a></sup></li>
+</ol>
+
+<h5 id="step-2--create-a-gpo-per-ring-with-client-side-targeting">Step 2 — Create a GPO per ring with client-side targeting</h5>
+
+<p>For each ring, create a dedicated GPO. Security-filter each GPO to its corresponding AD security group (remove <strong>Authenticated Users</strong> from the security filter and add the ring-specific group).<sup id="fnref:3:2"><a href="#fn:3" class="footnote" rel="footnote" role="doc-noteref">3</a></sup></p>
+
+<ol>
+  <li>Open <strong>Group Policy Management Console (gpmc.msc)</strong>.</li>
+  <li>Create a GPO named using a consistent convention — e.g., <code class="language-plaintext highlighter-rouge">WSUS - Workstations - Ring 1 Pilot IT</code>.</li>
+  <li>In the GPO, navigate to: <code class="language-plaintext highlighter-rouge">Computer Configuration\Policies\Administrative Templates\Windows Components\Windows Update</code></li>
+  <li>Configure:
+    <ul>
+      <li><strong>Specify intranet Microsoft update service location</strong> — point to your WSUS server URL (e.g., <code class="language-plaintext highlighter-rouge">http://wsus.contoso.com:8530</code>)</li>
+      <li><strong>Enable client-side targeting</strong> — <strong>Enabled</strong>; enter the WSUS target group name exactly as created in Step 1 (e.g., <code class="language-plaintext highlighter-rouge">Ring 1 - Pilot IT</code>)<sup id="fnref:4:2"><a href="#fn:4" class="footnote" rel="footnote" role="doc-noteref">4</a></sup></li>
+      <li><strong>Configure Automatic Updates</strong> — set to option <strong>4</strong> (Auto download and schedule the install); set install day/time to align with the ring’s maintenance window</li>
+      <li><strong>No auto-restart with logged-on users during automatic updates installations</strong> — configure to match your user impact policy</li>
+    </ul>
+  </li>
+  <li>In <strong>Group Policy Management</strong>, set the <strong>Security Filtering</strong> on the GPO to the ring’s AD security group only.</li>
+  <li>Link the GPO to the appropriate OU(s) containing target devices.</li>
+  <li>Repeat for each ring GPO.</li>
+</ol>
+
+<blockquote>
+  <p>[!TIP]
+<strong>GPO naming convention:</strong> Prefix all WSUS GPOs consistently for easy identification in GPMC, e.g. <code class="language-plaintext highlighter-rouge">WSUS - [Tier] - [Ring] - [Site]</code>. For multi-site deployments, create site-specific variants (e.g., <code class="language-plaintext highlighter-rouge">WSUS - Servers - Sydney - Round 1</code>, <code class="language-plaintext highlighter-rouge">WSUS - Servers - Sydney - Round 2</code>) to stagger deployment across geographic locations within the same ring.<sup id="fnref:3:3"><a href="#fn:3" class="footnote" rel="footnote" role="doc-noteref">3</a></sup></p>
+</blockquote>
+
+<hr />
+
+<h4 id="approach-2--windows-update-for-business-wufb-with-group-policy">Approach 2 — Windows Update for Business (WUfB) with Group Policy</h4>
+
+<p>For cloud-connected environments that want ring-based deployment <strong>without WSUS</strong>, Windows Update for Business delivers updates directly from Microsoft Update and uses Group Policy (or MDM) deferral periods to stagger rings. No WSUS server is required.<sup id="fnref:5"><a href="#fn:5" class="footnote" rel="footnote" role="doc-noteref">5</a></sup></p>
+
+<p><strong>Deferral ring model:</strong></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Ring</th>
+      <th>GPO name</th>
+      <th>Quality update deferral</th>
+      <th>Feature update deferral</th>
+      <th>Coverage</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Ring 0 — Pilot</strong></td>
+      <td><code class="language-plaintext highlighter-rouge">WUfB - Pilot</code></td>
+      <td>0 days</td>
+      <td>0 days</td>
+      <td>IT/test devices</td>
+    </tr>
+    <tr>
+      <td><strong>Ring 1 — Fast</strong></td>
+      <td><code class="language-plaintext highlighter-rouge">WUfB - Fast</code></td>
+      <td>5 days</td>
+      <td>30 days</td>
+      <td>Power users / early adopters</td>
+    </tr>
+    <tr>
+      <td><strong>Ring 2 — Broad</strong></td>
+      <td><code class="language-plaintext highlighter-rouge">WUfB - Broad</code></td>
+      <td>14 days</td>
+      <td>60–90 days</td>
+      <td>Standard production devices</td>
+    </tr>
+  </tbody>
+</table>
+
+<blockquote>
+  <p>[!NOTE]
+A 14-day quality update deferral on the <strong>Broad</strong> ring satisfies the ISM two-week non-critical patching requirement for devices that receive updates directly from Microsoft Update (no WSUS).</p>
+</blockquote>
+
+<h5 id="step-1--ensure-group-policy-admx-files-are-current">Step 1 — Ensure Group Policy ADMX files are current</h5>
+
+<p>Download the latest Windows 11 Administrative Templates from the Microsoft Download Centre and update the Central Store (<code class="language-plaintext highlighter-rouge">\\contoso.com\SYSVOL\contoso.com\Policies\PolicyDefinitions</code>) to ensure WUfB settings are available in GPMC.</p>
+
+<h5 id="step-2--create-a-gpo-per-ring-with-wufb-deferral-settings">Step 2 — Create a GPO per ring with WUfB deferral settings</h5>
+
+<ol>
+  <li>In GPMC, create a GPO per ring (e.g., <code class="language-plaintext highlighter-rouge">WUfB - Pilot</code>, <code class="language-plaintext highlighter-rouge">WUfB - Fast</code>, <code class="language-plaintext highlighter-rouge">WUfB - Broad</code>).</li>
+  <li>Navigate to: <code class="language-plaintext highlighter-rouge">Computer Configuration\Policies\Administrative Templates\Windows Components\Windows Update\Windows Update for Business</code></li>
+  <li>Configure the following per ring:
+    <ul>
+      <li><strong>Select when Quality Updates are Received</strong> → <strong>Enabled</strong>; set <strong>Defer receiving a quality update for this many days</strong> to the ring’s deferral value (0 / 5 / 14).</li>
+      <li><strong>Select when Preview Builds and Feature Updates are Received</strong> → <strong>Enabled</strong>; set feature update deferral as appropriate.</li>
+      <li><strong>Manage updates offered from Windows Update</strong> → <strong>Enabled</strong> (disables WSUS targeting; omit this if WSUS is also in use).</li>
+    </ul>
+  </li>
+  <li>Security-filter each GPO to an AD security group representing that ring’s devices.</li>
+  <li>Link the GPO to the relevant OU(s).</li>
+</ol>
+
+<h5 id="step-3--pausing-updates-on-a-problematic-patch">Step 3 — Pausing updates on a problematic patch</h5>
+
+<p>If a quality update causes issues after Ring 0 deployment, pause rollout to downstream rings:</p>
+
+<ol>
+  <li>Edit the Ring 1 / Ring 2 GPOs.</li>
+  <li>In <strong>Select when Quality Updates are Received</strong>, enable the <strong>Pause Quality Updates</strong> option and set the pause start date.</li>
+  <li>Updates will pause for up to <strong>35 days</strong> or until the pause date is cleared.<sup id="fnref:5:1"><a href="#fn:5" class="footnote" rel="footnote" role="doc-noteref">5</a></sup></li>
+</ol>
+
+<hr />
+
+<h2 id="additional-related-information">Additional related information</h2>
+
+<ul>
+  <li>Essential Eight patch applications provides patch remediation guidance and how to leverage Intune integration for vulnerability remediation <a href="https://learn.microsoft.com/en-us/compliance/anz/e8-patch-app">Essential Eight patch applications</a></li>
+  <li>ASD Blueprint: Windows update and patching - ASD’s Blueprint for Secure Cloud outlines patching design, update rings, and deployment strategies for Windows devices <a href="https://blueprint.asd.gov.au/design/endpoints/windows/configuration/windows-update-and-patching/">ASD Blueprint: Windows update and patching - ASD’s Blueprint for Secure Cloud</a></li>
+  <li>Configure Microsoft Intune for Zero Trust: Secure devices explains Windows Update policy enforcement to reduce risk from unpatched vulnerabilities <a href="https://learn.microsoft.com/en-us/intune/intune-service/protect/zero-trust-secure-devices">Configure Microsoft Intune for Zero Trust: Secure devices</a></li>
+  <li>Walkthrough: Use CSPs and MDMs to configure Windows Update client policies covers CSP/MDM based update management and policy configuration <a href="https://learn.microsoft.com/en-us/windows/deployment/update/waas-wufb-csp-mdm">Walkthrough: Use CSPs and MDMs to configure Windows Update client policies</a></li>
+  <li>Cloud-native patch management with Azure Arc-enabled servers describes maintenance windows and cloud-native patch orchestration <a href="https://learn.microsoft.com/en-us/azure/azure-arc/servers/cloud-native/patch-management">Cloud-native patch management with Azure Arc-enabled servers</a></li>
+  <li>MCSB: Posture and Vulnerability Management provides guidance on rapid remediation and using Update Management for timely patching <a href="https://learn.microsoft.com/en-us/security/benchmark/azure/mcsb-posture-vulnerability-management">MCSB: Posture and Vulnerability Management</a></li>
+  <li>Best practices: Group Policy for WSUS covers the canonical ring/round-based GPO model for WSUS deployments, including security-filtered GPO design, client-side targeting, maintenance window scheduling, and multi-site staggered rollout strategies <a href="https://www.grouppolicy.biz/2011/06/best-practices-group-policy-for-wsus/">Best practices: Group Policy for WSUS — grouppolicy.biz</a> <sup id="fnref:3:4"><a href="#fn:3" class="footnote" rel="footnote" role="doc-noteref">3</a></sup></li>
+  <li>Deploy updates using WSUS describes Microsoft’s official ring deployment workflow using WSUS computer target groups and Group Policy client-side targeting <a href="https://learn.microsoft.com/en-us/windows/deployment/update/waas-manage-updates-wsus">Deploy updates using Windows Server Update Services</a> <sup id="fnref:4:3"><a href="#fn:4" class="footnote" rel="footnote" role="doc-noteref">4</a></sup></li>
+  <li>Configure Windows Update client policies via Group Policy covers the WUfB deferral model with quality/feature update ring settings, pause mechanisms, and GPO structure <a href="https://learn.microsoft.com/en-us/windows/deployment/update/waas-wufb-group-policy">Configure Windows Update client policies via Group Policy</a> <sup id="fnref:5:2"><a href="#fn:5" class="footnote" rel="footnote" role="doc-noteref">5</a></sup></li>
+</ul>
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:1">
+      <p><a href="https://learn.microsoft.com/en-us/windows/deployment/windows-autopatch/overview/windows-autopatch-faq">Frequently Asked Questions about Windows Autopatch</a> <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a> <a href="#fnref:1:1" class="reversefootnote" role="doc-backlink">&#8617;<sup>2</sup></a> <a href="#fnref:1:2" class="reversefootnote" role="doc-backlink">&#8617;<sup>3</sup></a> <a href="#fnref:1:3" class="reversefootnote" role="doc-backlink">&#8617;<sup>4</sup></a> <a href="#fnref:1:4" class="reversefootnote" role="doc-backlink">&#8617;<sup>5</sup></a></p>
+    </li>
+    <li id="fn:2">
+      <p><a href="https://learn.microsoft.com/en-us/compliance/anz/e8-patch-os">Essential Eight patch operating systems</a> <a href="#fnref:2" class="reversefootnote" role="doc-backlink">&#8617;</a> <a href="#fnref:2:1" class="reversefootnote" role="doc-backlink">&#8617;<sup>2</sup></a> <a href="#fnref:2:2" class="reversefootnote" role="doc-backlink">&#8617;<sup>3</sup></a> <a href="#fnref:2:3" class="reversefootnote" role="doc-backlink">&#8617;<sup>4</sup></a> <a href="#fnref:2:4" class="reversefootnote" role="doc-backlink">&#8617;<sup>5</sup></a> <a href="#fnref:2:5" class="reversefootnote" role="doc-backlink">&#8617;<sup>6</sup></a> <a href="#fnref:2:6" class="reversefootnote" role="doc-backlink">&#8617;<sup>7</sup></a> <a href="#fnref:2:7" class="reversefootnote" role="doc-backlink">&#8617;<sup>8</sup></a> <a href="#fnref:2:8" class="reversefootnote" role="doc-backlink">&#8617;<sup>9</sup></a> <a href="#fnref:2:9" class="reversefootnote" role="doc-backlink">&#8617;<sup>10</sup></a> <a href="#fnref:2:10" class="reversefootnote" role="doc-backlink">&#8617;<sup>11</sup></a></p>
+    </li>
+    <li id="fn:3">
+      <p><a href="https://www.grouppolicy.biz/2011/06/best-practices-group-policy-for-wsus/">Best practices: Group Policy for WSUS — grouppolicy.biz (Alan Burchill, Group Policy MVP)</a> <a href="#fnref:3" class="reversefootnote" role="doc-backlink">&#8617;</a> <a href="#fnref:3:1" class="reversefootnote" role="doc-backlink">&#8617;<sup>2</sup></a> <a href="#fnref:3:2" class="reversefootnote" role="doc-backlink">&#8617;<sup>3</sup></a> <a href="#fnref:3:3" class="reversefootnote" role="doc-backlink">&#8617;<sup>4</sup></a> <a href="#fnref:3:4" class="reversefootnote" role="doc-backlink">&#8617;<sup>5</sup></a></p>
+    </li>
+    <li id="fn:4">
+      <p><a href="https://learn.microsoft.com/en-us/windows/deployment/update/waas-manage-updates-wsus">Deploy updates using Windows Server Update Services — Microsoft Learn</a> <a href="#fnref:4" class="reversefootnote" role="doc-backlink">&#8617;</a> <a href="#fnref:4:1" class="reversefootnote" role="doc-backlink">&#8617;<sup>2</sup></a> <a href="#fnref:4:2" class="reversefootnote" role="doc-backlink">&#8617;<sup>3</sup></a> <a href="#fnref:4:3" class="reversefootnote" role="doc-backlink">&#8617;<sup>4</sup></a></p>
+    </li>
+    <li id="fn:5">
+      <p><a href="https://learn.microsoft.com/en-us/windows/deployment/update/waas-wufb-group-policy">Configure Windows Update client policies via Group Policy — Microsoft Learn</a> <a href="#fnref:5" class="reversefootnote" role="doc-backlink">&#8617;</a> <a href="#fnref:5:1" class="reversefootnote" role="doc-backlink">&#8617;<sup>2</sup></a> <a href="#fnref:5:2" class="reversefootnote" role="doc-backlink">&#8617;<sup>3</sup></a></p>
+    </li>
+  </ol>
+</div>
+
+    </div>
+
+    <div style="margin-bottom:20px; display:flex; justify-content:space-between; align-items:center;">
+      <div style="display:flex; gap:12px; align-items:center;">
+        <a href="/ISM-Controls-Guide-preview/" class="back-btn">HOME</a>
+
+        
+          <a class="prev-control back-btn" href="/ISM-Controls-Guide-preview/controls/ISM-1686.html" aria-label="Previous control">← ISM-1686</a>
+        
+      </div>
+
+      <div style="display:flex; gap:12px; align-items:center;">
+        
+          <a class="next-control back-btn" href="/ISM-Controls-Guide-preview/controls/ISM-1692.html" aria-label="Next control">ISM-1692 →</a>
+        
+      </div>
+    </div>
+  </div>
+  <script>
+    // Convert GitHub-style alerts [!NOTE], [!WARNING], etc. to styled callouts
+    document.querySelectorAll('blockquote').forEach(bq => {
+      const text = bq.innerHTML;
+      const match = text.match(/\[!(NOTE|WARNING|TIP|IMPORTANT|CAUTION)\]/i);
+      if (match) {
+        const type = match[1].toLowerCase();
+        const icons = { note: '📝', warning: '⚠️', tip: '💡', important: '📢', caution: '🚨' };
+        const titles = { note: 'Note', warning: 'Warning', tip: 'Tip', important: 'Important', caution: 'Caution' };
+        const content = text.replace(/\[!(NOTE|WARNING|TIP|IMPORTANT|CAUTION)\]\s*/i, '');
+        bq.className = 'callout callout-' + type;
+        bq.innerHTML = '<div class="callout-title">' + icons[type] + ' ' + titles[type] + '</div>' + content;
+      }
+    });
+  </script>
+  <footer class="site-footer" role="contentinfo" aria-label="Site footer" style="background:#161b22;border-top:1px solid #30363d;padding:20px 40px;margin-top:40px;">
+    <div style="max-width:900px;margin:0 auto;display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:space-between;">
+      <div style="color:#94a3b8;font-size:0.9rem;">
+        
+          Last updated: 2026-02-18 21:35 UTC
+        
+      </div>
+      <div style="color:#94a3b8;font-size:0.9rem;text-align:right;max-width:620px;">
+        <strong style="color:#e6edf3;">AI-generated content:</strong> This site contains AI-assisted content created from primary sources and may contain errors or be out of date. Always verify with official documentation. See <a href="https://e8guide.com/about" style="color:#58a6ff;text-decoration:none;">About</a> for details.
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

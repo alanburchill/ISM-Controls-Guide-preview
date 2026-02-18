@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privileged users use separate privileged and unprivileged operating environments. - Essential 8 Guide</title>
+  <!-- Canonical URL -->
+<link rel="canonical" href="https://e8guide.com/controls/ISM-1380.html">
+
+<!-- Meta description --><meta name="description" content="Privileged users use separate privileged and unprivileged operating environments.">
+
+<!-- Google Search Console ownership verification -->
+
+<meta name="google-site-verification" content="">
+
+
+<!-- Open Graph / Social sharing -->
+<meta property="og:title" content="Privileged users use separate privileged and unprivileged operating environments. - Essential 8 Guide">
+<meta property="og:description" content="Privileged users use separate privileged and unprivileged operating environments.">
+<meta property="og:url" content="https://e8guide.com/controls/ISM-1380.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Essential 8 Guide">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Privileged users use separate privileged and unprivileged operating environments. - Essential 8 Guide">
+<meta name="twitter:description" content="Privileged users use separate privileged and unprivileged operating environments.">
+
+<!-- Emoji favicon — no image file required -->
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>&#x1F6E1;&#xFE0F;</text></svg>">
+
+  
+<!-- Google Analytics (GA4) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id="></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', '');
+</script>
+
+
+  <link rel="stylesheet" href="/ISM-Controls-Guide-preview/assets/css/main.css">
+  <style>
+    /* Page-specific styles */
+    .container {
+      max-width: 900px;
+    }
+    .content-card {
+      padding: 40px;
+    }
+    .content-card h1 {
+      padding-bottom: 15px;
+      border-bottom: 1px solid #30363d;
+    }
+    /* Footnotes styling */
+    .footnotes {
+      margin-top: 40px;
+      padding-top: 20px;
+      border-top: 1px solid #30363d;
+      font-size: 0.9rem;
+    }
+    .footnotes ol { color: #8b949e; }
+    .footnote { color: #58a6ff; font-size: 0.85em; vertical-align: super; }
+    .reversefootnote { color: #58a6ff; }
+    /* GitHub-style alerts/callouts */
+    .callout {
+      padding: 16px 20px;
+      margin: 20px 0;
+      border-radius: 6px;
+      border-left: 4px solid;
+    }
+    .callout-title {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+    .callout-title svg { flex-shrink: 0; }
+    .callout p { margin: 0; color: #e6edf3; }
+    .callout-note {
+      background: rgba(88, 166, 255, 0.1);
+      border-color: #58a6ff;
+    }
+    .callout-note .callout-title { color: #58a6ff; }
+    .callout-warning {
+      background: rgba(210, 153, 34, 0.1);
+      border-color: #d29922;
+    }
+    .callout-warning .callout-title { color: #d29922; }
+    .callout-tip {
+      background: rgba(63, 185, 80, 0.1);
+      border-color: #3fb950;
+    }
+    .callout-tip .callout-title { color: #3fb950; }
+    .callout-important {
+      background: rgba(168, 113, 255, 0.1);
+      border-color: #a371f7;
+    }
+    .callout-important .callout-title { color: #a371f7; }
+    .callout-caution {
+      background: rgba(248, 81, 73, 0.1);
+      border-color: #f85149;
+    }
+    .callout-caution .callout-title { color: #f85149; }
+  </style>
+  <!-- JSON-LD structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "TechArticle",
+    "name": "ISM-1380",
+    "headline": "Privileged users use separate privileged and unprivileged operating environments.",
+    "description": "Privileged users use separate privileged and unprivileged operating environments.",
+    "url": "https://e8guide.com/controls/ISM-1380.html",
+    "dateModified": "2026-02-13",
+    "inLanguage": "en-AU",
+    "author": {
+      "@type": "Organization",
+      "name": "Essential 8 Guide",
+      "url": "https://e8guide.com"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Essential 8 Guide",
+      "url": "https://e8guide.com"
+    },
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": "Essential 8 Guide",
+      "url": "https://e8guide.com"
+    }
+  }
+  </script>
+</head>
+<body><div style="background:#d29922;color:#0d1117;padding:6px 16px;font-size:0.85rem;text-align:center;position:sticky;top:0;z-index:9999;">⚠️ PREVIEW — branch: research-review-controls — <a href="https://e8guide.com" style="color:#0d1117;font-weight:bold;">production site</a></div>
+  <div class="header">
+  <div class="header-content">
+    <h1>🛡️ Essential 8 Guide</h1>
+    <p>Implementation guidance for Australian Essential Eight controls in Microsoft environments - ISM controls with PSPF mappings</p>
+  </div>
+  <a href="/ISM-Controls-Guide-preview/about" class="about-link">About</a>
+</div>
+
+  <div class="container">
+    <div style="margin-bottom:20px; display:flex; justify-content:space-between; align-items:center;">
+      <div style="display:flex; gap:12px; align-items:center;">
+      <a href="/ISM-Controls-Guide-preview/" class="back-btn">HOME</a>
+
+      
+      
+      
+      
+
+
+      
+      
+      
+      
+      
+
+      
+        
+        
+        <a class="prev-control back-btn" href="/ISM-Controls-Guide-preview/controls/ISM-1173.html" aria-label="Previous control">← ISM-1173</a>
+      
+    </div>
+
+    <div style="display:flex; gap:12px; align-items:center;">
+      
+        
+        
+        <a class="next-control back-btn" href="/ISM-Controls-Guide-preview/controls/ISM-1412.html" aria-label="Next control">ISM-1412 →</a>
+      
+    </div>
+  </div>
+    <div class="content-card">
+      <h2 id="privileged-users-use-separate-privileged-and-unprivileged-operating-environments">Privileged users use separate privileged and unprivileged operating environments</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Property</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>ISM Control</strong></td>
+      <td>ISM-1380</td>
+    </tr>
+    <tr>
+      <td><strong>Revision</strong></td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td><strong>Updated</strong></td>
+      <td>Sep-21</td>
+    </tr>
+    <tr>
+      <td><strong>Guideline</strong></td>
+      <td>Not provided</td>
+    </tr>
+    <tr>
+      <td><strong>Section</strong></td>
+      <td>System administration</td>
+    </tr>
+    <tr>
+      <td><strong>Topic</strong></td>
+      <td>Separate privileged operating environments</td>
+    </tr>
+    <tr>
+      <td><strong>Essential Eight</strong></td>
+      <td>ML1, ML2, ML3</td>
+    </tr>
+    <tr>
+      <td><strong>PSPF Levels</strong></td>
+      <td>NC, OS, P, S, TS</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="summary">Summary</h2>
+
+<p>Deploy a Conditional Access policy that blocks cloud administrators unless they are from a trusted known IP address range, enforcing separation of privileged administration from untrusted networks. This approach reduces the attack surface by ensuring privileged access is only possible from approved, monitored environments and supports MFA/device-compliance requirements for privileged tasks.<sup id="fnref:1"><a href="#fn:1" class="footnote" rel="footnote" role="doc-noteref">1</a></sup><sup id="fnref:2"><a href="#fn:2" class="footnote" rel="footnote" role="doc-noteref">2</a></sup></p>
+
+<p><strong>Privileged Identity Management (PIM)</strong> complements the separation of environments by eliminating permanently active privileged role assignments. Roles are granted as <em>eligible</em> only, activated on demand with a maximum duration (e.g., 1 hour), and optionally require approval. This enforces just-in-time (JIT) privileged access from the dedicated privileged environment.<sup id="fnref:4"><a href="#fn:4" class="footnote" rel="footnote" role="doc-noteref">3</a></sup></p>
+
+<p><strong>Emergency (break-glass) accounts</strong> must be maintained as cloud-only Global Administrator accounts excluded from all Conditional Access policies. Two accounts should exist, each protected by a different FIDO2 hardware security key, with sign-in alerts configured in Entra ID to trigger an alert on any break-glass sign-in.<sup id="fnref:1:1"><a href="#fn:1" class="footnote" rel="footnote" role="doc-noteref">1</a></sup></p>
+
+<h2 id="design-decision">Design Decision</h2>
+
+<blockquote>
+  <p>[!NOTE]
+The <strong>Conditional Access Policy</strong> will be deployed to block cloud administrators unless they are from a trusted known IP address range. The separation of privileged operating environments described in ISM-1380 will be reinforced by the policy.</p>
+</blockquote>
+
+<h2 id="prerequisites">Prerequisites</h2>
+
+<ul>
+  <li><strong>Permissions/Roles</strong>
+    <ul>
+      <li>Separate admin accounts for administration and end-user activities. <sup id="fnref:1:2"><a href="#fn:1" class="footnote" rel="footnote" role="doc-noteref">1</a></sup></li>
+      <li>Minimize the number of Tier 0 privileged administrators. <sup id="fnref:1:3"><a href="#fn:1" class="footnote" rel="footnote" role="doc-noteref">1</a></sup></li>
+      <li>Plan for emergency access accounts and related exemptions from Conditional Access as appropriate. [^7]</li>
+    </ul>
+  </li>
+  <li><strong>Dependencies</strong>
+    <ul>
+      <li>Privileged Access Workstation (PAW) foundation
+        <ul>
+          <li>Dedicated PAW OU structure and PAW-specific groups and policies</li>
+          <li>Hardware from a trusted supplier that meets security requirements</li>
+          <li>Windows 11 Enterprise Edition</li>
+          <li>Remote Server Administration Tools for Windows 11</li>
+          <li>Windows 11 Security Baselines</li>
+          <li>On-intranet WSUS server for PAW updates</li>
+          <li>Domain join to the appropriate administrative OU
+These prerequisites are described in the legacy PAW guidance. <sup id="fnref:3"><a href="#fn:3" class="footnote" rel="footnote" role="doc-noteref">4</a></sup></li>
+        </ul>
+      </li>
+      <li>Identity and device management for PAWs and privileged access
+        <ul>
+          <li>Devices used for privileged administration must be enrolled in Microsoft Intune / Entra ID (and Defender for Endpoint), and be device compliant</li>
+          <li>Multi-factor authentication (MFA) and device compliance are enforced as part of Conditional Access</li>
+          <li>If using Intune to implement Administrator protection, deploy a Settings Catalog policy under Local Policies Security Options
+These requirements are supported by privileged access deployment guidance. <sup id="fnref:1:4"><a href="#fn:1" class="footnote" rel="footnote" role="doc-noteref">1</a></sup> <sup id="fnref:2:1"><a href="#fn:2" class="footnote" rel="footnote" role="doc-noteref">2</a></sup></li>
+        </ul>
+      </li>
+      <li>Just-in-Time privileged access and elevated session controls
+        <ul>
+          <li>Enable Just-in-Time privileges for Azure resources using Privileged Identity Management (PIM), with activation workflows and time-bound durations</li>
+          <li>Consider using Azure Bastion for Just-In-Time VM access
+These capabilities are described in Privileged Access guidance. <sup id="fnref:4:1"><a href="#fn:4" class="footnote" rel="footnote" role="doc-noteref">3</a></sup></li>
+        </ul>
+      </li>
+      <li>Conditional Access posture for privileged administration
+        <ul>
+          <li>Deploy Conditional Access to require device compliance, MFA, and a trusted device for cloud admin portal access
+This posture is described in privileged access deployment guidance. <sup id="fnref:1:5"><a href="#fn:1" class="footnote" rel="footnote" role="doc-noteref">1</a></sup></li>
+        </ul>
+      </li>
+      <li>Architectural alignment and zero-trust guidance
+        <ul>
+          <li>Align with secure administration blueprint guidance to separate privileged environments and enforce zero-trust through Intune and Conditional Access
+This guidance is described in ASD Blueprint and related best-practice sources. <sup id="fnref:10"><a href="#fn:10" class="footnote" rel="footnote" role="doc-noteref">5</a></sup> <sup id="fnref:2:2"><a href="#fn:2" class="footnote" rel="footnote" role="doc-noteref">2</a></sup></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="implementation-steps">Implementation Steps</h2>
+
+<h3 id="conditional-access-policy-for-trusted-ip-range-for-cloud-administrators">Conditional Access policy for trusted IP range for cloud administrators</h3>
+
+<ol>
+  <li>
+    <p>Identify cloud administrator accounts to scope the policy to privileged sign-ins. <sup id="fnref:1:6"><a href="#fn:1" class="footnote" rel="footnote" role="doc-noteref">1</a></sup></p>
+  </li>
+  <li>
+    <p>Define a trusted IP range as a named location to restrict sign-ins to cloud admin portals. <sup id="fnref:2:3"><a href="#fn:2" class="footnote" rel="footnote" role="doc-noteref">2</a></sup></p>
+  </li>
+  <li>
+    <p>Create and enforce a Conditional Access policy that blocks sign-ins from locations outside the trusted IP range and requires MFA and device compliance for access to cloud management interfaces. <sup id="fnref:1:7"><a href="#fn:1" class="footnote" rel="footnote" role="doc-noteref">1</a></sup></p>
+
+    <ul>
+      <li>
+        <p>Require MFA for all sign-ins to cloud management portals. <sup id="fnref:1:8"><a href="#fn:1" class="footnote" rel="footnote" role="doc-noteref">1</a></sup></p>
+      </li>
+      <li>
+        <p>Require device to be compliant (or a dedicated privileged workstation) as a gating condition. <sup id="fnref:1:9"><a href="#fn:1" class="footnote" rel="footnote" role="doc-noteref">1</a></sup></p>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <p>Create an emergency break-glass exception group to bypass the policy in critical situations. <sup id="fnref:1:10"><a href="#fn:1" class="footnote" rel="footnote" role="doc-noteref">1</a></sup></p>
+  </li>
+  <li>
+    <p>Deploy the policy using the recommended tooling (Intune Settings Catalog approach or Azure AD CA) and apply to the defined group of cloud administrators. <sup id="fnref:1:11"><a href="#fn:1" class="footnote" rel="footnote" role="doc-noteref">1</a></sup></p>
+  </li>
+  <li>
+    <p>Validate implementation and monitor sign-in activity and policy enforcement. Verify that sign-ins from trusted IP addresses succeed and from non-trusted IPs are blocked; review Conditional Access logs for sign-in events and alerts. <sup id="fnref:1:12"><a href="#fn:1" class="footnote" rel="footnote" role="doc-noteref">1</a></sup></p>
+  </li>
+</ol>
+
+<blockquote>
+  <p>[!NOTE]
+Emergency break-glass accounts should be excluded from the policy and managed separately to ensure access remains possible in extreme cases. <sup id="fnref:1:13"><a href="#fn:1" class="footnote" rel="footnote" role="doc-noteref">1</a></sup></p>
+</blockquote>
+
+<h2 id="just-in-time-privileged-access-with-pim">Just-in-time privileged access with PIM</h2>
+
+<p>Where permanent administrative role assignments exist, replace them with <strong>eligible assignments</strong> in Microsoft Entra Privileged Identity Management:<sup id="fnref:4:2"><a href="#fn:4" class="footnote" rel="footnote" role="doc-noteref">3</a></sup></p>
+
+<ol>
+  <li><strong>Enable PIM</strong> for Entra ID directory roles and Azure resource roles via the PIM wizard.</li>
+  <li>Assign administrators as <strong>eligible</strong> (not permanently active) for all privileged roles.</li>
+  <li>Configure <strong>activation settings</strong>:
+    <ul>
+      <li>Maximum activation duration: 1 hour (or shortest operationally feasible).</li>
+      <li>Require MFA (or phishing-resistant MFA for ML3) at activation.</li>
+      <li>Require approval for high-impact roles (e.g., Global Administrator).</li>
+    </ul>
+  </li>
+  <li>Enable activation <strong>notifications</strong> to designated approvers.</li>
+  <li>Keep <strong>zero permanently active assignments</strong>, except for break-glass accounts.</li>
+</ol>
+
+<h2 id="emergency-break-glass-account-configuration">Emergency (break-glass) account configuration</h2>
+
+<p>Emergency accounts must be available even if the primary identity infrastructure fails:<sup id="fnref:1:14"><a href="#fn:1" class="footnote" rel="footnote" role="doc-noteref">1</a></sup></p>
+
+<ol>
+  <li>Create <strong>two cloud-only accounts</strong> using the <code class="language-plaintext highlighter-rouge">.onmicrosoft.com</code> domain (no on-premises sync, no federation dependency).</li>
+  <li>Assign each account a <strong>permanent active</strong> Global Administrator role in PIM.</li>
+  <li>Protect each account with a <strong>different FIDO2 security key</strong> (store keys in physically separate secure locations).</li>
+  <li><strong>Exclude</strong> both accounts from all Conditional Access policies.</li>
+  <li><strong>Disable password expiration</strong> and use a 16+ character random password, split across two secure storage locations.</li>
+  <li>Configure an <strong>Entra ID sign-in alert</strong> (and Azure Monitor alert) to trigger immediately on any break-glass sign-in.</li>
+  <li><strong>Test</strong> break-glass access during BC/DR drills and reset passwords after each test.</li>
+</ol>
+
+<blockquote>
+  <p>[!NOTE]
+Monitoring of break-glass account sign-ins must be in place before the accounts are created. A sign-in from these accounts is a high-severity event and should trigger an immediate investigation response.</p>
+</blockquote>
+
+<h2 id="additional-related-information">Additional related information</h2>
+
+<ul>
+  <li>
+    <p>ASD Blueprint provides service provisioning considerations for secure admin onboarding and zero-trust alignment with Intune and conditional access <a href="https://blueprint.asd.gov.au/design/overview/considerations/">ASD Blueprint: Service provisioning considerations</a></p>
+  </li>
+  <li>
+    <p>Privileged access: Strategy describes strategic initiatives for end-to-end session security, identity governance, and rapid threat response for privileged access <a href="https://learn.microsoft.com/en-us/security/privileged-access-workstations/privileged-access-strategy">Privileged access: Strategy</a></p>
+  </li>
+  <li>
+    <p>Administrator protection (preview — rollout deferred) provides options to enable admin elevation controls via Intune Settings Catalog, CSP policies, Group Policy, and Windows Security Settings <a href="https://learn.microsoft.com/en-us/windows/security/application-security/application-control/administrator-protection/">Administrator protection (preview)</a></p>
+  </li>
+  <li>
+    <p>Best practices for all isolation architectures offers guidance on conditional access policies and zero-trust design for isolated admin environments <a href="https://learn.microsoft.com/en-us/entra/architecture/secure-best-practices">Best practices for all isolation architectures</a></p>
+  </li>
+  <li>
+    <p>Essential Eight restrict administrative privileges describes separation of privileged and unprivileged environments and least-privilege administration concepts <a href="https://learn.microsoft.com/en-us/compliance/anz/e8-admin">Essential Eight restrict administrative privileges</a></p>
+  </li>
+  <li>
+    <p>Security rapid modernization plan outlines admin workstations deployment and rapid modernization to reduce privileged access risk <a href="https://learn.microsoft.com/en-us/security/privileged-access-workstations/security-rapid-modernization-plan">Security rapid modernization plan</a></p>
+  </li>
+  <li>
+    <p>Manage emergency access accounts in Microsoft Entra ID covers the configuration, testing, and monitoring of break-glass accounts <a href="https://learn.microsoft.com/en-us/entra/identity/role-based-access-control/security-emergency-access">Manage emergency access accounts in Microsoft Entra ID</a></p>
+  </li>
+  <li>
+    <p>Plan a Privileged Identity Management deployment covers eligible assignment configuration, activation settings, approval workflows, and auditing requirements <a href="https://learn.microsoft.com/en-us/entra/id-governance/privileged-identity-management/pim-deployment-plan">Plan a Privileged Identity Management deployment</a></p>
+  </li>
+</ul>
+
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:1">
+      <p><a href="https://learn.microsoft.com/en-us/security/privileged-access-workstations/privileged-access-deployment">Privileged access deployment — Microsoft Learn</a> <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a> <a href="#fnref:1:1" class="reversefootnote" role="doc-backlink">&#8617;<sup>2</sup></a> <a href="#fnref:1:2" class="reversefootnote" role="doc-backlink">&#8617;<sup>3</sup></a> <a href="#fnref:1:3" class="reversefootnote" role="doc-backlink">&#8617;<sup>4</sup></a> <a href="#fnref:1:4" class="reversefootnote" role="doc-backlink">&#8617;<sup>5</sup></a> <a href="#fnref:1:5" class="reversefootnote" role="doc-backlink">&#8617;<sup>6</sup></a> <a href="#fnref:1:6" class="reversefootnote" role="doc-backlink">&#8617;<sup>7</sup></a> <a href="#fnref:1:7" class="reversefootnote" role="doc-backlink">&#8617;<sup>8</sup></a> <a href="#fnref:1:8" class="reversefootnote" role="doc-backlink">&#8617;<sup>9</sup></a> <a href="#fnref:1:9" class="reversefootnote" role="doc-backlink">&#8617;<sup>10</sup></a> <a href="#fnref:1:10" class="reversefootnote" role="doc-backlink">&#8617;<sup>11</sup></a> <a href="#fnref:1:11" class="reversefootnote" role="doc-backlink">&#8617;<sup>12</sup></a> <a href="#fnref:1:12" class="reversefootnote" role="doc-backlink">&#8617;<sup>13</sup></a> <a href="#fnref:1:13" class="reversefootnote" role="doc-backlink">&#8617;<sup>14</sup></a> <a href="#fnref:1:14" class="reversefootnote" role="doc-backlink">&#8617;<sup>15</sup></a></p>
+    </li>
+    <li id="fn:2">
+      <p><a href="https://learn.microsoft.com/en-us/entra/architecture/secure-best-practices">Best practices for all isolation architectures — Microsoft Learn</a> <a href="#fnref:2" class="reversefootnote" role="doc-backlink">&#8617;</a> <a href="#fnref:2:1" class="reversefootnote" role="doc-backlink">&#8617;<sup>2</sup></a> <a href="#fnref:2:2" class="reversefootnote" role="doc-backlink">&#8617;<sup>3</sup></a> <a href="#fnref:2:3" class="reversefootnote" role="doc-backlink">&#8617;<sup>4</sup></a></p>
+    </li>
+    <li id="fn:4">
+      <p><a href="https://learn.microsoft.com/en-us/security/benchmark/azure/mcsb-v2-privileged-access">Privileged access — Azure MCSB v2 (Privileged access)</a> <a href="#fnref:4" class="reversefootnote" role="doc-backlink">&#8617;</a> <a href="#fnref:4:1" class="reversefootnote" role="doc-backlink">&#8617;<sup>2</sup></a> <a href="#fnref:4:2" class="reversefootnote" role="doc-backlink">&#8617;<sup>3</sup></a></p>
+    </li>
+    <li id="fn:3">
+      <p><a href="https://learn.microsoft.com/en-us/security/privileged-access-workstations/legacy-privileged-access-devices">Legacy privileged access guidance (archived) — Microsoft Learn</a> <a href="#fnref:3" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:10">
+      <p><a href="https://blueprint.asd.gov.au/design/overview/considerations/">ASD Blueprint: Service provisioning considerations (ASD Blueprint for Secure Cloud)</a> <a href="#fnref:10" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+
+    </div>
+
+    <div style="margin-bottom:20px; display:flex; justify-content:space-between; align-items:center;">
+      <div style="display:flex; gap:12px; align-items:center;">
+        <a href="/ISM-Controls-Guide-preview/" class="back-btn">HOME</a>
+
+        
+          <a class="prev-control back-btn" href="/ISM-Controls-Guide-preview/controls/ISM-1173.html" aria-label="Previous control">← ISM-1173</a>
+        
+      </div>
+
+      <div style="display:flex; gap:12px; align-items:center;">
+        
+          <a class="next-control back-btn" href="/ISM-Controls-Guide-preview/controls/ISM-1412.html" aria-label="Next control">ISM-1412 →</a>
+        
+      </div>
+    </div>
+  </div>
+  <script>
+    // Convert GitHub-style alerts [!NOTE], [!WARNING], etc. to styled callouts
+    document.querySelectorAll('blockquote').forEach(bq => {
+      const text = bq.innerHTML;
+      const match = text.match(/\[!(NOTE|WARNING|TIP|IMPORTANT|CAUTION)\]/i);
+      if (match) {
+        const type = match[1].toLowerCase();
+        const icons = { note: '📝', warning: '⚠️', tip: '💡', important: '📢', caution: '🚨' };
+        const titles = { note: 'Note', warning: 'Warning', tip: 'Tip', important: 'Important', caution: 'Caution' };
+        const content = text.replace(/\[!(NOTE|WARNING|TIP|IMPORTANT|CAUTION)\]\s*/i, '');
+        bq.className = 'callout callout-' + type;
+        bq.innerHTML = '<div class="callout-title">' + icons[type] + ' ' + titles[type] + '</div>' + content;
+      }
+    });
+  </script>
+  <footer class="site-footer" role="contentinfo" aria-label="Site footer" style="background:#161b22;border-top:1px solid #30363d;padding:20px 40px;margin-top:40px;">
+    <div style="max-width:900px;margin:0 auto;display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:space-between;">
+      <div style="color:#94a3b8;font-size:0.9rem;">
+        
+          Last updated: 2026-02-18 05:56 UTC
+        
+      </div>
+      <div style="color:#94a3b8;font-size:0.9rem;text-align:right;max-width:620px;">
+        <strong style="color:#e6edf3;">AI-generated content:</strong> This site contains AI-assisted content created from primary sources and may contain errors or be out of date. Always verify with official documentation. See <a href="https://e8guide.com/about" style="color:#58a6ff;text-decoration:none;">About</a> for details.
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

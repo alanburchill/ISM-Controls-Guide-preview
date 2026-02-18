@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Remote Credential Guard functionality is enabled. - Essential 8 Guide</title>
+  <!-- Canonical URL -->
+<link rel="canonical" href="https://e8guide.com/controls/ISM-1897.html">
+
+<!-- Meta description --><meta name="description" content="Remote Credential Guard functionality is enabled.">
+
+<!-- Google Search Console ownership verification -->
+
+<meta name="google-site-verification" content="">
+
+
+<!-- Open Graph / Social sharing -->
+<meta property="og:title" content="Remote Credential Guard functionality is enabled. - Essential 8 Guide">
+<meta property="og:description" content="Remote Credential Guard functionality is enabled.">
+<meta property="og:url" content="https://e8guide.com/controls/ISM-1897.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Essential 8 Guide">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Remote Credential Guard functionality is enabled. - Essential 8 Guide">
+<meta name="twitter:description" content="Remote Credential Guard functionality is enabled.">
+
+<!-- Emoji favicon — no image file required -->
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>&#x1F6E1;&#xFE0F;</text></svg>">
+
+  
+<!-- Google Analytics (GA4) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id="></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', '');
+</script>
+
+
+  <link rel="stylesheet" href="/ISM-Controls-Guide-preview/assets/css/main.css">
+  <style>
+    /* Page-specific styles */
+    .container {
+      max-width: 900px;
+    }
+    .content-card {
+      padding: 40px;
+    }
+    .content-card h1 {
+      padding-bottom: 15px;
+      border-bottom: 1px solid #30363d;
+    }
+    /* Footnotes styling */
+    .footnotes {
+      margin-top: 40px;
+      padding-top: 20px;
+      border-top: 1px solid #30363d;
+      font-size: 0.9rem;
+    }
+    .footnotes ol { color: #8b949e; }
+    .footnote { color: #58a6ff; font-size: 0.85em; vertical-align: super; }
+    .reversefootnote { color: #58a6ff; }
+    /* GitHub-style alerts/callouts */
+    .callout {
+      padding: 16px 20px;
+      margin: 20px 0;
+      border-radius: 6px;
+      border-left: 4px solid;
+    }
+    .callout-title {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+    .callout-title svg { flex-shrink: 0; }
+    .callout p { margin: 0; color: #e6edf3; }
+    .callout-note {
+      background: rgba(88, 166, 255, 0.1);
+      border-color: #58a6ff;
+    }
+    .callout-note .callout-title { color: #58a6ff; }
+    .callout-warning {
+      background: rgba(210, 153, 34, 0.1);
+      border-color: #d29922;
+    }
+    .callout-warning .callout-title { color: #d29922; }
+    .callout-tip {
+      background: rgba(63, 185, 80, 0.1);
+      border-color: #3fb950;
+    }
+    .callout-tip .callout-title { color: #3fb950; }
+    .callout-important {
+      background: rgba(168, 113, 255, 0.1);
+      border-color: #a371f7;
+    }
+    .callout-important .callout-title { color: #a371f7; }
+    .callout-caution {
+      background: rgba(248, 81, 73, 0.1);
+      border-color: #f85149;
+    }
+    .callout-caution .callout-title { color: #f85149; }
+  </style>
+  <!-- JSON-LD structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "TechArticle",
+    "name": "ISM-1897",
+    "headline": "Remote Credential Guard functionality is enabled.",
+    "description": "Remote Credential Guard functionality is enabled.",
+    "url": "https://e8guide.com/controls/ISM-1897.html",
+    "dateModified": "2026-02-13",
+    "inLanguage": "en-AU",
+    "author": {
+      "@type": "Organization",
+      "name": "Essential 8 Guide",
+      "url": "https://e8guide.com"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Essential 8 Guide",
+      "url": "https://e8guide.com"
+    },
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": "Essential 8 Guide",
+      "url": "https://e8guide.com"
+    }
+  }
+  </script>
+</head>
+<body><div style="background:#d29922;color:#0d1117;padding:6px 16px;font-size:0.85rem;text-align:center;position:sticky;top:0;z-index:9999;">⚠️ PREVIEW — branch: research-review-controls — <a href="https://e8guide.com" style="color:#0d1117;font-weight:bold;">production site</a></div>
+  <div class="header">
+  <div class="header-content">
+    <h1>🛡️ Essential 8 Guide</h1>
+    <p>Implementation guidance for Australian Essential Eight controls in Microsoft environments - ISM controls with PSPF mappings</p>
+  </div>
+  <a href="/ISM-Controls-Guide-preview/about" class="about-link">About</a>
+</div>
+
+  <div class="container">
+    <div style="margin-bottom:20px; display:flex; justify-content:space-between; align-items:center;">
+      <div style="display:flex; gap:12px; align-items:center;">
+      <a href="/ISM-Controls-Guide-preview/" class="back-btn">HOME</a>
+
+      
+      
+      
+      
+
+
+      
+      
+      
+      
+      
+
+      
+        
+        
+        <a class="prev-control back-btn" href="/ISM-Controls-Guide-preview/controls/ISM-1896.html" aria-label="Previous control">← ISM-1896</a>
+      
+    </div>
+
+    <div style="display:flex; gap:12px; align-items:center;">
+      
+        
+        
+        <a class="next-control back-btn" href="/ISM-Controls-Guide-preview/controls/ISM-1900.html" aria-label="Next control">ISM-1900 →</a>
+      
+    </div>
+  </div>
+    <div class="content-card">
+      <h2 id="remote-credential-guard-functionality-is-enabled">Remote Credential Guard functionality is enabled.</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Property</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>ISM Control</strong></td>
+      <td>ISM-1897</td>
+    </tr>
+    <tr>
+      <td><strong>Revision</strong></td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td><strong>Updated</strong></td>
+      <td>Dec-23</td>
+    </tr>
+    <tr>
+      <td><strong>Guideline</strong></td>
+      <td>Not provided</td>
+    </tr>
+    <tr>
+      <td><strong>Section</strong></td>
+      <td>Authentication hardening</td>
+    </tr>
+    <tr>
+      <td><strong>Topic</strong></td>
+      <td>Protecting credentials</td>
+    </tr>
+    <tr>
+      <td><strong>Essential Eight</strong></td>
+      <td>ML3</td>
+    </tr>
+    <tr>
+      <td><strong>PSPF Levels</strong></td>
+      <td>NC, OS, P, S, TS</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="summary">Summary</h2>
+
+<p><strong>Remote Credential Guard</strong> protects credentials by preventing delegation of nonexportable credentials to remote hosts, reducing the risk of credential theft during remote authentication<sup id="fnref:1"><a href="#fn:1" class="footnote" rel="footnote" role="doc-noteref">1</a></sup>. Implemented via Intune/MDM using a settings catalog policy deployed to all devices to ensure consistent protection<sup id="fnref:1:1"><a href="#fn:1" class="footnote" rel="footnote" role="doc-noteref">1</a></sup>.</p>
+
+<h3 id="justification">Justification</h3>
+
+<p>When a user connects to a remote host via Remote Desktop Protocol (RDP), Windows traditionally delegates credentials to the remote session host — storing credential material on a machine the administrator does not own. Attackers with local administrator access on a compromised RDP host can then run Mimikatz against the LSASS process of the RDP session to extract NTLM hashes or Kerberos tickets of connecting administrators, enabling immediate lateral movement.</p>
+
+<p>Remote Credential Guard (RCG) routes all Kerberos and NTLM authentication requests back to the originating device. The remote host never receives or stores any credential material — it receives only a Kerberos service ticket valid for the remote session, not the underlying credentials. This means a fully compromised RDP host cannot be used to extract the credentials of an administrative user who connects to it.</p>
+
+<p>This control is particularly important for Privileged Access Workstations (PAWs) and tiered administration models (Tier 0/1/2) where administrators manage sensitive infrastructure over RDP. Without RCG, a single compromised jump host or Tier 1 server can be used to harvest Tier 0 admin credentials.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>RDP credential protection model</th>
+      <th>Credentials on remote host</th>
+      <th>Attack risk</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>No protection</td>
+      <td>Yes — plaintext/hash in LSASS</td>
+      <td>Critical — full credential exposure</td>
+    </tr>
+    <tr>
+      <td>Restricted Admin mode</td>
+      <td>No — machine account only</td>
+      <td>Medium — pass-the-hash of machine account possible</td>
+    </tr>
+    <tr>
+      <td>Remote Credential Guard</td>
+      <td>No — Kerberos redirect only</td>
+      <td>Low — no credential material on remote host</td>
+    </tr>
+  </tbody>
+</table>
+
+<blockquote>
+  <p>[!NOTE]
+Remote Credential Guard requires both the client and server to be running Windows 10 version 1607 / Windows Server 2016 or later. It is not supported for RDP connections to Azure Virtual Machines; use just-in-time VM access instead.</p>
+</blockquote>
+
+<h2 id="design-decision">Design Decision</h2>
+
+<blockquote>
+  <p>[!NOTE]
+The <strong>Microsoft Defender for Endpoint baseline</strong> security baseline will be applied via <strong>Intune</strong> to all devices to enable <strong>Remote Credential Guard</strong>. It will be enforced across the entire environment.</p>
+</blockquote>
+
+<h2 id="prerequisites">Prerequisites</h2>
+
+<ul>
+  <li>
+    <p><strong>Licensing:</strong> <strong>Microsoft Intune Plan 1</strong> is required if Intune is used for implementation.<sup id="fnref:2"><a href="#fn:2" class="footnote" rel="footnote" role="doc-noteref">2</a></sup></p>
+  </li>
+  <li>
+    <p><strong>Permissions/Roles:</strong> Administrative permissions to create and deploy an <strong>Intune Settings Catalog policy</strong> and to assign it to device/user groups.<sup id="fnref:2:1"><a href="#fn:2" class="footnote" rel="footnote" role="doc-noteref">2</a></sup></p>
+  </li>
+  <li>
+    <p><strong>Dependencies:</strong></p>
+    <ul>
+      <li>Devices must be enrolled in <strong>Intune</strong> and joined to <strong>Entra ID</strong> and/or hybrid Azure AD joined.<sup id="fnref:2:2"><a href="#fn:2" class="footnote" rel="footnote" role="doc-noteref">2</a></sup></li>
+      <li>The implementation relies on a <strong>Defender for Endpoint baseline</strong> in Intune.<sup id="fnref:4"><a href="#fn:4" class="footnote" rel="footnote" role="doc-noteref">3</a></sup></li>
+      <li>The policy should be applied to all devices.<sup id="fnref:1:2"><a href="#fn:1" class="footnote" rel="footnote" role="doc-noteref">1</a></sup></li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="implementation-steps">Implementation Steps</h2>
+
+<h3 id="enable-remote-credential-guard-with-intune-settings-catalog">Enable Remote Credential Guard with Intune Settings Catalog</h3>
+
+<ol>
+  <li>In Intune, create a <strong>Settings Catalog</strong> policy and configure the following settings:</li>
+</ol>
+
+<table>
+  <thead>
+    <tr>
+      <th>Category</th>
+      <th>Setting name</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Administrative Templates &gt; System &gt; Credentials Delegation</td>
+      <td><strong>Remote host allows delegation of nonexportable credentials</strong></td>
+      <td><strong>Enabled</strong></td>
+    </tr>
+  </tbody>
+</table>
+
+<ol>
+  <li>Assign the policy to a group that contains as members the devices or users you want to configure.<sup id="fnref:1:3"><a href="#fn:1" class="footnote" rel="footnote" role="doc-noteref">1</a></sup></li>
+</ol>
+
+<h3 id="enable-remote-credential-guard-with-policy-csp-alternative">Enable Remote Credential Guard with Policy CSP (Alternative)</h3>
+
+<ol>
+  <li>Configure devices using a custom policy with the Policy CSP. Set the following:</li>
+</ol>
+
+<table>
+  <thead>
+    <tr>
+      <th>Setting</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>- OMA-URI: ./Device/Vendor/MSFT/Policy/Config/CredentialsDelegation/RemoteHostAllowsDelegDelegationOfNonExportableCredentials- Data type: string- Value:<code class="language-plaintext highlighter-rouge">&lt;enabled/&gt;</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<ol>
+  <li>Assign the policy to a group containing the target devices or users.<sup id="fnref:1:4"><a href="#fn:1" class="footnote" rel="footnote" role="doc-noteref">1</a></sup></li>
+</ol>
+
+<h3 id="enable-credential-guard-with-intune-settings-catalog">Enable Credential Guard with Intune Settings Catalog</h3>
+
+<ol>
+  <li>In Intune, create a <strong>Settings Catalog</strong> policy and configure the following:</li>
+</ol>
+
+<table>
+  <thead>
+    <tr>
+      <th>Category</th>
+      <th>Setting name</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Device Guard</td>
+      <td><strong>Credential Guard</strong></td>
+      <td>Select one of the options: <strong>Enabled with UEFI lock</strong>; <strong>Enabled without lock</strong></td>
+    </tr>
+  </tbody>
+</table>
+
+<ol>
+  <li>Assign the policy to a group that contains the devices or users you want to configure. If you need remote disable capability, choose the option <strong>Enabled without lock</strong>. After applying the policy, restart the device.<sup id="fnref:2:3"><a href="#fn:2" class="footnote" rel="footnote" role="doc-noteref">2</a></sup></li>
+</ol>
+
+<h3 id="enable-credential-guard-with-deviceguard-csp-alternative">Enable Credential Guard with DeviceGuard CSP (Alternative)</h3>
+
+<ol>
+  <li>Create a custom policy with the following CSPs:</li>
+</ol>
+
+<table>
+  <thead>
+    <tr>
+      <th>Setting</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Turn On Virtualization-Based Security (OMA-URI): <code class="language-plaintext highlighter-rouge">./Device/Vendor/MSFT/Policy/Config/DeviceGuard/EnableVirtualizationBasedSecurity</code> (Data type: int) Value: 1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Credential Guard Configuration (OMA-URI): <code class="language-plaintext highlighter-rouge">./Device/Vendor/MSFT/Policy/Config/DeviceGuard/LsaCfgFlags</code> (Data type: int) Value: Enabled with UEFI lock: 1; Enabled without lock: 2</td>
+      <td>Enabled with UEFI lock: 1; Enabled without lock: 2</td>
+    </tr>
+  </tbody>
+</table>
+
+<ol>
+  <li>Assign the policy to a group containing the target devices or users.</li>
+  <li>Restart the device after the policy is applied.<sup id="fnref:2:4"><a href="#fn:2" class="footnote" rel="footnote" role="doc-noteref">2</a></sup></li>
+</ol>
+
+<blockquote>
+  <p>[!NOTE]
+For global baseline deployment, apply the Remote Credential Guard setting via the <strong>Microsoft Defender for Endpoint security baseline</strong> in Intune, which includes the <code class="language-plaintext highlighter-rouge">RemoteHostAllowsDelegDelegationOfNonExportableCredentials</code> setting. This baseline can be applied to all devices as a single assignment, removing the need for a separate custom policy.</p>
+</blockquote>
+
+<h2 id="additional-related-information">Additional related information</h2>
+
+<ul>
+  <li>Credential Guard overview explains the core concepts, architecture, and security benefits of Credential Guard in Windows environments <a href="https://learn.microsoft.com/en-us/windows/security/identity-protection/credential-guard/">Credential Guard overview</a></li>
+  <li>Enabling Credential Guard and Remote Credential Guard (ML3) describes how to enable Credential Guard and Remote Credential Guard using ML3 controls via the Essential Eight guidance <a href="https://learn.microsoft.com/en-us/compliance/anz/e8-admin">Enabling Credential Guard and Remote Credential Guard (ML3)</a></li>
+  <li>Account protection policy settings for endpoint security in Intune describes account protection profile options including Turn on Credential Guard <a href="https://learn.microsoft.com/en-us/intune/intune-service/protect/endpoint-security-account-protection-profile-settings">Account protection policy settings for endpoint security in Intune</a></li>
+  <li>Windows settings you can manage through an Intune Endpoint Protection profile explains Windows Defender Credential Guard and related settings you can manage with Endpoint Protection profiles <a href="https://learn.microsoft.com/en-us/intune/intune-service/protect/endpoint-protection-windows-10">Windows settings you can manage through an Intune Endpoint Protection profile</a></li>
+  <li>Legacy privileged access guidance provides strategies for managing privileged access devices and related security considerations <a href="https://learn.microsoft.com/en-us/security/privileged-access-workstations/legacy-privileged-access-devices">Legacy privileged access guidance</a></li>
+  <li>Considerations and known issues when using Credential Guard outlines known caveats and compatibility issues when Credential Guard is enabled <a href="https://learn.microsoft.com/en-us/windows/security/identity-protection/credential-guard/considerations-known-issues">Considerations and known issues when using Credential Guard</a></li>
+  <li>Trustworthy addition for Azure Local describes Credential Guard in Azure Local deployments and its protection of credentials in Local Security Authority <a href="https://learn.microsoft.com/en-us/azure/azure-local/security-book/trustworthy-addition?view=azloc-2512">Trustworthy addition for Azure Local</a></li>
+</ul>
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:1">
+      <p><a href="https://learn.microsoft.com/en-us/windows/security/identity-protection/remote-credential-guard">Remote Credential Guard</a> <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a> <a href="#fnref:1:1" class="reversefootnote" role="doc-backlink">&#8617;<sup>2</sup></a> <a href="#fnref:1:2" class="reversefootnote" role="doc-backlink">&#8617;<sup>3</sup></a> <a href="#fnref:1:3" class="reversefootnote" role="doc-backlink">&#8617;<sup>4</sup></a> <a href="#fnref:1:4" class="reversefootnote" role="doc-backlink">&#8617;<sup>5</sup></a></p>
+    </li>
+    <li id="fn:2">
+      <p><a href="https://learn.microsoft.com/en-us/windows/security/identity-protection/credential-guard/configure">Configure Credential Guard</a> <a href="#fnref:2" class="reversefootnote" role="doc-backlink">&#8617;</a> <a href="#fnref:2:1" class="reversefootnote" role="doc-backlink">&#8617;<sup>2</sup></a> <a href="#fnref:2:2" class="reversefootnote" role="doc-backlink">&#8617;<sup>3</sup></a> <a href="#fnref:2:3" class="reversefootnote" role="doc-backlink">&#8617;<sup>4</sup></a> <a href="#fnref:2:4" class="reversefootnote" role="doc-backlink">&#8617;<sup>5</sup></a></p>
+    </li>
+    <li id="fn:4">
+      <p><a href="https://learn.microsoft.com/en-us/intune/intune-service/protect/endpoint-protection-windows-10">Windows settings you can manage through an Intune Endpoint Protection profile</a> <a href="#fnref:4" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+
+    </div>
+
+    <div style="margin-bottom:20px; display:flex; justify-content:space-between; align-items:center;">
+      <div style="display:flex; gap:12px; align-items:center;">
+        <a href="/ISM-Controls-Guide-preview/" class="back-btn">HOME</a>
+
+        
+          <a class="prev-control back-btn" href="/ISM-Controls-Guide-preview/controls/ISM-1896.html" aria-label="Previous control">← ISM-1896</a>
+        
+      </div>
+
+      <div style="display:flex; gap:12px; align-items:center;">
+        
+          <a class="next-control back-btn" href="/ISM-Controls-Guide-preview/controls/ISM-1900.html" aria-label="Next control">ISM-1900 →</a>
+        
+      </div>
+    </div>
+  </div>
+  <script>
+    // Convert GitHub-style alerts [!NOTE], [!WARNING], etc. to styled callouts
+    document.querySelectorAll('blockquote').forEach(bq => {
+      const text = bq.innerHTML;
+      const match = text.match(/\[!(NOTE|WARNING|TIP|IMPORTANT|CAUTION)\]/i);
+      if (match) {
+        const type = match[1].toLowerCase();
+        const icons = { note: '📝', warning: '⚠️', tip: '💡', important: '📢', caution: '🚨' };
+        const titles = { note: 'Note', warning: 'Warning', tip: 'Tip', important: 'Important', caution: 'Caution' };
+        const content = text.replace(/\[!(NOTE|WARNING|TIP|IMPORTANT|CAUTION)\]\s*/i, '');
+        bq.className = 'callout callout-' + type;
+        bq.innerHTML = '<div class="callout-title">' + icons[type] + ' ' + titles[type] + '</div>' + content;
+      }
+    });
+  </script>
+  <footer class="site-footer" role="contentinfo" aria-label="Site footer" style="background:#161b22;border-top:1px solid #30363d;padding:20px 40px;margin-top:40px;">
+    <div style="max-width:900px;margin:0 auto;display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:space-between;">
+      <div style="color:#94a3b8;font-size:0.9rem;">
+        
+          Last updated: 2026-02-18 21:24 UTC
+        
+      </div>
+      <div style="color:#94a3b8;font-size:0.9rem;text-align:right;max-width:620px;">
+        <strong style="color:#e6edf3;">AI-generated content:</strong> This site contains AI-assisted content created from primary sources and may contain errors or be out of date. Always verify with official documentation. See <a href="https://e8guide.com/about" style="color:#58a6ff;text-decoration:none;">About</a> for details.
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

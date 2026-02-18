@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Patches, updates or other vendor mitigations for vulnerabilities in operating systems of workstations, non-internet-facing servers and non-internet-facing network devices are applied within one month of release when vulnerabilities are assessed as non-critical by vendors and no working exploits exist. - Essential 8 Guide</title>
+  <!-- Canonical URL -->
+<link rel="canonical" href="https://e8guide.com/controls/ISM-1902.html">
+
+<!-- Meta description --><meta name="description" content="Patches, updates or other vendor mitigations for vulnerabilities in operating systems of workstations, non-internet-facing servers and non-internet-faci...">
+
+<!-- Google Search Console ownership verification -->
+
+<meta name="google-site-verification" content="">
+
+
+<!-- Open Graph / Social sharing -->
+<meta property="og:title" content="Patches, updates or other vendor mitigations for vulnerabilities in operating systems of workstations, non-internet-facing servers and non-internet-facing network devices are applied within one month of release when vulnerabilities are assessed as non-critical by vendors and no working exploits exist. - Essential 8 Guide">
+<meta property="og:description" content="Patches, updates or other vendor mitigations for vulnerabilities in operating systems of workstations, non-internet-facing servers and non-internet-faci...">
+<meta property="og:url" content="https://e8guide.com/controls/ISM-1902.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Essential 8 Guide">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Patches, updates or other vendor mitigations for vulnerabilities in operating systems of workstations, non-internet-facing servers and non-internet-facing network devices are applied within one month of release when vulnerabilities are assessed as non-critical by vendors and no working exploits exist. - Essential 8 Guide">
+<meta name="twitter:description" content="Patches, updates or other vendor mitigations for vulnerabilities in operating systems of workstations, non-internet-facing servers and non-internet-faci...">
+
+<!-- Emoji favicon — no image file required -->
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>&#x1F6E1;&#xFE0F;</text></svg>">
+
+  
+<!-- Google Analytics (GA4) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id="></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', '');
+</script>
+
+
+  <link rel="stylesheet" href="/ISM-Controls-Guide-preview/assets/css/main.css">
+  <style>
+    /* Page-specific styles */
+    .container {
+      max-width: 900px;
+    }
+    .content-card {
+      padding: 40px;
+    }
+    .content-card h1 {
+      padding-bottom: 15px;
+      border-bottom: 1px solid #30363d;
+    }
+    /* Footnotes styling */
+    .footnotes {
+      margin-top: 40px;
+      padding-top: 20px;
+      border-top: 1px solid #30363d;
+      font-size: 0.9rem;
+    }
+    .footnotes ol { color: #8b949e; }
+    .footnote { color: #58a6ff; font-size: 0.85em; vertical-align: super; }
+    .reversefootnote { color: #58a6ff; }
+    /* GitHub-style alerts/callouts */
+    .callout {
+      padding: 16px 20px;
+      margin: 20px 0;
+      border-radius: 6px;
+      border-left: 4px solid;
+    }
+    .callout-title {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+    .callout-title svg { flex-shrink: 0; }
+    .callout p { margin: 0; color: #e6edf3; }
+    .callout-note {
+      background: rgba(88, 166, 255, 0.1);
+      border-color: #58a6ff;
+    }
+    .callout-note .callout-title { color: #58a6ff; }
+    .callout-warning {
+      background: rgba(210, 153, 34, 0.1);
+      border-color: #d29922;
+    }
+    .callout-warning .callout-title { color: #d29922; }
+    .callout-tip {
+      background: rgba(63, 185, 80, 0.1);
+      border-color: #3fb950;
+    }
+    .callout-tip .callout-title { color: #3fb950; }
+    .callout-important {
+      background: rgba(168, 113, 255, 0.1);
+      border-color: #a371f7;
+    }
+    .callout-important .callout-title { color: #a371f7; }
+    .callout-caution {
+      background: rgba(248, 81, 73, 0.1);
+      border-color: #f85149;
+    }
+    .callout-caution .callout-title { color: #f85149; }
+  </style>
+  <!-- JSON-LD structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "TechArticle",
+    "name": "ISM-1902",
+    "headline": "Patches, updates or other vendor mitigations for vulnerabilities in operating systems of workstations, non-...",
+    "description": "Patches, updates or other vendor mitigations for vulnerabilities in operating systems of workstations, non-internet-facing servers and non-internet-faci...",
+    "url": "https://e8guide.com/controls/ISM-1902.html",
+    "dateModified": "2026-02-13",
+    "inLanguage": "en-AU",
+    "author": {
+      "@type": "Organization",
+      "name": "Essential 8 Guide",
+      "url": "https://e8guide.com"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Essential 8 Guide",
+      "url": "https://e8guide.com"
+    },
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": "Essential 8 Guide",
+      "url": "https://e8guide.com"
+    }
+  }
+  </script>
+</head>
+<body><div style="background:#d29922;color:#0d1117;padding:6px 16px;font-size:0.85rem;text-align:center;position:sticky;top:0;z-index:9999;">⚠️ PREVIEW — branch: research-review-controls — <a href="https://e8guide.com" style="color:#0d1117;font-weight:bold;">production site</a></div>
+  <div class="header">
+  <div class="header-content">
+    <h1>🛡️ Essential 8 Guide</h1>
+    <p>Implementation guidance for Australian Essential Eight controls in Microsoft environments - ISM controls with PSPF mappings</p>
+  </div>
+  <a href="/ISM-Controls-Guide-preview/about" class="about-link">About</a>
+</div>
+
+  <div class="container">
+    <div style="margin-bottom:20px; display:flex; justify-content:space-between; align-items:center;">
+      <div style="display:flex; gap:12px; align-items:center;">
+      <a href="/ISM-Controls-Guide-preview/" class="back-btn">HOME</a>
+
+      
+      
+      
+      
+
+
+      
+      
+      
+      
+      
+
+      
+        
+        
+        <a class="prev-control back-btn" href="/ISM-Controls-Guide-preview/controls/ISM-1901.html" aria-label="Previous control">← ISM-1901</a>
+      
+    </div>
+
+    <div style="display:flex; gap:12px; align-items:center;">
+      
+    </div>
+  </div>
+    <div class="content-card">
+      <h2 id="patches-updates-or-other-vendor-mitigations-for-vulnerabilities-in-operating-systems-of-workstations-non-internet-facing-servers-and-non-internet-facing-network-devices-are-applied-within-one-month-of-release-when-vulnerabilities-are-assessed-as-non-critical-by-vendors-and-no-working-exploits-exist">Patches, updates or other vendor mitigations for vulnerabilities in operating systems of workstations, non-internet-facing servers and non-internet-facing network devices are applied within one month of release when vulnerabilities are assessed as non-critical by vendors and no working exploits exist.</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Property</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>ISM Control</strong></td>
+      <td>ISM-1902</td>
+    </tr>
+    <tr>
+      <td><strong>Revision</strong></td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td><strong>Updated</strong></td>
+      <td>Dec-23</td>
+    </tr>
+    <tr>
+      <td><strong>Guideline</strong></td>
+      <td>Not provided</td>
+    </tr>
+    <tr>
+      <td><strong>Section</strong></td>
+      <td>System patching</td>
+    </tr>
+    <tr>
+      <td><strong>Topic</strong></td>
+      <td>Mitigating known vulnerabilities</td>
+    </tr>
+    <tr>
+      <td><strong>Essential Eight</strong></td>
+      <td>ML3</td>
+    </tr>
+    <tr>
+      <td><strong>PSPF Levels</strong></td>
+      <td>NC, OS, P, S, TS</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="summary">Summary</h2>
+
+<p>Enforces a monthly cadence for applying non-critical operating system updates on <strong>Intune-enrolled workstations (Windows 10/11)</strong> and eligible Windows Server 2025 devices by deploying patches through Intune Windows AutoPatch, ensuring timely mitigation within one month of release when no exploits exist.<sup id="fnref:1"><a href="#fn:1" class="footnote" rel="footnote" role="doc-noteref">1</a></sup><sup id="fnref:3"><a href="#fn:3" class="footnote" rel="footnote" role="doc-noteref">2</a></sup></p>
+
+<blockquote>
+  <p>[!NOTE]
+<strong>Windows Autopatch applies to Intune-enrolled Windows 10/11 Enterprise/Education workstations and Windows Server 2025 (Intune-managed) only.</strong> For <strong>non-internet-facing Windows Servers (2016/2019/2022)</strong>, use <strong>WSUS + Group Policy</strong> (on-premises) or <strong>Azure Update Manager</strong> (Azure VMs / Arc-connected servers) to meet the one-month non-critical patching cadence. Network devices follow vendor-specific update procedures.</p>
+</blockquote>
+
+<h3 id="justification">Justification</h3>
+
+<p>Non-internet-facing workstations, servers, and network devices present a lower immediate exploitation risk than internet-facing systems, but they remain critical targets for lateral movement once an attacker has established initial access. A one-month remediation window for non-critical vulnerabilities provides sufficient operational flexibility for organisations to test patches in lower environments (Test/First rings) and manage restart scheduling for business-critical systems.</p>
+
+<p>Windows Autopatch’s four-ring deployment model (Test → First → Fast → Broad) was explicitly designed to spread patch risk across the device fleet while ensuring the Broad ring (representing the majority of devices) receives patches within the one-month window. The Broad ring default deadline of 21 days from release comfortably satisfies the one-month requirement.</p>
+
+<p>Hotpatch (available for Windows 11 24H2+ and Windows Server 2025 on Intune-managed devices) enables kernel-level security patches to be applied <em>without a device restart</em> on eligible months, dramatically reducing the operational disruption of monthly patching for server workloads — removing the traditional barrier to timely patch application for non-internet-facing servers.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Device category</th>
+      <th>Autopatch ring</th>
+      <th>Deferral</th>
+      <th>Effective patch date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Test VMs / pilot devices</td>
+      <td>Test ring</td>
+      <td>0 days</td>
+      <td>Patch Tuesday + 1 day</td>
+    </tr>
+    <tr>
+      <td>IT staff devices</td>
+      <td>First ring</td>
+      <td>1 day</td>
+      <td>Patch Tuesday + 2 days</td>
+    </tr>
+    <tr>
+      <td>Standard workstations</td>
+      <td>Fast ring</td>
+      <td>6 days</td>
+      <td>Patch Tuesday + 7 days</td>
+    </tr>
+    <tr>
+      <td>PAW / service accounts</td>
+      <td>Broad ring</td>
+      <td>9 days + 7d deadline</td>
+      <td>Patch Tuesday + ~21 days</td>
+    </tr>
+  </tbody>
+</table>
+
+<blockquote>
+  <p>[!NOTE]
+<strong>Windows Server (2016/2019/2022)</strong> is not supported by Windows Autopatch. For these servers, configure equivalent patch deadline rings using <strong>WSUS Automatic Approval Rules</strong> (on-premises) or <strong>Azure Update Manager Maintenance Configurations</strong> (Azure/Arc). Target the same cadence: patch within 21–30 days of Patch Tuesday. <strong>Windows Server 2025</strong> enrolled in Intune is eligible for Autopatch and Hotpatch — place these in the Broad ring or a dedicated server group.</p>
+</blockquote>
+
+<p>For non-internet-facing network devices (routers, switches, firewalls) not managed by Intune, the one-month requirement is met through the organisation’s network device change management process, using vendor-specific update mechanisms and verified against Defender Vulnerability Management’s network device discovery inventory.</p>
+
+<h2 id="design-decision">Design Decision</h2>
+
+<blockquote>
+  <p>[!NOTE]
+The <strong>Intune Windows AutoPatch</strong> approach will be used to maintain a monthly patch cadence for non-critical OS updates on <strong>Intune-enrolled workstations (Windows 10/11 Enterprise/Education)</strong> and <strong>Windows Server 2025</strong> devices enrolled in Intune.</p>
+
+  <p>For <strong>non-internet-facing Windows Servers (2016/2019/2022)</strong>, apply non-critical OS patches within one month using one of the following tools:</p>
+
+  <ul>
+    <li><strong>WSUS + Group Policy</strong> — configure an Automatic Approval Rule for Security/Critical update classifications with a deadline of 21 days</li>
+    <li><strong>Azure Update Manager</strong> — configure a Maintenance Configuration with a monthly schedule window and an end-time before the one-month deadline</li>
+  </ul>
+
+  <p>For <strong>non-internet-facing network devices</strong>, apply vendor firmware updates within one month of release using the vendor-specific update process, verified against the Defender Vulnerability Management network device inventory.</p>
+</blockquote>
+
+<h2 id="prerequisites">Prerequisites</h2>
+
+<ul>
+  <li>Licensing:
+    <ul>
+      <li>Subscriptions required to use Windows Autopatch: Windows 10/11 Enterprise E3 or E5 (included in Microsoft 365 F3, E3, or E5); Windows 10/11 Education A3 or A5 (included in Microsoft 365 A3 or A5); Windows Virtual Desktop Access E3 or E5; Microsoft 365 Business Premium. <sup id="fnref:5"><a href="#fn:5" class="footnote" rel="footnote" role="doc-noteref">3</a></sup></li>
+    </ul>
+  </li>
+  <li>Permissions/Roles:
+    <ul>
+      <li><strong>Microsoft Entra ID</strong> (for co-management). <sup id="fnref:4"><a href="#fn:4" class="footnote" rel="footnote" role="doc-noteref">4</a></sup></li>
+      <li><strong>Microsoft Entra hybrid joined devices</strong> or <strong>Microsoft Entra joined devices</strong>. <sup id="fnref:4:1"><a href="#fn:4" class="footnote" rel="footnote" role="doc-noteref">4</a></sup></li>
+      <li><strong>Microsoft Intune</strong> (including Configuration Manager via co-management). <sup id="fnref:4:2"><a href="#fn:4" class="footnote" rel="footnote" role="doc-noteref">4</a></sup></li>
+    </ul>
+  </li>
+  <li>Dependencies:
+    <ul>
+      <li><strong>Intune enrollment and Windows Autopatch policy configuration</strong> in the Intune admin center to manage Windows updates and hotpatch updates. <sup id="fnref:1:1"><a href="#fn:1" class="footnote" rel="footnote" role="doc-noteref">1</a></sup></li>
+      <li><strong>Device prerequisites</strong>: Entra joined or Hybrid AD joined; Windows 10 version 1709 or later; editions Pro, Enterprise, Education, Pro Education, Pro for Workstations. <sup id="fnref:5:1"><a href="#fn:5" class="footnote" rel="footnote" role="doc-noteref">3</a></sup></li>
+      <li>Optional: <strong>Co-management with Configuration Manager</strong> support if used. <sup id="fnref:4:3"><a href="#fn:4" class="footnote" rel="footnote" role="doc-noteref">4</a></sup></li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="implementation-steps">Implementation Steps</h2>
+
+<h3 id="enable-hotpatch-updates-with-intune-windows-quality-update-policy">Enable Hotpatch updates with Intune Windows quality update policy</h3>
+
+<ol>
+  <li>In the Intune admin center, go to Devices from the left navigation menu.<sup id="fnref:1:2"><a href="#fn:1" class="footnote" rel="footnote" role="doc-noteref">1</a></sup></li>
+  <li>Under the Manage updates section, select Windows updates.<sup id="fnref:1:3"><a href="#fn:1" class="footnote" rel="footnote" role="doc-noteref">1</a></sup></li>
+  <li>Go to the Quality updates tab.<sup id="fnref:1:4"><a href="#fn:1" class="footnote" rel="footnote" role="doc-noteref">1</a></sup></li>
+  <li>Select Create, and select Windows quality update policy.<sup id="fnref:1:5"><a href="#fn:1" class="footnote" rel="footnote" role="doc-noteref">1</a></sup></li>
+  <li>Under Basics, enter a name for the new policy and select Next. The policy to be created is the <strong>Windows quality update policy</strong>.<sup id="fnref:1:6"><a href="#fn:1" class="footnote" rel="footnote" role="doc-noteref">1</a></sup></li>
+  <li>Under Settings, ensure that the option <strong>“When available, apply without restarting the device ("Hotpatch")”</strong> is set to <strong>Allow</strong>. Then, select Next. Noted that hotpatch updates do not alter existing deadline-driven or scheduled install configurations.<sup id="fnref:1:7"><a href="#fn:1" class="footnote" rel="footnote" role="doc-noteref">1</a></sup></li>
+  <li>Select the appropriate Scope tags or leave as Default. Then, select Next.<sup id="fnref:1:8"><a href="#fn:1" class="footnote" rel="footnote" role="doc-noteref">1</a></sup></li>
+  <li>Assign the devices to the policy and select Next. Noting that you can target specific device groups as needed.<sup id="fnref:1:9"><a href="#fn:1" class="footnote" rel="footnote" role="doc-noteref">1</a></sup></li>
+  <li>Review the policy and select Create. The policy will enable hotpatch deployment for eligible devices.<sup id="fnref:1:10"><a href="#fn:1" class="footnote" rel="footnote" role="doc-noteref">1</a></sup></li>
+  <li>You can also Edit the existing <strong>Windows quality update policy</strong> and set the <strong>“When available, apply without restarting the device ("Hotpatch")”</strong> to <strong>Allow</strong>.<sup id="fnref:1:11"><a href="#fn:1" class="footnote" rel="footnote" role="doc-noteref">1</a></sup></li>
+  <li>Targeting and enforcement will apply to devices according to the policy configuration, with ineligible devices receiving the LCUs as applicable.<sup id="fnref:1:12"><a href="#fn:1" class="footnote" rel="footnote" role="doc-noteref">1</a></sup></li>
+</ol>
+
+<blockquote>
+  <p>[!NOTE]
+Turning on Hotpatch updates doesn’t change the existing deadline-driven or scheduled install configurations on your managed devices. Deferral and active hour settings still apply. See the referenced guidance for details.<sup id="fnref:1:13"><a href="#fn:1" class="footnote" rel="footnote" role="doc-noteref">1</a></sup></p>
+</blockquote>
+
+<h3 id="patch-non-internet-facing-windows-servers-201620192022-within-one-month--wsus-approach">Patch non-internet-facing Windows Servers (2016/2019/2022) within one month — WSUS approach</h3>
+
+<p>For on-premises domain-joined servers not eligible for Intune/Autopatch management, use WSUS with Group Policy to enforce a maximum 21-day install deadline:</p>
+
+<ol>
+  <li>In the <strong>WSUS Administration Console</strong>, go to <strong>Options → Automatic Approvals</strong>.</li>
+  <li>Click <strong>New Rule</strong>. Name it <code class="language-plaintext highlighter-rouge">Monthly Non-Critical — Servers</code>.</li>
+  <li>Set <strong>Rule properties</strong>:
+    <ul>
+      <li>When an update is in the following <strong>classifications</strong>: Security Updates, Critical Updates</li>
+      <li>Set the <strong>deadline</strong> to <strong>21 days</strong> from approval.</li>
+    </ul>
+  </li>
+  <li>Add the server <strong>computer groups</strong> that correspond to non-internet-facing server rings.</li>
+  <li>Click <strong>OK</strong> and run the rule immediately against existing updates.</li>
+  <li>Create a <strong>Group Policy Object</strong> linked to the server OUs with the following settings under <code class="language-plaintext highlighter-rouge">Computer Configuration → Administrative Templates → Windows Components → Windows Update</code>:
+    <ul>
+      <li><strong>Configure Automatic Updates</strong>: <code class="language-plaintext highlighter-rouge">4 – Auto download and schedule the install</code></li>
+      <li><strong>Specify intranet Microsoft update service location</strong>: Point to the WSUS server URL.</li>
+      <li><strong>No auto-restart with logged on users</strong>: <code class="language-plaintext highlighter-rouge">Disabled</code> (allow forced restart for servers with no interactive sessions, or set a maintenance window).</li>
+    </ul>
+  </li>
+  <li>Run <code class="language-plaintext highlighter-rouge">gpupdate /force</code> on a test server to confirm policy application, then verify compliance in the WSUS reports view.</li>
+</ol>
+
+<h3 id="patch-non-internet-facing-azure-vms-and-arc-connected-servers-within-one-month--azure-update-manager-approach">Patch non-internet-facing Azure VMs and Arc-connected servers within one month — Azure Update Manager approach</h3>
+
+<ol>
+  <li>In the <strong>Azure portal</strong>, navigate to <strong>Azure Update Manager</strong>.</li>
+  <li>Select <strong>Maintenance Configurations → Create</strong>.</li>
+  <li>Configure the maintenance window:
+    <ul>
+      <li><strong>Schedule</strong>: Weekly or monthly recurring; set the maintenance window to <strong>last Saturday of the month</strong> (or equivalent date before the 28-day point).</li>
+      <li><strong>Duration</strong>: 3–4 hours.</li>
+      <li><strong>OS updates</strong>: Include <strong>Security</strong> and <strong>Critical</strong> update classifications.</li>
+    </ul>
+  </li>
+  <li>Under <strong>Machines</strong>, add the Azure VM or Arc-connected server resource groups containing non-internet-facing servers.</li>
+  <li>Set <strong>Reboot setting</strong> to <code class="language-plaintext highlighter-rouge">IfRequired</code> to allow restarts during the maintenance window.</li>
+  <li>Save the configuration. Azure Update Manager will schedule and apply qualifying updates without a restart outside the window.</li>
+  <li>After each maintenance window, review the <strong>Update compliance</strong> view in Azure Update Manager and confirm that all servers show <strong>Compliant</strong> status within the one-month deadline.</li>
+</ol>
+
+<h2 id="additional-related-information">Additional related information</h2>
+
+<ul>
+  <li>
+    <p>Hotpatch updates guide explains how to enroll devices and enable hotpatch deployment via Intune Windows Autopatch to maintain monthly update cadence <a href="https://learn.microsoft.com/en-us/windows/deployment/windows-autopatch/manage/windows-autopatch-hotpatch-updates">Hotpatch updates</a></p>
+  </li>
+  <li>
+    <p>Deploy a hotpatch quality update using Windows Autopatch describes how to query the hotpatch catalog and deploy updates to devices <a href="https://learn.microsoft.com/en-us/graph/windowsupdates-hotpatch-update">Deploy a hotpatch quality update using Windows Autopatch</a></p>
+  </li>
+  <li>
+    <p>Essential Eight patch operating systems provides guidance on patch cadence and tooling for non-internet-facing systems including Intune and Azure Update Manager <a href="https://learn.microsoft.com/en-us/compliance/anz/e8-patch-os">Essential Eight patch operating systems</a></p>
+  </li>
+  <li>
+    <p>Windows updates API overview describes how Windows Autopatch manages content approvals scheduling and safeguards for deployments <a href="https://learn.microsoft.com/en-us/graph/windowsupdates-concept-overview">Windows updates API overview</a></p>
+  </li>
+  <li>
+    <p>ASD Blueprint - Windows update and patching outlines design decisions for patching Windows endpoints in cloud and hybrid environments using Intune and related update rings <a href="https://blueprint.asd.gov.au/design/endpoints/windows/configuration/windows-update-and-patching/">ASD Blueprint - Windows update and patching</a></p>
+  </li>
+  <li>
+    <p>Azure Update Manager overview explains how to manage updates at scale for Azure VMs and Arc-enabled servers, including maintenance configurations and compliance reporting <a href="https://learn.microsoft.com/en-us/azure/update-manager/overview">Azure Update Manager documentation</a></p>
+  </li>
+  <li>
+    <p>Configure Windows Server Update Services (WSUS) describes how to set up WSUS server synchronisation, automatic approval rules, and GPO-based deployment for domain-joined servers not managed by Intune <a href="https://learn.microsoft.com/en-us/windows-server/administration/windows-server-update-services/get-started/windows-server-update-services-wsus">Windows Server Update Services (WSUS)</a></p>
+  </li>
+</ul>
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:1">
+      <p><a href="https://learn.microsoft.com/en-us/windows/deployment/windows-autopatch/manage/windows-autopatch-hotpatch-updates">Hotpatch updates</a> <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a> <a href="#fnref:1:1" class="reversefootnote" role="doc-backlink">&#8617;<sup>2</sup></a> <a href="#fnref:1:2" class="reversefootnote" role="doc-backlink">&#8617;<sup>3</sup></a> <a href="#fnref:1:3" class="reversefootnote" role="doc-backlink">&#8617;<sup>4</sup></a> <a href="#fnref:1:4" class="reversefootnote" role="doc-backlink">&#8617;<sup>5</sup></a> <a href="#fnref:1:5" class="reversefootnote" role="doc-backlink">&#8617;<sup>6</sup></a> <a href="#fnref:1:6" class="reversefootnote" role="doc-backlink">&#8617;<sup>7</sup></a> <a href="#fnref:1:7" class="reversefootnote" role="doc-backlink">&#8617;<sup>8</sup></a> <a href="#fnref:1:8" class="reversefootnote" role="doc-backlink">&#8617;<sup>9</sup></a> <a href="#fnref:1:9" class="reversefootnote" role="doc-backlink">&#8617;<sup>10</sup></a> <a href="#fnref:1:10" class="reversefootnote" role="doc-backlink">&#8617;<sup>11</sup></a> <a href="#fnref:1:11" class="reversefootnote" role="doc-backlink">&#8617;<sup>12</sup></a> <a href="#fnref:1:12" class="reversefootnote" role="doc-backlink">&#8617;<sup>13</sup></a> <a href="#fnref:1:13" class="reversefootnote" role="doc-backlink">&#8617;<sup>14</sup></a></p>
+    </li>
+    <li id="fn:3">
+      <p><a href="https://learn.microsoft.com/en-us/compliance/anz/e8-patch-os">Essential Eight patch operating systems</a> <a href="#fnref:3" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:5">
+      <p><a href="https://learn.microsoft.com/en-us/graph/windowsupdates-concept-overview">Windows updates API overview</a> <a href="#fnref:5" class="reversefootnote" role="doc-backlink">&#8617;</a> <a href="#fnref:5:1" class="reversefootnote" role="doc-backlink">&#8617;<sup>2</sup></a></p>
+    </li>
+    <li id="fn:4">
+      <p><a href="https://learn.microsoft.com/en-us/windows/deployment/windows-autopatch/prepare/windows-autopatch-prerequisites">Windows Autopatch prerequisites</a> <a href="#fnref:4" class="reversefootnote" role="doc-backlink">&#8617;</a> <a href="#fnref:4:1" class="reversefootnote" role="doc-backlink">&#8617;<sup>2</sup></a> <a href="#fnref:4:2" class="reversefootnote" role="doc-backlink">&#8617;<sup>3</sup></a> <a href="#fnref:4:3" class="reversefootnote" role="doc-backlink">&#8617;<sup>4</sup></a></p>
+    </li>
+  </ol>
+</div>
+
+    </div>
+
+    <div style="margin-bottom:20px; display:flex; justify-content:space-between; align-items:center;">
+      <div style="display:flex; gap:12px; align-items:center;">
+        <a href="/ISM-Controls-Guide-preview/" class="back-btn">HOME</a>
+
+        
+          <a class="prev-control back-btn" href="/ISM-Controls-Guide-preview/controls/ISM-1901.html" aria-label="Previous control">← ISM-1901</a>
+        
+      </div>
+
+      <div style="display:flex; gap:12px; align-items:center;">
+        
+      </div>
+    </div>
+  </div>
+  <script>
+    // Convert GitHub-style alerts [!NOTE], [!WARNING], etc. to styled callouts
+    document.querySelectorAll('blockquote').forEach(bq => {
+      const text = bq.innerHTML;
+      const match = text.match(/\[!(NOTE|WARNING|TIP|IMPORTANT|CAUTION)\]/i);
+      if (match) {
+        const type = match[1].toLowerCase();
+        const icons = { note: '📝', warning: '⚠️', tip: '💡', important: '📢', caution: '🚨' };
+        const titles = { note: 'Note', warning: 'Warning', tip: 'Tip', important: 'Important', caution: 'Caution' };
+        const content = text.replace(/\[!(NOTE|WARNING|TIP|IMPORTANT|CAUTION)\]\s*/i, '');
+        bq.className = 'callout callout-' + type;
+        bq.innerHTML = '<div class="callout-title">' + icons[type] + ' ' + titles[type] + '</div>' + content;
+      }
+    });
+  </script>
+  <footer class="site-footer" role="contentinfo" aria-label="Site footer" style="background:#161b22;border-top:1px solid #30363d;padding:20px 40px;margin-top:40px;">
+    <div style="max-width:900px;margin:0 auto;display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:space-between;">
+      <div style="color:#94a3b8;font-size:0.9rem;">
+        
+          Last updated: 2026-02-18 22:25 UTC
+        
+      </div>
+      <div style="color:#94a3b8;font-size:0.9rem;text-align:right;max-width:620px;">
+        <strong style="color:#e6edf3;">AI-generated content:</strong> This site contains AI-assisted content created from primary sources and may contain errors or be out of date. Always verify with official documentation. See <a href="https://e8guide.com/about" style="color:#58a6ff;text-decoration:none;">About</a> for details.
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

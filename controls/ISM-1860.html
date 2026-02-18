@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PDF applications are hardened using ASD and vendor hardening guidance, with the most restrictive guidance taking precedence when conflicts occur. - Essential 8 Guide</title>
+  <!-- Canonical URL -->
+<link rel="canonical" href="https://e8guide.com/controls/ISM-1860.html">
+
+<!-- Meta description --><meta name="description" content="PDF applications are hardened using ASD and vendor hardening guidance, with the most restrictive guidance taking precedence when conflicts occur.">
+
+<!-- Google Search Console ownership verification -->
+
+<meta name="google-site-verification" content="">
+
+
+<!-- Open Graph / Social sharing -->
+<meta property="og:title" content="PDF applications are hardened using ASD and vendor hardening guidance, with the most restrictive guidance taking precedence when conflicts occur. - Essential 8 Guide">
+<meta property="og:description" content="PDF applications are hardened using ASD and vendor hardening guidance, with the most restrictive guidance taking precedence when conflicts occur.">
+<meta property="og:url" content="https://e8guide.com/controls/ISM-1860.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Essential 8 Guide">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="PDF applications are hardened using ASD and vendor hardening guidance, with the most restrictive guidance taking precedence when conflicts occur. - Essential 8 Guide">
+<meta name="twitter:description" content="PDF applications are hardened using ASD and vendor hardening guidance, with the most restrictive guidance taking precedence when conflicts occur.">
+
+<!-- Emoji favicon — no image file required -->
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>&#x1F6E1;&#xFE0F;</text></svg>">
+
+  
+<!-- Google Analytics (GA4) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id="></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', '');
+</script>
+
+
+  <link rel="stylesheet" href="/ISM-Controls-Guide-preview/assets/css/main.css">
+  <style>
+    /* Page-specific styles */
+    .container {
+      max-width: 900px;
+    }
+    .content-card {
+      padding: 40px;
+    }
+    .content-card h1 {
+      padding-bottom: 15px;
+      border-bottom: 1px solid #30363d;
+    }
+    /* Footnotes styling */
+    .footnotes {
+      margin-top: 40px;
+      padding-top: 20px;
+      border-top: 1px solid #30363d;
+      font-size: 0.9rem;
+    }
+    .footnotes ol { color: #8b949e; }
+    .footnote { color: #58a6ff; font-size: 0.85em; vertical-align: super; }
+    .reversefootnote { color: #58a6ff; }
+    /* GitHub-style alerts/callouts */
+    .callout {
+      padding: 16px 20px;
+      margin: 20px 0;
+      border-radius: 6px;
+      border-left: 4px solid;
+    }
+    .callout-title {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+    .callout-title svg { flex-shrink: 0; }
+    .callout p { margin: 0; color: #e6edf3; }
+    .callout-note {
+      background: rgba(88, 166, 255, 0.1);
+      border-color: #58a6ff;
+    }
+    .callout-note .callout-title { color: #58a6ff; }
+    .callout-warning {
+      background: rgba(210, 153, 34, 0.1);
+      border-color: #d29922;
+    }
+    .callout-warning .callout-title { color: #d29922; }
+    .callout-tip {
+      background: rgba(63, 185, 80, 0.1);
+      border-color: #3fb950;
+    }
+    .callout-tip .callout-title { color: #3fb950; }
+    .callout-important {
+      background: rgba(168, 113, 255, 0.1);
+      border-color: #a371f7;
+    }
+    .callout-important .callout-title { color: #a371f7; }
+    .callout-caution {
+      background: rgba(248, 81, 73, 0.1);
+      border-color: #f85149;
+    }
+    .callout-caution .callout-title { color: #f85149; }
+  </style>
+  <!-- JSON-LD structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "TechArticle",
+    "name": "ISM-1860",
+    "headline": "PDF applications are hardened using ASD and vendor hardening guidance, with the most restrictive guidance t...",
+    "description": "PDF applications are hardened using ASD and vendor hardening guidance, with the most restrictive guidance taking precedence when conflicts occur.",
+    "url": "https://e8guide.com/controls/ISM-1860.html",
+    "dateModified": "2026-02-13",
+    "inLanguage": "en-AU",
+    "author": {
+      "@type": "Organization",
+      "name": "Essential 8 Guide",
+      "url": "https://e8guide.com"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Essential 8 Guide",
+      "url": "https://e8guide.com"
+    },
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": "Essential 8 Guide",
+      "url": "https://e8guide.com"
+    }
+  }
+  </script>
+</head>
+<body><div style="background:#d29922;color:#0d1117;padding:6px 16px;font-size:0.85rem;text-align:center;position:sticky;top:0;z-index:9999;">⚠️ PREVIEW — branch: research-review-controls — <a href="https://e8guide.com" style="color:#0d1117;font-weight:bold;">production site</a></div>
+  <div class="header">
+  <div class="header-content">
+    <h1>🛡️ Essential 8 Guide</h1>
+    <p>Implementation guidance for Australian Essential Eight controls in Microsoft environments - ISM controls with PSPF mappings</p>
+  </div>
+  <a href="/ISM-Controls-Guide-preview/about" class="about-link">About</a>
+</div>
+
+  <div class="container">
+    <div style="margin-bottom:20px; display:flex; justify-content:space-between; align-items:center;">
+      <div style="display:flex; gap:12px; align-items:center;">
+      <a href="/ISM-Controls-Guide-preview/" class="back-btn">HOME</a>
+
+      
+      
+      
+      
+
+
+      
+      
+      
+      
+      
+
+      
+        
+        
+        <a class="prev-control back-btn" href="/ISM-Controls-Guide-preview/controls/ISM-1859.html" aria-label="Previous control">← ISM-1859</a>
+      
+    </div>
+
+    <div style="display:flex; gap:12px; align-items:center;">
+      
+        
+        
+        <a class="next-control back-btn" href="/ISM-Controls-Guide-preview/controls/ISM-1861.html" aria-label="Next control">ISM-1861 →</a>
+      
+    </div>
+  </div>
+    <div class="content-card">
+      <h2 id="pdf-applications-are-hardened-using-asd-and-vendor-hardening-guidance-with-the-most-restrictive-guidance-taking-precedence-when-conflicts-occur">PDF applications are hardened using ASD and vendor hardening guidance, with the most restrictive guidance taking precedence when conflicts occur.</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Property</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>ISM Control</strong></td>
+      <td>ISM-1860</td>
+    </tr>
+    <tr>
+      <td><strong>Revision</strong></td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td><strong>Updated</strong></td>
+      <td>Jun-25</td>
+    </tr>
+    <tr>
+      <td><strong>Guideline</strong></td>
+      <td>Not provided</td>
+    </tr>
+    <tr>
+      <td><strong>Section</strong></td>
+      <td>User application hardening</td>
+    </tr>
+    <tr>
+      <td><strong>Topic</strong></td>
+      <td>Hardening user application configurations</td>
+    </tr>
+    <tr>
+      <td><strong>Essential Eight</strong></td>
+      <td>ML2, ML3</td>
+    </tr>
+    <tr>
+      <td><strong>PSPF Levels</strong></td>
+      <td>NC, OS, P, S, TS</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="summary">Summary</h2>
+
+<p>PDF hardening for user applications enforces ASD and vendor guidance, with the most restrictive controls taking precedence when conflicts occur, and is implemented by applying vendor PDF hardening settings via Intune configuration profiles to standardize protection across endpoints.<sup id="fnref:1"><a href="#fn:1" class="footnote" rel="footnote" role="doc-noteref">1</a></sup><sup id="fnref:3"><a href="#fn:3" class="footnote" rel="footnote" role="doc-noteref">2</a></sup></p>
+
+<h3 id="justification">Justification</h3>
+
+<p>PDF applications are a persistent high-value attack vector due to their complex file format parsers, embedded JavaScript engines, and support for rich media and external resource loading. ACSC incident response data consistently identifies weaponised PDF files as an initial access vector against Australian Government targets.</p>
+
+<p>Applying the <em>most restrictive</em> guidance when ASD and vendor recommendations conflict ensures that vendor defaults (which are often calibrated for usability) do not inadvertently weaken the security posture. For example, Adobe’s default allows JavaScript execution in PDFs and permits automatic loading of external resources — both of which are disabled under ASD hardening guidance.</p>
+
+<p>The ISM-1670 ASR rule (Block Adobe Reader from creating child processes) provides an OS-level enforcement layer, but is only effective when combined with application-level hardening. Without locking the application settings, a user could re-enable child process creation from within Adobe Reader’s preferences, bypassing the intent of the ASR rule.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>PDF hardening category</th>
+      <th>Default (vendor)</th>
+      <th>ASD/ACSC hardened setting</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>JavaScript execution</td>
+      <td>Enabled</td>
+      <td>Disabled</td>
+    </tr>
+    <tr>
+      <td>Protected Mode (sandbox)</td>
+      <td>Enabled</td>
+      <td>Enabled + locked</td>
+    </tr>
+    <tr>
+      <td>Protected View</td>
+      <td>Enabled for email attachments</td>
+      <td>Enabled for all sources</td>
+    </tr>
+    <tr>
+      <td>Allow opening non-PDF attachments</td>
+      <td>Enabled</td>
+      <td>Disabled</td>
+    </tr>
+    <tr>
+      <td>External content loading</td>
+      <td>Enabled</td>
+      <td>Disabled</td>
+    </tr>
+    <tr>
+      <td>Child process creation</td>
+      <td>Permitted</td>
+      <td>Blocked (ASR Rule ISM-1670)</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>For organisations using Microsoft Edge as their primary PDF viewer (default in Windows 11), the Adobe-specific ADMX templates are not required. Edge’s built-in PDF engine is controlled via Edge ADMX policies, which have a separate hardening baseline.</p>
+
+<blockquote>
+  <p>[!NOTE]
+CVE-2016-3198<sup id="fnref:4"><a href="#fn:4" class="footnote" rel="footnote" role="doc-noteref">3</a></sup> (Edge PDF security feature bypass) and CVE-2016-3203<sup id="fnref:5"><a href="#fn:5" class="footnote" rel="footnote" role="doc-noteref">4</a></sup> (Windows PDF Remote Code Execution) are historical examples illustrating the attack class. The hardening controls in this ISM control provide defence-in-depth against current and future vulnerabilities of this type.</p>
+</blockquote>
+
+<h2 id="design-decision">Design Decision</h2>
+
+<blockquote>
+  <p>[!NOTE]
+The <strong>vendor PDF hardening settings</strong> will be applied via <strong>Intune configuration profiles</strong> to enforce the vendor guidance for PDF hardening. In case of conflicts with ASD guidance, the most restrictive guidance will be applied.</p>
+</blockquote>
+
+<h2 id="prerequisites">Prerequisites</h2>
+
+<ul>
+  <li>
+    <p><strong>Licensing:</strong> Not provided in source documentation.</p>
+  </li>
+  <li>
+    <p><strong>Permissions/Roles:</strong> Not provided in source documentation.</p>
+  </li>
+  <li>
+    <p><strong>Dependencies:</strong></p>
+    <ul>
+      <li>Devices must be managed by <strong>Intune</strong> and enrolled in <strong>Entra ID</strong> and/or <strong>hybrid Azure AD joined</strong> to support deployment of vendor PDF hardening settings via <strong>Intune configuration profiles</strong>. <sup id="fnref:1:1"><a href="#fn:1" class="footnote" rel="footnote" role="doc-noteref">1</a></sup></li>
+      <li>Implementation relies on applying vendor PDF hardening settings through <strong>Intune configuration profiles</strong>. <sup id="fnref:1:2"><a href="#fn:1" class="footnote" rel="footnote" role="doc-noteref">1</a></sup></li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="implementation-steps">Implementation Steps</h2>
+
+<h3 id="intune-attack-surface-reduction-policy-for-pdf-hardening">Intune Attack Surface Reduction policy for PDF hardening</h3>
+
+<ol>
+  <li>In Intune, navigate to <strong>Endpoint Security &gt; Attack Surface Reduction</strong>.<sup id="fnref:1:3"><a href="#fn:1" class="footnote" rel="footnote" role="doc-noteref">1</a></sup></li>
+  <li>Create (or modify) a new <strong>Attack Surface Reduction Endpoint Security Policy</strong>.<sup id="fnref:1:4"><a href="#fn:1" class="footnote" rel="footnote" role="doc-noteref">1</a></sup></li>
+  <li>Set <strong>Block Adobe Reader from creating child processes</strong> to Enable.<sup id="fnref:1:5"><a href="#fn:1" class="footnote" rel="footnote" role="doc-noteref">1</a></sup></li>
+  <li>Assign the Attack Surface Reduction Rule policy to a group.<sup id="fnref:1:6"><a href="#fn:1" class="footnote" rel="footnote" role="doc-noteref">1</a></sup></li>
+</ol>
+
+<h3 id="harden-adobe-acrobat-and-reader-settings-using-custom-admx-via-intune">Harden Adobe Acrobat and Reader settings using custom ADMX via Intune</h3>
+
+<p>For organisations deploying <strong>Adobe Acrobat</strong> or <strong>Adobe Reader</strong> as their primary PDF application, ASD and vendor hardening guidance can be applied and locked through Adobe’s ADMX Group Policy templates imported into Intune. This approach mirrors the standards-based management available for Microsoft Edge and provides an auditable, policy-driven alternative to registry scripts or manual configuration.</p>
+
+<p>Adobe’s FeatureLockDown registry path (<code class="language-plaintext highlighter-rouge">HKLM\SOFTWARE\Policies\Adobe\...\FeatureLockDown</code>) represents the vendor’s preferred, supported mechanism for enforcing security settings. Writing to this path via Group Policy or Intune ADMX prevents user overrides through the application preferences UI — satisfying both the ASD requirement to harden applications <em>and</em> the ISM-1824 requirement that security settings cannot be changed by users.<sup id="fnref:6"><a href="#fn:6" class="footnote" rel="footnote" role="doc-noteref">5</a></sup><sup id="fnref:7"><a href="#fn:7" class="footnote" rel="footnote" role="doc-noteref">6</a></sup></p>
+
+<p><strong>ASD hardening requirements mapped to Adobe ADMX FeatureLockDown settings:</strong></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>ASD/ISM hardening requirement</th>
+      <th>Risk</th>
+      <th>Adobe ADMX setting</th>
+      <th>Recommended value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Disable JavaScript execution in PDFs</td>
+      <td>Arbitrary code execution via embedded JS engine</td>
+      <td>Allow JavaScript (<code class="language-plaintext highlighter-rouge">bEnableJS</code>)</td>
+      <td><code class="language-plaintext highlighter-rouge">0</code> (disabled)</td>
+    </tr>
+    <tr>
+      <td>Enable Protected Mode (sandbox)</td>
+      <td>Sandbox escape via parser exploit</td>
+      <td>Protected Mode (<code class="language-plaintext highlighter-rouge">bProtectedMode</code>)</td>
+      <td><code class="language-plaintext highlighter-rouge">1</code> (enabled)</td>
+    </tr>
+    <tr>
+      <td>Enable Protected View for all files</td>
+      <td>Script/macro execution from untrusted PDFs</td>
+      <td>Protected View (<code class="language-plaintext highlighter-rouge">iProtectedView</code>)</td>
+      <td><code class="language-plaintext highlighter-rouge">2</code> (All files)</td>
+    </tr>
+    <tr>
+      <td>Enable Enhanced Security (standalone)</td>
+      <td>UNC path traversal, temp file access</td>
+      <td>Enhanced Security standalone (<code class="language-plaintext highlighter-rouge">bEnhancedSecurityStandalone</code>)</td>
+      <td><code class="language-plaintext highlighter-rouge">1</code> (enabled)</td>
+    </tr>
+    <tr>
+      <td>Enable Enhanced Security (browser)</td>
+      <td>Restricted content bypass when opened via browser</td>
+      <td>Enhanced Security browser (<code class="language-plaintext highlighter-rouge">bEnhancedSecurityInBrowser</code>)</td>
+      <td><code class="language-plaintext highlighter-rouge">1</code> (enabled)</td>
+    </tr>
+    <tr>
+      <td>Block external content/hyperlink loading</td>
+      <td>SSRF, DNS rebinding, exfiltration via embedded URLs</td>
+      <td>Hyperlink Internet access (<code class="language-plaintext highlighter-rouge">bDisableHyperlink</code>)</td>
+      <td><code class="language-plaintext highlighter-rouge">1</code> (blocked)</td>
+    </tr>
+    <tr>
+      <td>Disable cloud connectivity</td>
+      <td>Data sovereignty, telemetry, unmanaged updates</td>
+      <td>Adobe Document Cloud services</td>
+      <td>Disabled</td>
+    </tr>
+    <tr>
+      <td>Centralise application updates</td>
+      <td>Prevent unmanaged version changes</td>
+      <td>Adobe Reader Product Updates</td>
+      <td>Disabled</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Step 1 — Download the Adobe Acrobat ADMX template:</strong></p>
+
+<ol>
+  <li>Go to the <a href="https://www.adobe.com/devnet-docs/acrobatetk/tools/DesktopDeployment/index.html">Adobe Acrobat Enterprise Toolkit</a> and download the Group Policy ADMX template package.</li>
+  <li>Extract the archive and locate:
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">AcrobatReaderDC.admx</code> (or <code class="language-plaintext highlighter-rouge">AcrobatDC.admx</code> for Acrobat Pro)</li>
+      <li><code class="language-plaintext highlighter-rouge">AcrobatReaderDC.adml</code> (in the <code class="language-plaintext highlighter-rouge">en-US</code> subfolder)</li>
+    </ul>
+  </li>
+</ol>
+
+<blockquote>
+  <p>[!NOTE]
+Reader DC policies are written to <code class="language-plaintext highlighter-rouge">HKLM\SOFTWARE\Policies\Adobe\Acrobat Reader\DC\FeatureLockDown</code>. Acrobat Pro DC uses <code class="language-plaintext highlighter-rouge">HKLM\SOFTWARE\Policies\Adobe\Adobe Acrobat\DC\FeatureLockDown</code>. Confirm the installed product before deploying.</p>
+</blockquote>
+
+<p><strong>Step 2 — Import the ADMX template into Intune:</strong></p>
+
+<ol>
+  <li>In the <strong>Microsoft Intune admin center</strong>, navigate to <strong>Devices</strong> &gt; <strong>Manage devices</strong> &gt; <strong>Configuration</strong> &gt; <strong>Import ADMX</strong> tab.</li>
+  <li>Select <strong>Import</strong>, upload the <code class="language-plaintext highlighter-rouge">.admx</code> file, then upload the <code class="language-plaintext highlighter-rouge">.adml</code> language file on the following step.</li>
+  <li>Select <strong>Create</strong> and allow a few minutes for processing. Verify the import status shows <strong>Available</strong> before proceeding.<sup id="fnref:6:1"><a href="#fn:6" class="footnote" rel="footnote" role="doc-noteref">5</a></sup></li>
+</ol>
+
+<p><strong>Step 3 — Create a hardening policy using the imported template:</strong></p>
+
+<ol>
+  <li>Navigate to <strong>Devices</strong> &gt; <strong>Manage devices</strong> &gt; <strong>Configuration</strong> &gt; <strong>+ Create policy</strong>.</li>
+  <li>Set <strong>Platform</strong> to <strong>Windows 10 and later</strong> and <strong>Profile type</strong> to <strong>Imported Administrative Templates (Preview)</strong>.</li>
+  <li>Enter a descriptive name (e.g., <code class="language-plaintext highlighter-rouge">Adobe Acrobat DC — ASD Hardening</code>) and select <strong>Next</strong>.</li>
+  <li>Under <strong>Configuration settings</strong>, locate the Adobe Acrobat category and apply each setting from the table above.<sup id="fnref:6:2"><a href="#fn:6" class="footnote" rel="footnote" role="doc-noteref">5</a></sup></li>
+</ol>
+
+<p><strong>Alternative: Direct registry OMA-URI (custom profile):</strong></p>
+
+<p>If a setting is not exposed in the imported ADMX template, configure it via a <strong>Custom</strong> profile using the following OMA-URI paths:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Setting</th>
+      <th>OMA-URI (Reader DC)</th>
+      <th>Data type</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Disable JavaScript</td>
+      <td><code class="language-plaintext highlighter-rouge">./Device/Vendor/MSFT/Registry/HKLM/SOFTWARE/Policies/Adobe/Acrobat Reader/DC/FeatureLockDown/bEnableJS</code></td>
+      <td>Integer</td>
+      <td><code class="language-plaintext highlighter-rouge">0</code></td>
+    </tr>
+    <tr>
+      <td>Enable Protected Mode</td>
+      <td><code class="language-plaintext highlighter-rouge">./Device/Vendor/MSFT/Registry/HKLM/SOFTWARE/Policies/Adobe/Acrobat Reader/DC/FeatureLockDown/bProtectedMode</code></td>
+      <td>Integer</td>
+      <td><code class="language-plaintext highlighter-rouge">1</code></td>
+    </tr>
+    <tr>
+      <td>Protected View — All files</td>
+      <td><code class="language-plaintext highlighter-rouge">./Device/Vendor/MSFT/Registry/HKLM/SOFTWARE/Policies/Adobe/Acrobat Reader/DC/FeatureLockDown/iProtectedView</code></td>
+      <td>Integer</td>
+      <td><code class="language-plaintext highlighter-rouge">2</code></td>
+    </tr>
+    <tr>
+      <td>Enhanced Security (standalone)</td>
+      <td><code class="language-plaintext highlighter-rouge">./Device/Vendor/MSFT/Registry/HKLM/SOFTWARE/Policies/Adobe/Acrobat Reader/DC/FeatureLockDown/bEnhancedSecurityStandalone</code></td>
+      <td>Integer</td>
+      <td><code class="language-plaintext highlighter-rouge">1</code></td>
+    </tr>
+    <tr>
+      <td>Enhanced Security (browser)</td>
+      <td><code class="language-plaintext highlighter-rouge">./Device/Vendor/MSFT/Registry/HKLM/SOFTWARE/Policies/Adobe/Acrobat Reader/DC/FeatureLockDown/bEnhancedSecurityInBrowser</code></td>
+      <td>Integer</td>
+      <td><code class="language-plaintext highlighter-rouge">1</code></td>
+    </tr>
+    <tr>
+      <td>Block hyperlink internet access</td>
+      <td><code class="language-plaintext highlighter-rouge">./Device/Vendor/MSFT/Registry/HKLM/SOFTWARE/Policies/Adobe/Acrobat Reader/DC/FeatureLockDown/bDisableHyperlink</code></td>
+      <td>Integer</td>
+      <td><code class="language-plaintext highlighter-rouge">1</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<blockquote>
+  <p>[!IMPORTANT]
+Replace <code class="language-plaintext highlighter-rouge">Acrobat Reader/DC</code> with <code class="language-plaintext highlighter-rouge">Adobe Acrobat/DC</code> in all paths when targeting Acrobat Pro DC. After policy assignment, verify registry values on a test device under <code class="language-plaintext highlighter-rouge">HKLM\SOFTWARE\Policies\Adobe\...\FeatureLockDown</code>. Values written here take precedence over any user-modified settings in <code class="language-plaintext highlighter-rouge">HKCU\Software\Adobe\...</code>.<sup id="fnref:7:1"><a href="#fn:7" class="footnote" rel="footnote" role="doc-noteref">6</a></sup></p>
+</blockquote>
+
+<h3 id="harden-edge-built-in-pdf-viewer-settings-via-intune-settings-catalog">Harden Edge built-in PDF viewer settings via Intune Settings Catalog</h3>
+
+<p>For organisations using <strong>Microsoft Edge</strong> as the primary PDF viewer (the default in Windows 11), Adobe ADMX templates are not required. Edge’s built-in PDF engine — powered by the Adobe Acrobat rendering engine when <code class="language-plaintext highlighter-rouge">NewPDFReaderEnabled</code> is active — is hardened through Edge’s native ADMX policies, which are natively available in the Intune <strong>Settings Catalog</strong> without any template import.</p>
+
+<p><strong>Edge PDF Reader policies to configure:</strong></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Edge policy</th>
+      <th>Security function</th>
+      <th>ASD alignment</th>
+      <th>Intune Settings Catalog path</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">PDFSecureMode</code> — Enabled</td>
+      <td>Activates sandbox process isolation and enforces certificate validation for digitally signed PDFs</td>
+      <td>Aligns with vendor Protected Mode requirement</td>
+      <td><strong>Microsoft Edge</strong> &gt; PDF Reader &gt; Secure mode</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">NewPDFReaderEnabled</code> — Enabled</td>
+      <td>Uses the Adobe Acrobat-based rendering engine (additional sandboxing layer)</td>
+      <td>Vendor hardening</td>
+      <td><strong>Microsoft Edge</strong> &gt; PDF Reader &gt; New PDF reader</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">AlwaysOpenPdfExternally</code> — Disabled</td>
+      <td>Ensures PDFs open in Edge’s sandboxed viewer rather than being downloaded to an unmanaged external process</td>
+      <td>Prevents bypass of browser sandbox</td>
+      <td><strong>Microsoft Edge</strong> &gt; PDF Reader &gt; Always open externally</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">PDFXFAEnabled</code> — Disabled</td>
+      <td>Disables XFA (XML Forms Architecture) support — a legacy attack surface with no ASD-approved use case in Australian Government environments</td>
+      <td>Minimise attack surface</td>
+      <td><strong>Microsoft Edge</strong> &gt; PDF Reader &gt; XFA support</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">ShowAcrobatSubscriptionButton</code> — Disabled</td>
+      <td>Removes upsell UI that could prompt users to install external Acrobat software outside managed channels</td>
+      <td>Prevent unmanaged software installs</td>
+      <td><strong>Microsoft Edge</strong> &gt; PDF Reader &gt; Show Acrobat subscription button</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>To configure in Intune:</strong></p>
+
+<ol>
+  <li>Navigate to <strong>Devices</strong> &gt; <strong>Manage devices</strong> &gt; <strong>Configuration</strong> &gt; <strong>+ Create policy</strong>.</li>
+  <li>Set <strong>Platform</strong> to <strong>Windows 10 and later</strong> and <strong>Profile type</strong> to <strong>Settings Catalog</strong>.</li>
+  <li>In the settings picker, search for <strong>Microsoft Edge</strong> and filter by <strong>PDF Reader</strong>.</li>
+  <li>Add and configure each setting from the table above.</li>
+  <li>Assign to the same device group as your Edge baseline policy.<sup id="fnref:8"><a href="#fn:8" class="footnote" rel="footnote" role="doc-noteref">7</a></sup></li>
+</ol>
+
+<h2 id="additional-related-information">Additional related information</h2>
+
+<ul>
+  <li>
+    <p>ASD Blueprint: User application hardening describes design decisions and reference architecture for hardening user applications across environments <a href="https://blueprint.asd.gov.au/security-and-governance/essential-eight/user-application-hardening/">ASD Blueprint: User application hardening</a></p>
+  </li>
+  <li>
+    <p>ASD Blueprint: System hardening user apps outlines technical controls for hardening user applications and macros in Office and Windows environments <a href="https://blueprint.asd.gov.au/security-and-governance/system-security-plan/system-hardening-user-apps/">ASD Blueprint: System hardening user apps</a></p>
+  </li>
+  <li>
+    <p>ACSC Essential Eight overview provides guidance for Essential Eight controls including user application hardening <a href="https://learn.microsoft.com/en-us/compliance/anz/e8-overview">ACSC Essential Eight</a></p>
+  </li>
+  <li>
+    <p>Microsoft Windows PDF vulnerability bulletins MS16-028 provide patches for memory-related vulnerabilities in PDF handling <a href="https://learn.microsoft.com/en-us/security-updates/securitybulletins/2016/ms16-028">MS16-028 - Critical</a></p>
+  </li>
+  <li>
+    <p>CVE-2025-32451 Foxit PDF Reader vulnerability analysis and mitigation covers Foxit PDF vulnerabilities and mitigations <a href="https://www.wiz.io/vulnerability-database/cve/cve-2025-32451">CVE-2025-32451: Foxit PDF Reader vulnerability analysis and mitigation</a></p>
+  </li>
+  <li>
+    <p>Import custom ADMX templates in Microsoft Intune explains how to upload third-party ADMX and ADML files into Intune to create Imported Administrative Templates policies for non-Microsoft applications, including Adobe Acrobat <a href="https://learn.microsoft.com/en-us/intune/intune-service/configuration/administrative-templates-import-custom">Import custom ADMX templates</a></p>
+  </li>
+  <li>
+    <p>Adobe Acrobat Enterprise Toolkit (Group Policy and Registry Reference) provides the official ADMX templates and full registry key reference for all Acrobat DC and Reader DC FeatureLockDown settings, covering all ASD hardening-relevant controls <a href="https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/gpo.html">Adobe Acrobat Enterprise Toolkit</a></p>
+  </li>
+  <li>
+    <p>Microsoft Edge PDF Reader policy reference documents <code class="language-plaintext highlighter-rouge">PDFSecureMode</code>, <code class="language-plaintext highlighter-rouge">AlwaysOpenPdfExternally</code>, <code class="language-plaintext highlighter-rouge">NewPDFReaderEnabled</code>, and <code class="language-plaintext highlighter-rouge">PDFXFAEnabled</code> policies used to harden the Edge built-in PDF viewer via Settings Catalog without any ADMX import <a href="https://learn.microsoft.com/en-us/deployedge/microsoft-edge-policies#pdf-reader">Microsoft Edge PDF Reader policies</a></p>
+  </li>
+</ul>
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:1">
+      <p><a href="https://blueprint.asd.gov.au/security-and-governance/essential-eight/user-application-hardening/">ASD Blueprint: User application hardening</a> <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a> <a href="#fnref:1:1" class="reversefootnote" role="doc-backlink">&#8617;<sup>2</sup></a> <a href="#fnref:1:2" class="reversefootnote" role="doc-backlink">&#8617;<sup>3</sup></a> <a href="#fnref:1:3" class="reversefootnote" role="doc-backlink">&#8617;<sup>4</sup></a> <a href="#fnref:1:4" class="reversefootnote" role="doc-backlink">&#8617;<sup>5</sup></a> <a href="#fnref:1:5" class="reversefootnote" role="doc-backlink">&#8617;<sup>6</sup></a> <a href="#fnref:1:6" class="reversefootnote" role="doc-backlink">&#8617;<sup>7</sup></a></p>
+    </li>
+    <li id="fn:3">
+      <p><a href="https://learn.microsoft.com/en-us/compliance/anz/e8-app-harden">Essential Eight - User application hardening</a> <a href="#fnref:3" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:4">
+      <p><a href="https://www.cve.org/CVERecord?id=CVE-2016-3198">Microsoft Edge Security Feature Bypass - CVE-2016-3198</a> <a href="#fnref:4" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:5">
+      <p><a href="https://www.cve.org/CVERecord?id=CVE-2016-3203">Windows PDF Remote Code Execution Vulnerability - CVE-2016-3203</a> <a href="#fnref:5" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:6">
+      <p><a href="https://learn.microsoft.com/en-us/intune/intune-service/configuration/administrative-templates-import-custom">Import custom ADMX templates in Microsoft Intune</a> <a href="#fnref:6" class="reversefootnote" role="doc-backlink">&#8617;</a> <a href="#fnref:6:1" class="reversefootnote" role="doc-backlink">&#8617;<sup>2</sup></a> <a href="#fnref:6:2" class="reversefootnote" role="doc-backlink">&#8617;<sup>3</sup></a></p>
+    </li>
+    <li id="fn:7">
+      <p><a href="https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/gpo.html">Adobe Acrobat Enterprise Toolkit — Group Policy and Registry Reference</a> <a href="#fnref:7" class="reversefootnote" role="doc-backlink">&#8617;</a> <a href="#fnref:7:1" class="reversefootnote" role="doc-backlink">&#8617;<sup>2</sup></a></p>
+    </li>
+    <li id="fn:8">
+      <p><a href="https://learn.microsoft.com/en-us/deployedge/microsoft-edge-policies#pdf-reader">Microsoft Edge PDF Reader policy reference</a> <a href="#fnref:8" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+
+    </div>
+
+    <div style="margin-bottom:20px; display:flex; justify-content:space-between; align-items:center;">
+      <div style="display:flex; gap:12px; align-items:center;">
+        <a href="/ISM-Controls-Guide-preview/" class="back-btn">HOME</a>
+
+        
+          <a class="prev-control back-btn" href="/ISM-Controls-Guide-preview/controls/ISM-1859.html" aria-label="Previous control">← ISM-1859</a>
+        
+      </div>
+
+      <div style="display:flex; gap:12px; align-items:center;">
+        
+          <a class="next-control back-btn" href="/ISM-Controls-Guide-preview/controls/ISM-1861.html" aria-label="Next control">ISM-1861 →</a>
+        
+      </div>
+    </div>
+  </div>
+  <script>
+    // Convert GitHub-style alerts [!NOTE], [!WARNING], etc. to styled callouts
+    document.querySelectorAll('blockquote').forEach(bq => {
+      const text = bq.innerHTML;
+      const match = text.match(/\[!(NOTE|WARNING|TIP|IMPORTANT|CAUTION)\]/i);
+      if (match) {
+        const type = match[1].toLowerCase();
+        const icons = { note: '📝', warning: '⚠️', tip: '💡', important: '📢', caution: '🚨' };
+        const titles = { note: 'Note', warning: 'Warning', tip: 'Tip', important: 'Important', caution: 'Caution' };
+        const content = text.replace(/\[!(NOTE|WARNING|TIP|IMPORTANT|CAUTION)\]\s*/i, '');
+        bq.className = 'callout callout-' + type;
+        bq.innerHTML = '<div class="callout-title">' + icons[type] + ' ' + titles[type] + '</div>' + content;
+      }
+    });
+  </script>
+  <footer class="site-footer" role="contentinfo" aria-label="Site footer" style="background:#161b22;border-top:1px solid #30363d;padding:20px 40px;margin-top:40px;">
+    <div style="max-width:900px;margin:0 auto;display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:space-between;">
+      <div style="color:#94a3b8;font-size:0.9rem;">
+        
+          Last updated: 2026-02-18 22:16 UTC
+        
+      </div>
+      <div style="color:#94a3b8;font-size:0.9rem;text-align:right;max-width:620px;">
+        <strong style="color:#e6edf3;">AI-generated content:</strong> This site contains AI-assisted content created from primary sources and may contain errors or be out of date. Always verify with official documentation. See <a href="https://e8guide.com/about" style="color:#58a6ff;text-decoration:none;">About</a> for details.
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

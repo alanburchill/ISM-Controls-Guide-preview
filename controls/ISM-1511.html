@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Backups of data, applications and settings are performed and retained in accordance with business criticality and business continuity requirements. - Essential 8 Guide</title>
+  <!-- Canonical URL -->
+<link rel="canonical" href="https://e8guide.com/controls/ISM-1511.html">
+
+<!-- Meta description --><meta name="description" content="Backups of data, applications and settings are performed and retained in accordance with business criticality and business continuity requirements.">
+
+<!-- Google Search Console ownership verification -->
+
+<meta name="google-site-verification" content="">
+
+
+<!-- Open Graph / Social sharing -->
+<meta property="og:title" content="Backups of data, applications and settings are performed and retained in accordance with business criticality and business continuity requirements. - Essential 8 Guide">
+<meta property="og:description" content="Backups of data, applications and settings are performed and retained in accordance with business criticality and business continuity requirements.">
+<meta property="og:url" content="https://e8guide.com/controls/ISM-1511.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Essential 8 Guide">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Backups of data, applications and settings are performed and retained in accordance with business criticality and business continuity requirements. - Essential 8 Guide">
+<meta name="twitter:description" content="Backups of data, applications and settings are performed and retained in accordance with business criticality and business continuity requirements.">
+
+<!-- Emoji favicon — no image file required -->
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>&#x1F6E1;&#xFE0F;</text></svg>">
+
+  
+<!-- Google Analytics (GA4) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id="></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', '');
+</script>
+
+
+  <link rel="stylesheet" href="/ISM-Controls-Guide-preview/assets/css/main.css">
+  <style>
+    /* Page-specific styles */
+    .container {
+      max-width: 900px;
+    }
+    .content-card {
+      padding: 40px;
+    }
+    .content-card h1 {
+      padding-bottom: 15px;
+      border-bottom: 1px solid #30363d;
+    }
+    /* Footnotes styling */
+    .footnotes {
+      margin-top: 40px;
+      padding-top: 20px;
+      border-top: 1px solid #30363d;
+      font-size: 0.9rem;
+    }
+    .footnotes ol { color: #8b949e; }
+    .footnote { color: #58a6ff; font-size: 0.85em; vertical-align: super; }
+    .reversefootnote { color: #58a6ff; }
+    /* GitHub-style alerts/callouts */
+    .callout {
+      padding: 16px 20px;
+      margin: 20px 0;
+      border-radius: 6px;
+      border-left: 4px solid;
+    }
+    .callout-title {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+    .callout-title svg { flex-shrink: 0; }
+    .callout p { margin: 0; color: #e6edf3; }
+    .callout-note {
+      background: rgba(88, 166, 255, 0.1);
+      border-color: #58a6ff;
+    }
+    .callout-note .callout-title { color: #58a6ff; }
+    .callout-warning {
+      background: rgba(210, 153, 34, 0.1);
+      border-color: #d29922;
+    }
+    .callout-warning .callout-title { color: #d29922; }
+    .callout-tip {
+      background: rgba(63, 185, 80, 0.1);
+      border-color: #3fb950;
+    }
+    .callout-tip .callout-title { color: #3fb950; }
+    .callout-important {
+      background: rgba(168, 113, 255, 0.1);
+      border-color: #a371f7;
+    }
+    .callout-important .callout-title { color: #a371f7; }
+    .callout-caution {
+      background: rgba(248, 81, 73, 0.1);
+      border-color: #f85149;
+    }
+    .callout-caution .callout-title { color: #f85149; }
+  </style>
+  <!-- JSON-LD structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "TechArticle",
+    "name": "ISM-1511",
+    "headline": "Backups of data, applications and settings are performed and retained in accordance with business criticali...",
+    "description": "Backups of data, applications and settings are performed and retained in accordance with business criticality and business continuity requirements.",
+    "url": "https://e8guide.com/controls/ISM-1511.html",
+    "dateModified": "2026-02-13",
+    "inLanguage": "en-AU",
+    "author": {
+      "@type": "Organization",
+      "name": "Essential 8 Guide",
+      "url": "https://e8guide.com"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Essential 8 Guide",
+      "url": "https://e8guide.com"
+    },
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": "Essential 8 Guide",
+      "url": "https://e8guide.com"
+    }
+  }
+  </script>
+</head>
+<body><div style="background:#d29922;color:#0d1117;padding:6px 16px;font-size:0.85rem;text-align:center;position:sticky;top:0;z-index:9999;">⚠️ PREVIEW — branch: research-review-controls — <a href="https://e8guide.com" style="color:#0d1117;font-weight:bold;">production site</a></div>
+  <div class="header">
+  <div class="header-content">
+    <h1>🛡️ Essential 8 Guide</h1>
+    <p>Implementation guidance for Australian Essential Eight controls in Microsoft environments - ISM controls with PSPF mappings</p>
+  </div>
+  <a href="/ISM-Controls-Guide-preview/about" class="about-link">About</a>
+</div>
+
+  <div class="container">
+    <div style="margin-bottom:20px; display:flex; justify-content:space-between; align-items:center;">
+      <div style="display:flex; gap:12px; align-items:center;">
+      <a href="/ISM-Controls-Guide-preview/" class="back-btn">HOME</a>
+
+      
+      
+      
+      
+
+
+      
+      
+      
+      
+      
+
+      
+        
+        
+        <a class="prev-control back-btn" href="/ISM-Controls-Guide-preview/controls/ISM-1504.html" aria-label="Previous control">← ISM-1504</a>
+      
+    </div>
+
+    <div style="display:flex; gap:12px; align-items:center;">
+      
+        
+        
+        <a class="next-control back-btn" href="/ISM-Controls-Guide-preview/controls/ISM-1542.html" aria-label="Next control">ISM-1542 →</a>
+      
+    </div>
+  </div>
+    <div class="content-card">
+      <h2 id="backups-of-data-applications-and-settings-are-performed-and-retained-in-accordance-with-business-criticality-and-business-continuity-requirements">Backups of data, applications and settings are performed and retained in accordance with business criticality and business continuity requirements.</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Property</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>ISM Control</strong></td>
+      <td>ISM-1511</td>
+    </tr>
+    <tr>
+      <td><strong>Revision</strong></td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td><strong>Updated</strong></td>
+      <td>Dec-23</td>
+    </tr>
+    <tr>
+      <td><strong>Guideline</strong></td>
+      <td>Not provided</td>
+    </tr>
+    <tr>
+      <td><strong>Section</strong></td>
+      <td>Data backup and restoration</td>
+    </tr>
+    <tr>
+      <td><strong>Topic</strong></td>
+      <td>Performing and retaining backups</td>
+    </tr>
+    <tr>
+      <td><strong>Essential Eight</strong></td>
+      <td>ML1, ML2, ML3</td>
+    </tr>
+    <tr>
+      <td><strong>PSPF Levels</strong></td>
+      <td>NC, OS, P, S, TS</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="summary">Summary</h2>
+
+<p>This control ensures backups of data, applications and settings are performed and retained in accordance with business criticality and business continuity requirements, covering workstations, on-premises servers, Azure servers, and Microsoft 365 content.</p>
+
+<p>Implementing this control strengthens resilience against data loss and supports secure recovery by leveraging Azure Backup security capabilities, access controls, and governance.</p>
+
+<h2 id="design-decision">Design Decision</h2>
+
+<blockquote>
+  <p>[!NOTE]
+The <strong>Windows Backup and Restore enrollment</strong> for Worksations will be enabled, with the <strong>Show restore page</strong> enabled and <strong>OneDrive for Business</strong> automatically enabled with <strong>Known Folder Backup</strong>. The <strong>Microsoft Azure Recovery Services agent</strong> will be used to protect <strong>On-Prem Servers</strong> using the <strong>DPM</strong> or <strong>Azure Backup Server agent</strong> to protect on-premises systems, and to back up <strong>Azure Servers</strong> with <strong>Microsoft Azure Recovery Services agent</strong> for <strong>Azure VMs</strong>. The content from <strong>Sharepoint</strong>, <strong>Exchange Online</strong>, and <strong>OneDrive</strong> will be backed up and restored by <strong>Microsoft 365 Backup</strong>.</p>
+</blockquote>
+
+<h2 id="prerequisites">Prerequisites</h2>
+
+<ul>
+  <li><strong>OneDrive (KFM):</strong> Users must be licensed for Microsoft 365 (Business, E3, or E5). OneDrive sync client version 19.123.0624 or later deployed to workstations.</li>
+  <li><strong>MARS agent (on-prem servers):</strong> A Recovery Services vault created in the target Azure subscription; vault credentials file downloaded; .NET Framework 4.5.2 or later installed on the server; outbound HTTPS (port 443) to <code class="language-plaintext highlighter-rouge">*.backup.windowsazure.com</code>.</li>
+  <li><strong>Azure VMs:</strong> VMs must be in the same region as the Recovery Services vault. The <code class="language-plaintext highlighter-rouge">Microsoft.RecoveryServices</code> resource provider must be registered. Assign <strong>Backup Contributor</strong>, <strong>Backup Operator</strong>, and <strong>Virtual Machine Contributor</strong> RBAC roles to the Backup service principal or managed identity.<sup id="fnref:3"><a href="#fn:3" class="footnote" rel="footnote" role="doc-noteref">1</a></sup></li>
+  <li><strong>Microsoft 365 Backup:</strong> Microsoft 365 Backup is a pay-as-you-go add-on. Billing is provisioned via the Microsoft 365 admin centre → <strong>Billing → Purchase services</strong>. The account performing setup must hold the <strong>Global Admin</strong> or <strong>M365 Backup Admin</strong> role.<sup id="fnref:5"><a href="#fn:5" class="footnote" rel="footnote" role="doc-noteref">2</a></sup></li>
+</ul>
+
+<h2 id="implementation-steps">Implementation Steps</h2>
+
+<h3 id="worksations-enable-windows-backup-and-restore-enrollment-and-turn-on-the-show-restore-page-and-enable-onedrive-for-business-with-known-folder-backup">Worksations: Enable “Windows Backup and Restore” enrollment and turn on the “Show restore page” and enable OneDrive for Business with Known Folder Backup</h3>
+
+<h4 id="configure-onedrive-known-folder-move-kfm-via-intune">Configure OneDrive Known Folder Move (KFM) via Intune</h4>
+
+<ol>
+  <li>In the <strong>Microsoft Intune admin centre</strong>, go to <strong>Devices → Configuration → Create → New Policy</strong>.</li>
+  <li>Platform: <strong>Windows 10 and later</strong>; Profile type: <strong>Administrative templates</strong>.</li>
+  <li>Search for <em>“Silently move Windows known folders to OneDrive”</em> (Computer Configuration):
+    <ul>
+      <li>Set to <strong>Enabled</strong>; enter your <strong>Tenant ID</strong> in the field provided.</li>
+    </ul>
+  </li>
+  <li>Search for <em>“Prompt users to move Windows known folders to OneDrive”</em>:
+    <ul>
+      <li>Set to <strong>Enabled</strong> to surface a user notification if silent move fails.</li>
+    </ul>
+  </li>
+  <li>Search for <em>“Prevent users from redirecting their Windows known folders to their PC”</em>:
+    <ul>
+      <li>Set to <strong>Enabled</strong> after initial KFM rollout is complete (locks folders to OneDrive).</li>
+    </ul>
+  </li>
+  <li>Search for <em>“Prevent users from moving their Windows known folders to OneDrive”</em>:
+    <ul>
+      <li>Keep <strong>Disabled</strong> (the default) so that KFM redirection is allowed.</li>
+    </ul>
+  </li>
+  <li>Assign the policy to the relevant device or user group and select <strong>Review + save</strong>.</li>
+  <li>Verify in OneDrive Settings (system tray → gear icon → <strong>Settings → Backup → Manage backup</strong>) that Desktop, Documents, and Pictures are shown with a sync icon.<sup id="fnref:1"><a href="#fn:1" class="footnote" rel="footnote" role="doc-noteref">3</a></sup></li>
+</ol>
+
+<h3 id="on-prem-servers-enable-microsoft-azure-recovery-services-agent-to-use-the-dpm-or-azure-backup-server-agent-to-protect-on-premises-systems">On-Prem Servers: Enable Microsoft Azure Recovery Services agent to use the DPM or Azure Backup Server agent to protect on-premises systems</h3>
+
+<h4 id="install-and-register-the-mars-agent">Install and register the MARS agent</h4>
+
+<ol>
+  <li>In the <strong>Azure portal</strong>, go to <strong>Recovery Services vaults → (your vault) → Getting started → Backup</strong>.</li>
+  <li>Under <em>“Where is your workload running?”</em> select <strong>On-premises</strong>; under <em>“What do you want to back up?”</em> select <strong>Files and folders</strong>. Click <strong>Prepare infrastructure</strong>.</li>
+  <li>Download the <strong>Microsoft Azure Recovery Services Agent</strong> installer (<code class="language-plaintext highlighter-rouge">MARSAgentInstaller.exe</code>) and the <strong>vault credentials</strong> file.</li>
+  <li>On the server, run <code class="language-plaintext highlighter-rouge">MARSAgentInstaller.exe</code>, accept the installation path and proxy settings, then click <strong>Proceed to Registration</strong>.</li>
+  <li>When prompted, browse to the downloaded <strong>vault credentials</strong> file.</li>
+  <li>Create a <strong>passphrase</strong> (minimum 16 characters). Store this passphrase in <strong>Azure Key Vault</strong> immediately — it cannot be recovered by Microsoft and is required for any restore.</li>
+  <li>Once registration completes, launch <strong>Microsoft Azure Backup</strong> (Start menu) and click <strong>Schedule Backup</strong>.</li>
+  <li>Select the folders/volumes to protect, set the backup <strong>frequency</strong> (up to 3× / day), and configure <strong>retention</strong> (daily, weekly, monthly, yearly tiers) to match business continuity requirements.</li>
+  <li>Click <strong>Finish</strong> to save the policy; the first backup will seed immediately.<sup id="fnref:2"><a href="#fn:2" class="footnote" rel="footnote" role="doc-noteref">4</a></sup></li>
+</ol>
+
+<h3 id="azure-servers-use-microsoft-azure-recovery-services-agent-to-backup-azure-vms">Azure Servers: Use Microsoft Azure Recovery Services agent to backup Azure VMs</h3>
+
+<h4 id="create-a-recovery-services-vault-and-configure-vm-backup">Create a Recovery Services vault and configure VM backup</h4>
+
+<ol>
+  <li>In the <strong>Azure portal</strong>, go to <strong>Recovery Services vaults → Create</strong>. Select the subscription, resource group, vault name, and the <strong>same region</strong> as the VMs to protect. Click <strong>Review + create</strong>.</li>
+  <li>Assign RBAC roles at the vault scope:
+    <ul>
+      <li><strong>Backup Contributor</strong> — allows vault and policy management.</li>
+      <li><strong>Backup Operator</strong> — allows triggering backups and restores.</li>
+      <li><strong>Virtual Machine Contributor</strong> — required on the VM resource group.</li>
+    </ul>
+  </li>
+  <li>In the vault, go to <strong>Backup → Azure Virtual Machine</strong>. Select <strong>Backup policy → Create a new policy</strong>. Set:
+    <ul>
+      <li><strong>Frequency:</strong> Daily or hourly as required.</li>
+      <li><strong>Instant restore:</strong> Retain snapshots for 1–5 days.</li>
+      <li><strong>Retention:</strong> Configure daily, weekly, monthly, yearly tiers to match business continuity requirements.</li>
+    </ul>
+  </li>
+  <li>Select the VMs to protect and click <strong>Enable Backup</strong>.</li>
+  <li>Enable <strong>immutable vault</strong> to protect backup data against deletion or tampering (WORM compliance):
+    <ul>
+      <li>Vault → <strong>Properties → Immutability</strong> → click <strong>Enable vault immutability</strong>.</li>
+      <li>Optionally click <strong>Lock</strong> to make the setting irreversible (recommended for high-classification data). <em>Note: locking is permanent and cannot be undone.</em><sup id="fnref:4"><a href="#fn:4" class="footnote" rel="footnote" role="doc-noteref">5</a></sup></li>
+    </ul>
+  </li>
+  <li>Optionally enable <strong>Multi-user authorisation (MUA)</strong> via a Resource Guard in a separate subscription to prevent single-admin deletion of backups.<sup id="fnref:3:1"><a href="#fn:3" class="footnote" rel="footnote" role="doc-noteref">1</a></sup></li>
+</ol>
+
+<h3 id="microsoft-365-backup-and-restore-content-from-sharepoint-exchange-online-and-onedrive-using-microsoft-365-backup">Microsoft 365: Backup and restore content from Sharepoint, Exchange Online, and OneDrive using “Microsoft 365 Backup”</h3>
+
+<h4 id="enable-and-configure-microsoft-365-backup">Enable and configure Microsoft 365 Backup</h4>
+
+<ol>
+  <li>In the <strong>Microsoft 365 admin centre</strong>, go to <strong>Setup → Microsoft 365 Backup</strong> (or search “Backup” in the top search bar).</li>
+  <li>Click <strong>Get started</strong>. Review billing terms — M365 Backup is charged per GB of protected data (pay-as-you-go).</li>
+  <li>Assign the <strong>Microsoft 365 Backup Administrator</strong> role to the backup operator account:
+    <ul>
+      <li><strong>Microsoft 365 admin centre → Roles → Role assignments → Search “Backup”</strong>.</li>
+    </ul>
+  </li>
+  <li>Select the <strong>workloads</strong> to protect:
+    <ul>
+      <li><strong>Exchange Online</strong> — protects mailboxes (email, calendar, contacts).</li>
+      <li><strong>SharePoint Online</strong> — protects site collections.</li>
+      <li><strong>OneDrive for Business</strong> — protects user drives (supplement to KFM sync).</li>
+    </ul>
+  </li>
+  <li>Choose the <strong>retention period</strong>. Default is <strong>365 days</strong>; extended retention (up to 7 years for compliance) may be available depending on licensing tier.</li>
+  <li>Click <strong>Save</strong> to activate backup jobs. Initial seeding may take several hours for large tenants.</li>
+  <li>To enforce immutable retention on backed-up content, create a <strong>Microsoft Purview Retention Policy</strong> targeting the relevant workloads:
+    <ul>
+      <li>Set action to <strong>Retain items for a specific period</strong> with <strong>Do not delete</strong> selected.</li>
+      <li>Apply to the SharePoint/OneDrive locations corresponding to the backup scope.</li>
+    </ul>
+  </li>
+  <li>Validate by performing a test restore: <strong>Admin centre → Backup → Restore →</strong> select a workload, choose a point-in-time, and restore a single item to confirm the end-to-end flow works before a real incident occurs.<sup id="fnref:5:1"><a href="#fn:5" class="footnote" rel="footnote" role="doc-noteref">2</a></sup><sup id="fnref:6"><a href="#fn:6" class="footnote" rel="footnote" role="doc-noteref">6</a></sup></li>
+</ol>
+
+<h2 id="additional-related-information">Additional related information</h2>
+
+<ul>
+  <li>About Backup center for Azure Backup and Azure Site Recovery provides unified backup management including governance, monitoring, and analysis across vaults and workloads <a href="https://learn.microsoft.com/en-us/azure/backup/backup-center-overview">About Backup center for Azure Backup and Azure Site Recovery</a></li>
+  <li>Azure Backup service documentation provides policy-based enablement and management guidance for protecting workloads <a href="https://learn.microsoft.com/en-us/azure/backup/">Azure Backup service documentation</a></li>
+  <li>Why Pursue ACSC Essential Eight User Backup Guidelines covers RBAC, multi-user authorization, and policy protections for backups <a href="https://learn.microsoft.com/en-us/compliance/anz/e8-backups">Why Pursue ACSC Essential Eight User Backup Guidelines?</a></li>
+  <li>Azure Disk Backup overview describes incremental snapshots and policy-driven retention for managed disks <a href="https://learn.microsoft.com/en-us/azure/backup/disk-backup-overview">Overview of Azure Disk Backup</a></li>
+</ul>
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:3">
+      <p><a href="https://learn.microsoft.com/en-us/azure/backup/backup-azure-vms-first-look-arm">Azure VM backup with Recovery Services vault — Microsoft Learn</a> <a href="#fnref:3" class="reversefootnote" role="doc-backlink">&#8617;</a> <a href="#fnref:3:1" class="reversefootnote" role="doc-backlink">&#8617;<sup>2</sup></a></p>
+    </li>
+    <li id="fn:5">
+      <p><a href="https://learn.microsoft.com/en-us/microsoft-365/backup/backup-overview">Microsoft 365 Backup — Microsoft Learn</a> <a href="#fnref:5" class="reversefootnote" role="doc-backlink">&#8617;</a> <a href="#fnref:5:1" class="reversefootnote" role="doc-backlink">&#8617;<sup>2</sup></a></p>
+    </li>
+    <li id="fn:1">
+      <p><a href="https://learn.microsoft.com/en-us/onedrive/redirect-known-folders">OneDrive Known Folder Move — Microsoft Learn</a> <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:2">
+      <p><a href="https://learn.microsoft.com/en-us/azure/backup/backup-configure-vault">MARS agent backup — Microsoft Learn</a> <a href="#fnref:2" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:4">
+      <p><a href="https://learn.microsoft.com/en-us/azure/backup/backup-azure-immutable-vault-how-to-manage">Manage immutable vaults for Azure Backup — Microsoft Learn</a> <a href="#fnref:4" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:6">
+      <p><a href="https://www.cyber.gov.au/resources-business-and-government/essential-cyber-security/essential-eight/essential-eight-maturity-model">ACSC Essential Eight — User data backups</a> <a href="#fnref:6" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+
+    </div>
+
+    <div style="margin-bottom:20px; display:flex; justify-content:space-between; align-items:center;">
+      <div style="display:flex; gap:12px; align-items:center;">
+        <a href="/ISM-Controls-Guide-preview/" class="back-btn">HOME</a>
+
+        
+          <a class="prev-control back-btn" href="/ISM-Controls-Guide-preview/controls/ISM-1504.html" aria-label="Previous control">← ISM-1504</a>
+        
+      </div>
+
+      <div style="display:flex; gap:12px; align-items:center;">
+        
+          <a class="next-control back-btn" href="/ISM-Controls-Guide-preview/controls/ISM-1542.html" aria-label="Next control">ISM-1542 →</a>
+        
+      </div>
+    </div>
+  </div>
+  <script>
+    // Convert GitHub-style alerts [!NOTE], [!WARNING], etc. to styled callouts
+    document.querySelectorAll('blockquote').forEach(bq => {
+      const text = bq.innerHTML;
+      const match = text.match(/\[!(NOTE|WARNING|TIP|IMPORTANT|CAUTION)\]/i);
+      if (match) {
+        const type = match[1].toLowerCase();
+        const icons = { note: '📝', warning: '⚠️', tip: '💡', important: '📢', caution: '🚨' };
+        const titles = { note: 'Note', warning: 'Warning', tip: 'Tip', important: 'Important', caution: 'Caution' };
+        const content = text.replace(/\[!(NOTE|WARNING|TIP|IMPORTANT|CAUTION)\]\s*/i, '');
+        bq.className = 'callout callout-' + type;
+        bq.innerHTML = '<div class="callout-title">' + icons[type] + ' ' + titles[type] + '</div>' + content;
+      }
+    });
+  </script>
+  <footer class="site-footer" role="contentinfo" aria-label="Site footer" style="background:#161b22;border-top:1px solid #30363d;padding:20px 40px;margin-top:40px;">
+    <div style="max-width:900px;margin:0 auto;display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:space-between;">
+      <div style="color:#94a3b8;font-size:0.9rem;">
+        
+          Last updated: 2026-02-18 22:55 UTC
+        
+      </div>
+      <div style="color:#94a3b8;font-size:0.9rem;text-align:right;max-width:620px;">
+        <strong style="color:#e6edf3;">AI-generated content:</strong> This site contains AI-assisted content created from primary sources and may contain errors or be out of date. Always verify with official documentation. See <a href="https://e8guide.com/about" style="color:#58a6ff;text-decoration:none;">About</a> for details.
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

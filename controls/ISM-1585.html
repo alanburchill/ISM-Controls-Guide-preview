@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web browser security settings cannot be changed by users. - Essential 8 Guide</title>
+  <!-- Canonical URL -->
+<link rel="canonical" href="https://e8guide.com/controls/ISM-1585.html">
+
+<!-- Meta description --><meta name="description" content="Web browser security settings cannot be changed by users.">
+
+<!-- Google Search Console ownership verification -->
+
+<meta name="google-site-verification" content="">
+
+
+<!-- Open Graph / Social sharing -->
+<meta property="og:title" content="Web browser security settings cannot be changed by users. - Essential 8 Guide">
+<meta property="og:description" content="Web browser security settings cannot be changed by users.">
+<meta property="og:url" content="https://e8guide.com/controls/ISM-1585.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Essential 8 Guide">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Web browser security settings cannot be changed by users. - Essential 8 Guide">
+<meta name="twitter:description" content="Web browser security settings cannot be changed by users.">
+
+<!-- Emoji favicon — no image file required -->
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>&#x1F6E1;&#xFE0F;</text></svg>">
+
+  
+<!-- Google Analytics (GA4) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id="></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', '');
+</script>
+
+
+  <link rel="stylesheet" href="/ISM-Controls-Guide-preview/assets/css/main.css">
+  <style>
+    /* Page-specific styles */
+    .container {
+      max-width: 900px;
+    }
+    .content-card {
+      padding: 40px;
+    }
+    .content-card h1 {
+      padding-bottom: 15px;
+      border-bottom: 1px solid #30363d;
+    }
+    /* Footnotes styling */
+    .footnotes {
+      margin-top: 40px;
+      padding-top: 20px;
+      border-top: 1px solid #30363d;
+      font-size: 0.9rem;
+    }
+    .footnotes ol { color: #8b949e; }
+    .footnote { color: #58a6ff; font-size: 0.85em; vertical-align: super; }
+    .reversefootnote { color: #58a6ff; }
+    /* GitHub-style alerts/callouts */
+    .callout {
+      padding: 16px 20px;
+      margin: 20px 0;
+      border-radius: 6px;
+      border-left: 4px solid;
+    }
+    .callout-title {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+    .callout-title svg { flex-shrink: 0; }
+    .callout p { margin: 0; color: #e6edf3; }
+    .callout-note {
+      background: rgba(88, 166, 255, 0.1);
+      border-color: #58a6ff;
+    }
+    .callout-note .callout-title { color: #58a6ff; }
+    .callout-warning {
+      background: rgba(210, 153, 34, 0.1);
+      border-color: #d29922;
+    }
+    .callout-warning .callout-title { color: #d29922; }
+    .callout-tip {
+      background: rgba(63, 185, 80, 0.1);
+      border-color: #3fb950;
+    }
+    .callout-tip .callout-title { color: #3fb950; }
+    .callout-important {
+      background: rgba(168, 113, 255, 0.1);
+      border-color: #a371f7;
+    }
+    .callout-important .callout-title { color: #a371f7; }
+    .callout-caution {
+      background: rgba(248, 81, 73, 0.1);
+      border-color: #f85149;
+    }
+    .callout-caution .callout-title { color: #f85149; }
+  </style>
+  <!-- JSON-LD structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "TechArticle",
+    "name": "ISM-1585",
+    "headline": "Web browser security settings cannot be changed by users.",
+    "description": "Web browser security settings cannot be changed by users.",
+    "url": "https://e8guide.com/controls/ISM-1585.html",
+    "dateModified": "2026-02-13",
+    "inLanguage": "en-AU",
+    "author": {
+      "@type": "Organization",
+      "name": "Essential 8 Guide",
+      "url": "https://e8guide.com"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Essential 8 Guide",
+      "url": "https://e8guide.com"
+    },
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": "Essential 8 Guide",
+      "url": "https://e8guide.com"
+    }
+  }
+  </script>
+</head>
+<body><div style="background:#d29922;color:#0d1117;padding:6px 16px;font-size:0.85rem;text-align:center;position:sticky;top:0;z-index:9999;">⚠️ PREVIEW — branch: research-review-controls — <a href="https://e8guide.com" style="color:#0d1117;font-weight:bold;">production site</a></div>
+  <div class="header">
+  <div class="header-content">
+    <h1>🛡️ Essential 8 Guide</h1>
+    <p>Implementation guidance for Australian Essential Eight controls in Microsoft environments - ISM controls with PSPF mappings</p>
+  </div>
+  <a href="/ISM-Controls-Guide-preview/about" class="about-link">About</a>
+</div>
+
+  <div class="container">
+    <div style="margin-bottom:20px; display:flex; justify-content:space-between; align-items:center;">
+      <div style="display:flex; gap:12px; align-items:center;">
+      <a href="/ISM-Controls-Guide-preview/" class="back-btn">HOME</a>
+
+      
+      
+      
+      
+
+
+      
+      
+      
+      
+      
+
+      
+        
+        
+        <a class="prev-control back-btn" href="/ISM-Controls-Guide-preview/controls/ISM-1544.html" aria-label="Previous control">← ISM-1544</a>
+      
+    </div>
+
+    <div style="display:flex; gap:12px; align-items:center;">
+      
+        
+        
+        <a class="next-control back-btn" href="/ISM-Controls-Guide-preview/controls/ISM-1621.html" aria-label="Next control">ISM-1621 →</a>
+      
+    </div>
+  </div>
+    <div class="content-card">
+      <h2 id="web-browser-security-settings-cannot-be-changed-by-users">Web browser security settings cannot be changed by users.</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Property</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>ISM Control</strong></td>
+      <td>ISM-1585</td>
+    </tr>
+    <tr>
+      <td><strong>Revision</strong></td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td><strong>Updated</strong></td>
+      <td>Mar-23</td>
+    </tr>
+    <tr>
+      <td><strong>Guideline</strong></td>
+      <td>Not provided</td>
+    </tr>
+    <tr>
+      <td><strong>Section</strong></td>
+      <td>User application hardening</td>
+    </tr>
+    <tr>
+      <td><strong>Topic</strong></td>
+      <td>Hardening user application configurations</td>
+    </tr>
+    <tr>
+      <td><strong>Essential Eight</strong></td>
+      <td>ML1, ML2, ML3</td>
+    </tr>
+    <tr>
+      <td><strong>PSPF Levels</strong></td>
+      <td>NC, OS, P, S, TS</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="summary">Summary</h2>
+
+<p>Enforce browser security settings via Intune so users cannot modify them, preventing changes that could weaken browser security<sup id="fnref:1"><a href="#fn:1" class="footnote" rel="footnote" role="doc-noteref">1</a></sup>. This approach maintains consistent, enterprise-wide protections and reduces exposure to phishing, tracking and data leakage risks<sup id="fnref:2"><a href="#fn:2" class="footnote" rel="footnote" role="doc-noteref">2</a></sup>.</p>
+
+<h2 id="design-decision">Design Decision</h2>
+
+<blockquote>
+  <p>[!NOTE]
+The <strong>Intune configuration profiles</strong> will enforce the <strong>browser security settings</strong> so users cannot modify them. This will implement the guidance to prevent changes to web browser configurations via Intune.</p>
+</blockquote>
+
+<h2 id="prerequisites">Prerequisites</h2>
+
+<ul>
+  <li><strong>Dependencies:</strong>
+    <ul>
+      <li>Devices must be enrolled in <strong>Microsoft Intune</strong>; all users must be enrolled to ensure device compliance. <sup id="fnref:2:1"><a href="#fn:2" class="footnote" rel="footnote" role="doc-noteref">2</a></sup></li>
+      <li><strong>Windows 10</strong>: 21H2 / 10.0.19044.100 minimum. <sup id="fnref:2:2"><a href="#fn:2" class="footnote" rel="footnote" role="doc-noteref">2</a></sup></li>
+      <li>Browser security settings must be deployed and enforced via <strong>Intune</strong> so users cannot modify them. <sup id="fnref:1:1"><a href="#fn:1" class="footnote" rel="footnote" role="doc-noteref">1</a></sup></li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="implementation-steps">Implementation Steps</h2>
+
+<h3 id="enforce-browser-security-settings-via-intune">Enforce browser security settings via Intune</h3>
+
+<ol>
+  <li>In Intune, create and deploy a Windows 10/11 device configuration profile that enforces Edge browser security settings. Use the following sub-settings:
+    <ul>
+      <li><strong>Start Microsoft Edge with</strong>: set to <strong>Custom start pages</strong> and configure the start pages via the setting <strong>EdgeHomepageUrls</strong>. Set <strong>Allow user to change start pages</strong> to <strong>No</strong> to block changes. This ensures the chosen start pages are enforced. <sup id="fnref:2:3"><a href="#fn:2" class="footnote" rel="footnote" role="doc-noteref">2</a></sup><sup id="fnref:1:2"><a href="#fn:1" class="footnote" rel="footnote" role="doc-noteref">1</a></sup></li>
+    </ul>
+  </li>
+  <li>Configure Edge startup behavior to fix the New Tab page:
+    <ul>
+      <li><strong>New Tab URL</strong>: enter the URL to open on the New Tab page.</li>
+      <li><strong>Allow web content on new tab page</strong>: set to <strong>No</strong> to prevent users from altering the New Tab content. <sup id="fnref:2:4"><a href="#fn:2" class="footnote" rel="footnote" role="doc-noteref">2</a></sup></li>
+    </ul>
+  </li>
+  <li>Lock down Edge home button behavior:
+    <ul>
+      <li><strong>Home button</strong>: configure to the desired action (e.g., a specific URL via the Home button URL option).</li>
+      <li><strong>Allow users to change home button</strong>: set to <strong>No</strong> to prevent user overrides. <sup id="fnref:2:5"><a href="#fn:2" class="footnote" rel="footnote" role="doc-noteref">2</a></sup></li>
+    </ul>
+  </li>
+  <li>Reduce user prompts during onboarding:
+    <ul>
+      <li><strong>Show First Run Experience page (Mobile only)</strong>: set to <strong>No</strong> to suppress the First Run page. <sup id="fnref:2:6"><a href="#fn:2" class="footnote" rel="footnote" role="doc-noteref">2</a></sup></li>
+    </ul>
+  </li>
+  <li>Enforce browser favorites protection:
+    <ul>
+      <li><strong>LockdownFavorites</strong>: set to value <strong>1 (Blocked)</strong> to prevent users from adding, importing, or editing Favorites in Edge. <sup id="fnref:3"><a href="#fn:3" class="footnote" rel="footnote" role="doc-noteref">3</a></sup></li>
+    </ul>
+  </li>
+  <li>Prevent changes to browser security policies:
+    <ul>
+      <li><strong>DoNotAllowUsersToChangePolicies</strong>: enable to prevent users from changing security zone settings in Internet Explorer. Note: if the related policy to disable the Security page is enabled, this policy is ignored. <sup id="fnref:2:7"><a href="#fn:2" class="footnote" rel="footnote" role="doc-noteref">2</a></sup></li>
+    </ul>
+  </li>
+</ol>
+
+<h3 id="key-edge-security-policies-to-lock">Key Edge security policies to lock</h3>
+
+<p>Use a <strong>Settings Catalog</strong> profile for most policies (available as MDM CSPs) and supplement with an <strong>Administrative Templates</strong> profile for Enhanced Security Mode settings not yet available in the catalog.<sup id="fnref:4"><a href="#fn:4" class="footnote" rel="footnote" role="doc-noteref">4</a></sup><sup id="fnref:5"><a href="#fn:5" class="footnote" rel="footnote" role="doc-noteref">5</a></sup></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Policy name</th>
+      <th>Category</th>
+      <th>Recommended value</th>
+      <th>Available in Settings Catalog</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td><code class="language-plaintext highlighter-rouge">ConfigureMicrosoftDefenderSmartScreen</code></td>
+      <td>SmartScreen</td>
+      <td><strong>Enabled</strong></td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td><code class="language-plaintext highlighter-rouge">PreventSmartScreenPromptOverride</code></td>
+      <td>SmartScreen</td>
+      <td><strong>Enabled</strong></td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td><code class="language-plaintext highlighter-rouge">PreventSmartScreenPromptOverrideForFiles</code></td>
+      <td>SmartScreen</td>
+      <td><strong>Enabled</strong></td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td><code class="language-plaintext highlighter-rouge">SmartScreenBlockPotentiallyUnwantedApps</code></td>
+      <td>SmartScreen</td>
+      <td><strong>Enabled</strong></td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td><code class="language-plaintext highlighter-rouge">SecurityZones_DoNotAllowAddDeleteSites</code></td>
+      <td>Security Zones</td>
+      <td><strong>Enabled</strong></td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td><code class="language-plaintext highlighter-rouge">SecurityZones_DoNotAllowPolicyChanges</code></td>
+      <td>Security Zones</td>
+      <td><strong>Enabled</strong></td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td><code class="language-plaintext highlighter-rouge">SecurityZones_UseOnlyMachineSettings</code></td>
+      <td>Security Zones</td>
+      <td><strong>Enabled</strong></td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td><code class="language-plaintext highlighter-rouge">EnableSiteIsolationForEverySite</code></td>
+      <td>Site Isolation</td>
+      <td><strong>Enabled</strong></td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td><code class="language-plaintext highlighter-rouge">MinimumTLSVersion</code></td>
+      <td>TLS/SSL</td>
+      <td><strong>TLS 1.2</strong></td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td><code class="language-plaintext highlighter-rouge">PasswordManagerEnabled</code></td>
+      <td>Passwords</td>
+      <td><strong>Disabled</strong></td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td><code class="language-plaintext highlighter-rouge">PasswordExportEnabled</code></td>
+      <td>Passwords</td>
+      <td><strong>Disabled</strong></td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td><code class="language-plaintext highlighter-rouge">ConfigureDoNotTrack</code></td>
+      <td>Privacy</td>
+      <td><strong>Enabled</strong></td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td><code class="language-plaintext highlighter-rouge">AllowInPrivateBrowsing</code></td>
+      <td>Privacy</td>
+      <td><strong>Disabled</strong></td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td><code class="language-plaintext highlighter-rouge">DeveloperToolsAvailability</code></td>
+      <td>UI control</td>
+      <td><strong>1 — Do not allow</strong></td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td><code class="language-plaintext highlighter-rouge">URLBlocklist</code></td>
+      <td>UI control</td>
+      <td><code class="language-plaintext highlighter-rouge">edge://settings/*</code>, <code class="language-plaintext highlighter-rouge">edge://flags/*</code></td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>16</td>
+      <td><code class="language-plaintext highlighter-rouge">AllowExtensions</code></td>
+      <td>Extensions</td>
+      <td><strong>Disabled</strong></td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>17</td>
+      <td><code class="language-plaintext highlighter-rouge">EnhancedSecurityMode</code></td>
+      <td>Enhanced Security</td>
+      <td><strong>Enabled</strong></td>
+      <td><strong>ADMX only</strong></td>
+    </tr>
+    <tr>
+      <td>18</td>
+      <td><code class="language-plaintext highlighter-rouge">EnhancedSecurityModeAllowUserBypass</code></td>
+      <td>Enhanced Security</td>
+      <td><strong>Disabled</strong></td>
+      <td><strong>ADMX only</strong></td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="additional-related-information">Additional related information</h2>
+
+<ul>
+  <li>Configure Microsoft Edge policies to support enterprise privacy describes how to configure diagnostic data, telemetry, and data collection in enterprise deployments <a href="https://learn.microsoft.com/en-us/deployedge/microsoft-edge-enterprise-privacy-settings">Configure Microsoft Edge policies to support enterprise privacy</a></li>
+  <li>Windows device settings to allow or restrict features using Intune provides how to set the Enterprise Mode Site List Location for Edge desktop deployments <a href="https://learn.microsoft.com/en-us/intune/intune-service/configuration/device-restrictions-windows-10">Windows device settings to allow or restrict features using Intune</a></li>
+  <li>
+    <table>
+      <tbody>
+        <tr>
+          <td>ASD’s Blueprint for Secure Cloud describes endpoint management design decisions for Intune, including browser configuration deployment [ASD Blueprint: Endpoint management</td>
+          <td>ASD’s Blueprint for Secure Cloud](https://blueprint.asd.gov.au/design/platform/client/)</td>
+        </tr>
+      </tbody>
+    </table>
+  </li>
+  <li>Windows device settings in Intune for Education details classroom-focused controls such as blocking favorites, extensions, InPrivate browsing, and pop-ups <a href="https://learn.microsoft.com/en-us/intune-education/all-edu-settings-windows">Windows device settings in Intune for Education</a></li>
+</ul>
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:1">
+      <p>Essential Eight user application hardening (<a href="https://learn.microsoft.com/en-us/compliance/anz/e8-app-harden">https://learn.microsoft.com/en-us/compliance/anz/e8-app-harden</a>) <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a> <a href="#fnref:1:1" class="reversefootnote" role="doc-backlink">&#8617;<sup>2</sup></a> <a href="#fnref:1:2" class="reversefootnote" role="doc-backlink">&#8617;<sup>3</sup></a></p>
+    </li>
+    <li id="fn:2">
+      <p>Windows device settings to allow or restrict features using Intune (<a href="https://learn.microsoft.com/en-us/intune/intune-service/configuration/device-restrictions-windows-10">https://learn.microsoft.com/en-us/intune/intune-service/configuration/device-restrictions-windows-10</a>) <a href="#fnref:2" class="reversefootnote" role="doc-backlink">&#8617;</a> <a href="#fnref:2:1" class="reversefootnote" role="doc-backlink">&#8617;<sup>2</sup></a> <a href="#fnref:2:2" class="reversefootnote" role="doc-backlink">&#8617;<sup>3</sup></a> <a href="#fnref:2:3" class="reversefootnote" role="doc-backlink">&#8617;<sup>4</sup></a> <a href="#fnref:2:4" class="reversefootnote" role="doc-backlink">&#8617;<sup>5</sup></a> <a href="#fnref:2:5" class="reversefootnote" role="doc-backlink">&#8617;<sup>6</sup></a> <a href="#fnref:2:6" class="reversefootnote" role="doc-backlink">&#8617;<sup>7</sup></a> <a href="#fnref:2:7" class="reversefootnote" role="doc-backlink">&#8617;<sup>8</sup></a></p>
+    </li>
+    <li id="fn:3">
+      <p>LockdownFavorites policy for Microsoft Edge (<a href="https://learn.microsoft.com/en-us/deployedge/microsoft-edge-policies">https://learn.microsoft.com/en-us/deployedge/microsoft-edge-policies</a>) <a href="#fnref:3" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:4">
+      <p><a href="https://learn.microsoft.com/en-us/intune/intune-service/protect/security-baseline-v2-edge-settings">Microsoft Edge security baseline settings for Intune</a> <a href="#fnref:4" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:5">
+      <p><a href="https://learn.microsoft.com/en-us/deployedge/microsoft-edge-policies">Microsoft Edge browser policies reference</a> <a href="#fnref:5" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+
+    </div>
+
+    <div style="margin-bottom:20px; display:flex; justify-content:space-between; align-items:center;">
+      <div style="display:flex; gap:12px; align-items:center;">
+        <a href="/ISM-Controls-Guide-preview/" class="back-btn">HOME</a>
+
+        
+          <a class="prev-control back-btn" href="/ISM-Controls-Guide-preview/controls/ISM-1544.html" aria-label="Previous control">← ISM-1544</a>
+        
+      </div>
+
+      <div style="display:flex; gap:12px; align-items:center;">
+        
+          <a class="next-control back-btn" href="/ISM-Controls-Guide-preview/controls/ISM-1621.html" aria-label="Next control">ISM-1621 →</a>
+        
+      </div>
+    </div>
+  </div>
+  <script>
+    // Convert GitHub-style alerts [!NOTE], [!WARNING], etc. to styled callouts
+    document.querySelectorAll('blockquote').forEach(bq => {
+      const text = bq.innerHTML;
+      const match = text.match(/\[!(NOTE|WARNING|TIP|IMPORTANT|CAUTION)\]/i);
+      if (match) {
+        const type = match[1].toLowerCase();
+        const icons = { note: '📝', warning: '⚠️', tip: '💡', important: '📢', caution: '🚨' };
+        const titles = { note: 'Note', warning: 'Warning', tip: 'Tip', important: 'Important', caution: 'Caution' };
+        const content = text.replace(/\[!(NOTE|WARNING|TIP|IMPORTANT|CAUTION)\]\s*/i, '');
+        bq.className = 'callout callout-' + type;
+        bq.innerHTML = '<div class="callout-title">' + icons[type] + ' ' + titles[type] + '</div>' + content;
+      }
+    });
+  </script>
+  <footer class="site-footer" role="contentinfo" aria-label="Site footer" style="background:#161b22;border-top:1px solid #30363d;padding:20px 40px;margin-top:40px;">
+    <div style="max-width:900px;margin:0 auto;display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:space-between;">
+      <div style="color:#94a3b8;font-size:0.9rem;">
+        
+          Last updated: 2026-02-18 06:16 UTC
+        
+      </div>
+      <div style="color:#94a3b8;font-size:0.9rem;text-align:right;max-width:620px;">
+        <strong style="color:#e6edf3;">AI-generated content:</strong> This site contains AI-assisted content created from primary sources and may contain errors or be out of date. Always verify with official documentation. See <a href="https://e8guide.com/about" style="color:#58a6ff;text-decoration:none;">About</a> for details.
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

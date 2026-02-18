@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Credentials for break glass accounts, local administrator accounts and service accounts are long, unique, unpredictable and managed. - Essential 8 Guide</title>
+  <!-- Canonical URL -->
+<link rel="canonical" href="https://e8guide.com/controls/ISM-1685.html">
+
+<!-- Meta description --><meta name="description" content="Credentials for break glass accounts, local administrator accounts and service accounts are long, unique, unpredictable and managed.">
+
+<!-- Google Search Console ownership verification -->
+
+<meta name="google-site-verification" content="">
+
+
+<!-- Open Graph / Social sharing -->
+<meta property="og:title" content="Credentials for break glass accounts, local administrator accounts and service accounts are long, unique, unpredictable and managed. - Essential 8 Guide">
+<meta property="og:description" content="Credentials for break glass accounts, local administrator accounts and service accounts are long, unique, unpredictable and managed.">
+<meta property="og:url" content="https://e8guide.com/controls/ISM-1685.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Essential 8 Guide">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Credentials for break glass accounts, local administrator accounts and service accounts are long, unique, unpredictable and managed. - Essential 8 Guide">
+<meta name="twitter:description" content="Credentials for break glass accounts, local administrator accounts and service accounts are long, unique, unpredictable and managed.">
+
+<!-- Emoji favicon — no image file required -->
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>&#x1F6E1;&#xFE0F;</text></svg>">
+
+  
+<!-- Google Analytics (GA4) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id="></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', '');
+</script>
+
+
+  <link rel="stylesheet" href="/ISM-Controls-Guide-preview/assets/css/main.css">
+  <style>
+    /* Page-specific styles */
+    .container {
+      max-width: 900px;
+    }
+    .content-card {
+      padding: 40px;
+    }
+    .content-card h1 {
+      padding-bottom: 15px;
+      border-bottom: 1px solid #30363d;
+    }
+    /* Footnotes styling */
+    .footnotes {
+      margin-top: 40px;
+      padding-top: 20px;
+      border-top: 1px solid #30363d;
+      font-size: 0.9rem;
+    }
+    .footnotes ol { color: #8b949e; }
+    .footnote { color: #58a6ff; font-size: 0.85em; vertical-align: super; }
+    .reversefootnote { color: #58a6ff; }
+    /* GitHub-style alerts/callouts */
+    .callout {
+      padding: 16px 20px;
+      margin: 20px 0;
+      border-radius: 6px;
+      border-left: 4px solid;
+    }
+    .callout-title {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+    .callout-title svg { flex-shrink: 0; }
+    .callout p { margin: 0; color: #e6edf3; }
+    .callout-note {
+      background: rgba(88, 166, 255, 0.1);
+      border-color: #58a6ff;
+    }
+    .callout-note .callout-title { color: #58a6ff; }
+    .callout-warning {
+      background: rgba(210, 153, 34, 0.1);
+      border-color: #d29922;
+    }
+    .callout-warning .callout-title { color: #d29922; }
+    .callout-tip {
+      background: rgba(63, 185, 80, 0.1);
+      border-color: #3fb950;
+    }
+    .callout-tip .callout-title { color: #3fb950; }
+    .callout-important {
+      background: rgba(168, 113, 255, 0.1);
+      border-color: #a371f7;
+    }
+    .callout-important .callout-title { color: #a371f7; }
+    .callout-caution {
+      background: rgba(248, 81, 73, 0.1);
+      border-color: #f85149;
+    }
+    .callout-caution .callout-title { color: #f85149; }
+  </style>
+  <!-- JSON-LD structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "TechArticle",
+    "name": "ISM-1685",
+    "headline": "Credentials for break glass accounts, local administrator accounts and service accounts are long, unique, u...",
+    "description": "Credentials for break glass accounts, local administrator accounts and service accounts are long, unique, unpredictable and managed.",
+    "url": "https://e8guide.com/controls/ISM-1685.html",
+    "dateModified": "2026-02-13",
+    "inLanguage": "en-AU",
+    "author": {
+      "@type": "Organization",
+      "name": "Essential 8 Guide",
+      "url": "https://e8guide.com"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Essential 8 Guide",
+      "url": "https://e8guide.com"
+    },
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": "Essential 8 Guide",
+      "url": "https://e8guide.com"
+    }
+  }
+  </script>
+</head>
+<body><div style="background:#d29922;color:#0d1117;padding:6px 16px;font-size:0.85rem;text-align:center;position:sticky;top:0;z-index:9999;">⚠️ PREVIEW — branch: research-review-controls — <a href="https://e8guide.com" style="color:#0d1117;font-weight:bold;">production site</a></div>
+  <div class="header">
+  <div class="header-content">
+    <h1>🛡️ Essential 8 Guide</h1>
+    <p>Implementation guidance for Australian Essential Eight controls in Microsoft environments - ISM controls with PSPF mappings</p>
+  </div>
+  <a href="/ISM-Controls-Guide-preview/about" class="about-link">About</a>
+</div>
+
+  <div class="container">
+    <div style="margin-bottom:20px; display:flex; justify-content:space-between; align-items:center;">
+      <div style="display:flex; gap:12px; align-items:center;">
+      <a href="/ISM-Controls-Guide-preview/" class="back-btn">HOME</a>
+
+      
+      
+      
+      
+
+
+      
+      
+      
+      
+      
+
+      
+        
+        
+        <a class="prev-control back-btn" href="/ISM-Controls-Guide-preview/controls/ISM-1683.html" aria-label="Previous control">← ISM-1683</a>
+      
+    </div>
+
+    <div style="display:flex; gap:12px; align-items:center;">
+      
+        
+        
+        <a class="next-control back-btn" href="/ISM-Controls-Guide-preview/controls/ISM-1686.html" aria-label="Next control">ISM-1686 →</a>
+      
+    </div>
+  </div>
+    <div class="content-card">
+      <h2 id="credentials-for-break-glass-accounts-local-administrator-accounts-and-service-accounts-are-long-unique-unpredictable-and-managed">Credentials for break glass accounts, local administrator accounts and service accounts are long, unique, unpredictable and managed.</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Property</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>ISM Control</strong></td>
+      <td>ISM-1685</td>
+    </tr>
+    <tr>
+      <td><strong>Revision</strong></td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td><strong>Updated</strong></td>
+      <td>Jun-23</td>
+    </tr>
+    <tr>
+      <td><strong>Guideline</strong></td>
+      <td>Not provided</td>
+    </tr>
+    <tr>
+      <td><strong>Section</strong></td>
+      <td>Authentication hardening</td>
+    </tr>
+    <tr>
+      <td><strong>Topic</strong></td>
+      <td>Setting credentials for built-in Administrator accounts, break glass accounts, local administrator accounts and service accounts</td>
+    </tr>
+    <tr>
+      <td><strong>Essential Eight</strong></td>
+      <td>ML2, ML3</td>
+    </tr>
+    <tr>
+      <td><strong>PSPF Levels</strong></td>
+      <td>NC, OS, P, S, TS</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="summary">Summary</h2>
+
+<p>Establish break-glass emergency access accounts with randomly generated passwords and a physical FIDO2 key for phishing-resistant MFA to ensure secure, auditable access during outages. Monitor sign-in and audit logs and validate accounts regularly to maintain accountability and incident readiness.<sup id="fnref:1"><a href="#fn:1" class="footnote" rel="footnote" role="doc-noteref">1</a></sup><sup id="fnref:2"><a href="#fn:2" class="footnote" rel="footnote" role="doc-noteref">2</a></sup></p>
+
+<h3 id="justification">Justification</h3>
+
+<p>Emergency access (break-glass) accounts represent the <strong>highest-privilege, lowest-frequency-use</strong> credential class. Their security requirements differ from regular admin accounts in three ways:</p>
+
+<p><strong>1. Why FIDO2 rather than TOTP/push:</strong></p>
+
+<ul>
+  <li>TOTP apps are software-only and vulnerable to phishing, SIM-swap, and authenticator-app malware — a single-device compromise can defeat them.</li>
+  <li>FIDO2 security keys provide <strong>hardware-bound, verifier-impersonation-resistant</strong> authentication (NIST SP 800-63 AAL3). The private key never leaves the physical device, making phishing-based credential theft impossible.</li>
+  <li>Break-glass use is tied to an infrastructure outage scenario (Azure MFA down, IdP unreachable). A FIDO2 key operates independently of cloud services, while push notifications require the MFA cloud service to be available.</li>
+  <li>Microsoft guidance explicitly recommends FIDO2 or certificate-based authentication for emergency accounts to ensure access during service disruptions.</li>
+</ul>
+
+<p><strong>2. Why cloud-only (not federated):</strong></p>
+
+<p>If an on-premises AD or federation service is unavailable (the primary outage scenario for break-glass use), federated or synced accounts cannot authenticate. Cloud-only accounts authenticate directly against Entra ID.</p>
+
+<p><strong>3. Monitoring requirements:</strong></p>
+
+<p>Any sign-in from a break-glass account — successful or failed — is a security event requiring immediate investigation. Key Entra ID Protection signals to monitor:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Signal</th>
+      <th>Why critical</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Leaked credentials</strong></td>
+      <td>Immediately grants king-of-the-castle access</td>
+    </tr>
+    <tr>
+      <td><strong>Impossible travel / atypical location</strong></td>
+      <td>Emergency accounts are rarely (if ever) used</td>
+    </tr>
+    <tr>
+      <td><strong>Anonymous or malicious IP</strong></td>
+      <td>Attacker concealment technique</td>
+    </tr>
+    <tr>
+      <td><strong>Authentication method or role change</strong></td>
+      <td>High-impact configuration event</td>
+    </tr>
+    <tr>
+      <td><strong>CA policy blocked sign-in (error 53003)</strong></td>
+      <td>May indicate misconfigured exclusions</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="design-decision">Design Decision</h2>
+
+<blockquote>
+  <p>[!NOTE]
+The <strong>Emergency Access Accounts</strong> will be created in <strong>Microsoft Entra ID</strong> with randomly generated passwords and a <strong>FIDO2 passkey</strong> for MFA provided. They will be configured as cloud-only accounts with a Global Administrator role to ensure break-glass capability during outages.</p>
+</blockquote>
+
+<h2 id="prerequisites">Prerequisites</h2>
+
+<ul>
+  <li><strong>Permissions/Roles</strong>
+    <ul>
+      <li>At least two cloud-only emergency access accounts with the <strong>Global Administrator</strong> role in <strong>Microsoft Entra ID</strong>.<sup id="fnref:1:1"><a href="#fn:1" class="footnote" rel="footnote" role="doc-noteref">1</a></sup></li>
+      <li>Emergency access accounts must use passwordless authentication methods: <strong>Passkey (FIDO2)</strong> or <strong>Certificate-based authentication</strong>.<sup id="fnref:1:2"><a href="#fn:1" class="footnote" rel="footnote" role="doc-noteref">1</a></sup></li>
+      <li>Require phishing-resistant MFA for all emergency accounts.<sup id="fnref:1:3"><a href="#fn:1" class="footnote" rel="footnote" role="doc-noteref">1</a></sup></li>
+    </ul>
+  </li>
+  <li><strong>Dependencies</strong>
+    <ul>
+      <li>Emergency access accounts must be cloud-only (not federated or synchronized from on-premises).<sup id="fnref:1:4"><a href="#fn:1" class="footnote" rel="footnote" role="doc-noteref">1</a></sup></li>
+      <li>If passwords are used in addition to passwordless methods, generate strong, randomly generated passwords of at least 32 characters, configured to never expire; implement dual control by storing credentials in separate secure physical locations and document retrieval procedures.<sup id="fnref:2:1"><a href="#fn:2" class="footnote" rel="footnote" role="doc-noteref">2</a></sup></li>
+      <li>Monitoring and alerting: enable sign-in and audit log monitoring using <strong>Azure Monitor</strong> or <strong>Microsoft Sentinel</strong>, with real-time alerts for emergency account activity.<sup id="fnref:2:2"><a href="#fn:2" class="footnote" rel="footnote" role="doc-noteref">2</a></sup></li>
+      <li>Runbooks and testing: maintain written runbooks detailing the complete emergency access process; perform quarterly testing; rotate credentials every 90 days or after personnel changes; train authorized administrators on break-glass procedures.<sup id="fnref:2:3"><a href="#fn:2" class="footnote" rel="footnote" role="doc-noteref">2</a></sup></li>
+      <li>Store account credentials safely.<sup id="fnref:1:5"><a href="#fn:1" class="footnote" rel="footnote" role="doc-noteref">1</a></sup></li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="implementation-steps">Implementation Steps</h2>
+
+<h3 id="create-break-glass-emergency-access-accounts-with-random-passwords-and-fido2-mfa">Create break-glass emergency access accounts with random passwords and FIDO2 MFA</h3>
+
+<ol>
+  <li>
+    <p>Create emergency access accounts: Provision two cloud-only accounts (<a href="mailto:EmergencyAccess01@contoso.onmicrosoft.com">EmergencyAccess01@contoso.onmicrosoft.com</a>, <a href="mailto:BreakGlass02@contoso.onmicrosoft.com">BreakGlass02@contoso.onmicrosoft.com</a>) with the <strong>Global Administrator</strong> role in Microsoft Entra ID; ensure accounts are not federated or synchronized from on-premises AD; use descriptive names that clearly identify their purpose.<sup id="fnref:2:4"><a href="#fn:2" class="footnote" rel="footnote" role="doc-noteref">2</a></sup><sup id="fnref:1:6"><a href="#fn:1" class="footnote" rel="footnote" role="doc-noteref">1</a></sup></p>
+  </li>
+  <li>
+    <p>Secure credentials with dual control: Generate strong, randomly generated passwords of at least <strong>32 characters</strong> configured to never expire; implement <strong>dual control</strong> by splitting credentials into multiple parts stored in separate secure physical locations, accessible only with multi-person approval.<sup id="fnref:1:7"><a href="#fn:1" class="footnote" rel="footnote" role="doc-noteref">1</a></sup></p>
+  </li>
+  <li>
+    <p>Configure passwordless authentication with MFA: Configure emergency access accounts to use passwordless authentication, preferably <strong>FIDO2 passkeys</strong>; or use <strong>certificate-based authentication</strong> if PKI is in place; require <strong>phishing-resistant MFA</strong> for all emergency accounts.<sup id="fnref:2:5"><a href="#fn:2" class="footnote" rel="footnote" role="doc-noteref">2</a></sup></p>
+  </li>
+  <li>
+    <p>Configure Conditional Access exclusions: Exclude at least one emergency account from all <strong>Conditional Access</strong> policies and MFA requirements to guarantee access during service disruptions; optionally secure the second account with <strong>FIDO2 security keys</strong> stored in secure locations.<sup id="fnref:2:6"><a href="#fn:2" class="footnote" rel="footnote" role="doc-noteref">2</a></sup></p>
+  </li>
+  <li>
+    <p>Enable monitoring and alerting: Configure <strong>Azure Monitor</strong> or <strong>Microsoft Sentinel</strong> to analyze sign-in and audit logs; create real-time alerts triggering on any emergency account authentication or configuration change; establish incident response procedures requiring immediate security team notification and justification documentation for all emergency account usage.<sup id="fnref:2:7"><a href="#fn:2" class="footnote" rel="footnote" role="doc-noteref">2</a></sup></p>
+  </li>
+  <li>
+    <p>Establish testing and maintenance procedures: Test emergency account access quarterly; rotate credentials every <strong>90 days</strong> or immediately following personnel changes affecting authorized users; train authorized administrators on break-glass procedures including credential retrieval and incident documentation; maintain written runbooks documenting the complete emergency access process for compliance and operational readiness.<sup id="fnref:2:8"><a href="#fn:2" class="footnote" rel="footnote" role="doc-noteref">2</a></sup></p>
+  </li>
+</ol>
+
+<h3 id="recommended-enterprise-fido2-security-keys">Recommended Enterprise FIDO2 Security Keys</h3>
+
+<p>The following FIDO2 security keys are attested with Microsoft Entra ID and commonly deployed in Australian enterprise and government environments. Each model’s AAGUID is published in the <a href="https://learn.microsoft.com/en-us/entra/identity/authentication/concept-fido2-hardware-vendor">Microsoft Entra FIDO2 hardware vendor attestation list</a>.<sup id="fnref:3"><a href="#fn:3" class="footnote" rel="footnote" role="doc-noteref">3</a></sup></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Brand / Model</th>
+      <th>USB</th>
+      <th>NFC</th>
+      <th>Bio</th>
+      <th>Example AAGUID</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>YubiKey 5 NFC</strong> (Yubico)</td>
+      <td>✅</td>
+      <td>✅</td>
+      <td>❌</td>
+      <td><code class="language-plaintext highlighter-rouge">fa2b99dc-9e39-4257-8f92-4a30d23c4118</code></td>
+      <td>Most widely deployed enterprise FIDO2 key. Multi-protocol (FIDO2, Smart Card, OTP). Recommended first choice.</td>
+    </tr>
+    <tr>
+      <td><strong>YubiKey 5C NFC</strong> (Yubico)</td>
+      <td>✅ USB-C</td>
+      <td>✅</td>
+      <td>❌</td>
+      <td><code class="language-plaintext highlighter-rouge">2fc0579f-8113-47ea-b116-bb5a8db9202a</code></td>
+      <td>USB-C variant suited for modern laptops and tablets.</td>
+    </tr>
+    <tr>
+      <td><strong>Security Key NFC by Yubico — Enterprise Edition</strong> (Yubico)</td>
+      <td>✅</td>
+      <td>✅</td>
+      <td>❌</td>
+      <td><code class="language-plaintext highlighter-rouge">ed042a3a-4b22-4455-bb69-a267b652ae7e</code></td>
+      <td>FIDO2-only (no Smart Card/OTP). Lower cost; Enterprise Profile AAGUID available for simplified org management.</td>
+    </tr>
+    <tr>
+      <td><strong>YubiKey Bio Series — Multi-protocol Edition</strong> (Yubico)</td>
+      <td>✅</td>
+      <td>❌</td>
+      <td>✅ fingerprint</td>
+      <td><code class="language-plaintext highlighter-rouge">90636e1f-ef82-43bf-bdcf-5255f139d12f</code></td>
+      <td>Biometric fingerprint instead of PIN. FIDO2 + Smart Card. Recommended for high-assurance or no-PIN-entry policy.</td>
+    </tr>
+    <tr>
+      <td><strong>YubiKey 5 FIPS Series with NFC</strong> (Yubico)</td>
+      <td>✅</td>
+      <td>✅</td>
+      <td>❌</td>
+      <td><code class="language-plaintext highlighter-rouge">fcc0118f-cd45-435b-8da1-9782b2da0715</code></td>
+      <td>FIPS 140-2 validated; required by some government and defence-sector security frameworks.</td>
+    </tr>
+    <tr>
+      <td><strong>Google Titan Security Key v2</strong> (Google)</td>
+      <td>✅</td>
+      <td>✅</td>
+      <td>❌</td>
+      <td><code class="language-plaintext highlighter-rouge">42b4fb4a-2866-43b2-9bf7-6c6669c2e5d3</code></td>
+      <td>Cost-effective FIDO2-only key; single AAGUID simplifies attestation configuration.</td>
+    </tr>
+    <tr>
+      <td><strong>HID Crescendo Key V3</strong> (HID Global)</td>
+      <td>✅</td>
+      <td>✅</td>
+      <td>❌</td>
+      <td><code class="language-plaintext highlighter-rouge">7991798a-a7f3-487f-98c0-3faf7a458a04</code></td>
+      <td>Enterprise smart card + FIDO2. Common where physical and logical access convergence on a single form factor is required.</td>
+    </tr>
+    <tr>
+      <td><strong>Feitian ePass FIDO2-NFC</strong> (Feitian)</td>
+      <td>✅</td>
+      <td>✅</td>
+      <td>❌</td>
+      <td><code class="language-plaintext highlighter-rouge">ee041bce-25e5-4cdb-8f86-897fd6418464</code></td>
+      <td>Cost-effective enterprise option; widely available in Australia for fleet deployments.</td>
+    </tr>
+    <tr>
+      <td><strong>Feitian BioPass FIDO2 Plus</strong> (Feitian)</td>
+      <td>✅</td>
+      <td>❌</td>
+      <td>✅ fingerprint</td>
+      <td><code class="language-plaintext highlighter-rouge">b6ede29c-3772-412c-8a78-539c1f4c62d2</code></td>
+      <td>Biometric + FIDO2; cost-effective alternative to YubiKey Bio for fingerprint-policy requirements.</td>
+    </tr>
+  </tbody>
+</table>
+
+<blockquote>
+  <p>[!NOTE]
+A single hardware model typically has <strong>multiple AAGUIDs</strong> across firmware versions, enterprise profile variants, and product revisions. When restricting by AAGUID, add all relevant AAGUIDs for the intended product family \u2014 the YubiKey 5 NFC family alone has 10+ distinct AAGUIDs. Always verify against the <a href="https://learn.microsoft.com/en-us/entra/identity/authentication/concept-fido2-hardware-vendor">Microsoft Entra FIDO2 hardware vendor attestation list</a> before finalising the approved list.<sup id="fnref:3:1"><a href="#fn:3" class="footnote" rel="footnote" role="doc-noteref">3</a></sup></p>
+</blockquote>
+
+<h3 id="restricting-fido2-keys-by-brand-or-model-device-attestation">Restricting FIDO2 Keys by Brand or Model (Device Attestation)</h3>
+
+<p>Microsoft Entra ID supports <strong>AAGUID-based restriction</strong> of FIDO2 security keys using Custom Authentication Strengths in Conditional Access. This allows organisations to enforce that only pre-approved key models (e.g., YubiKey 5 NFC only, or YubiKey + HID Crescendo) can satisfy FIDO2 authentication \u2014 preventing the use of unvetted consumer-grade or unapproved devices.</p>
+
+<h4 id="step-1-u2014-enable-attestation-enforcement-for-passkeys-fido2">Step 1 \u2014 Enable attestation enforcement for passkeys (FIDO2)</h4>
+
+<p>Attestation must be enabled before AAGUID filtering takes effect. Without enforced attestation, Entra ID accepts any FIDO2-compliant key regardless of AAGUID.</p>
+
+<ol>
+  <li>In the <a href="https://entra.microsoft.com">Microsoft Entra admin center</a>, browse to <strong>Authentication methods</strong> &gt; <strong>Policies</strong> &gt; <strong>Passkeys (FIDO2)</strong>.<sup id="fnref:3:2"><a href="#fn:3" class="footnote" rel="footnote" role="doc-noteref">3</a></sup></li>
+  <li>Set <strong>Enforce attestation</strong> to <strong>Yes</strong> and save.</li>
+</ol>
+
+<p>Keys registered after this point must have a FIDO Alliance MDS-validated attestation chain. Previously registered keys without a valid attestation will no longer satisfy authentication.</p>
+
+<h4 id="step-2-u2014-create-a-custom-authentication-strength-with-approved-aaguids">Step 2 \u2014 Create a custom Authentication Strength with approved AAGUIDs</h4>
+
+<ol>
+  <li>Browse to <strong>Entra ID</strong> &gt; <strong>Authentication methods</strong> &gt; <strong>Authentication strengths</strong>.<sup id="fnref:3:3"><a href="#fn:3" class="footnote" rel="footnote" role="doc-noteref">3</a></sup></li>
+  <li>Select <strong>New authentication strength</strong>; provide a name (e.g., <code class="language-plaintext highlighter-rouge">Approved FIDO2 Keys \u2014 [Organisation]</code>).</li>
+  <li>Select <strong>Passkeys (FIDO2)</strong> as the allowed method.</li>
+  <li>Select <strong>Advanced options</strong> &gt; <strong>Add AAGUID</strong>.</li>
+  <li>Enter each AAGUID for every approved key model and firmware variant. For a YubiKey-only policy, add all AAGUIDs for the chosen product lines from the Microsoft Entra attestation list.</li>
+  <li>Select <strong>Save</strong>, then <strong>Next</strong>, then <strong>Create</strong>.<sup id="fnref:3:4"><a href="#fn:3" class="footnote" rel="footnote" role="doc-noteref">3</a></sup></li>
+</ol>
+
+<blockquote>
+  <p>[!TIP]
+<strong>YubiKey Enterprise Program:</strong> YubiKey 5 Series and Security Key Series keys purchased through the <a href="https://www.yubico.com/products/yubikey-as-a-service/">YubiEnterprise Subscription</a> can be provisioned with an <strong>Enterprise Profile AAGUID</strong> \u2014 a single organisation-specific AAGUID assigned to an entire batch. This dramatically simplifies AAGUID management: instead of tracking 10+ AAGUIDs per product line, you manage one. Enterprise Profile variants appear in the Microsoft Entra attestation list with <code class="language-plaintext highlighter-rouge">(Enterprise Profile)</code> in the description. HID Crescendo similarly offers an enterprise/managed profile variant.</p>
+</blockquote>
+
+<h4 id="step-3-u2014-apply-the-custom-strength-to-conditional-access-policies">Step 3 \u2014 Apply the custom strength to Conditional Access policies</h4>
+
+<ol>
+  <li>Navigate to <strong>Entra ID</strong> &gt; <strong>Security</strong> &gt; <strong>Conditional Access</strong> &gt; <strong>Policies</strong> and open the relevant CA policy.</li>
+  <li>Under <strong>Grant</strong>, select <strong>Require authentication strength</strong> and choose the custom strength (e.g., <code class="language-plaintext highlighter-rouge">Approved FIDO2 Keys \u2014 [Organisation]</code>) instead of the built-in <strong>Phishing-resistant MFA</strong> strength.</li>
+  <li>Save and enable the policy. Users presenting a key whose AAGUID is not in the approved list receive CA error <strong>53003</strong> (authentication strength not satisfied).<sup id="fnref:3:5"><a href="#fn:3" class="footnote" rel="footnote" role="doc-noteref">3</a></sup></li>
+</ol>
+
+<blockquote>
+  <p>[!WARNING]
+Before enforcing, verify that <strong>all currently registered FIDO2 keys for emergency accounts are in the approved AAGUID list</strong>, or re-register them with an approved key. A user whose registered key AAGUID is not in the list will be completely blocked.</p>
+</blockquote>
+
+<h2 id="additional-related-information">Additional related information</h2>
+
+<ul>
+  <li>
+    <p>Local Administrator Password Solution provides per-device random local admin passwords rotated and stored with restricted ACLs for secure local admin management <a href="https://www.microsoft.com/download/details.aspx?id=46899">Local Administrator Password Solution</a></p>
+  </li>
+  <li>
+    <p>Deploy Windows LAPS policy with Microsoft Intune guides how to enforce Windows LAPS to rotate strong, unique local admin passwords across devices in Zero Trust environments <a href="https://learn.microsoft.com/en-us/intune/intune-service/protect/windows-laps-policy#create-a-laps-policy">Deploy Windows LAPS policy with Microsoft Intune</a></p>
+  </li>
+  <li>
+    <p>ASD Blueprint: Restrict administrative privileges outlines essential eight guidance on limiting break-glass and admin privileges to reduce risk <a href="https://blueprint.asd.gov.au/security-and-governance/essential-eight/restrict-administrative-privileges/">ASD Blueprint: Restrict administrative privileges</a></p>
+  </li>
+  <li>
+    <p>Managing service accounts (ML2) highlights long, unique, unpredictable credentials for service accounts and OS-driven password management (gMSAs) <a href="https://learn.microsoft.com/en-us/compliance/anz/e8-admin">Managing service accounts (ML2)</a></p>
+  </li>
+</ul>
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:1">
+      <p><a href="https://learn.microsoft.com/en-us/entra/identity/role-based-access-control/security-emergency-access">Manage emergency access accounts in Microsoft Entra ID</a> <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a> <a href="#fnref:1:1" class="reversefootnote" role="doc-backlink">&#8617;<sup>2</sup></a> <a href="#fnref:1:2" class="reversefootnote" role="doc-backlink">&#8617;<sup>3</sup></a> <a href="#fnref:1:3" class="reversefootnote" role="doc-backlink">&#8617;<sup>4</sup></a> <a href="#fnref:1:4" class="reversefootnote" role="doc-backlink">&#8617;<sup>5</sup></a> <a href="#fnref:1:5" class="reversefootnote" role="doc-backlink">&#8617;<sup>6</sup></a> <a href="#fnref:1:6" class="reversefootnote" role="doc-backlink">&#8617;<sup>7</sup></a> <a href="#fnref:1:7" class="reversefootnote" role="doc-backlink">&#8617;<sup>8</sup></a></p>
+    </li>
+    <li id="fn:2">
+      <p><a href="https://learn.microsoft.com/en-us/security/benchmark/azure/mcsb-v2-privileged-access">PA-5: Set up emergency access</a> <a href="#fnref:2" class="reversefootnote" role="doc-backlink">&#8617;</a> <a href="#fnref:2:1" class="reversefootnote" role="doc-backlink">&#8617;<sup>2</sup></a> <a href="#fnref:2:2" class="reversefootnote" role="doc-backlink">&#8617;<sup>3</sup></a> <a href="#fnref:2:3" class="reversefootnote" role="doc-backlink">&#8617;<sup>4</sup></a> <a href="#fnref:2:4" class="reversefootnote" role="doc-backlink">&#8617;<sup>5</sup></a> <a href="#fnref:2:5" class="reversefootnote" role="doc-backlink">&#8617;<sup>6</sup></a> <a href="#fnref:2:6" class="reversefootnote" role="doc-backlink">&#8617;<sup>7</sup></a> <a href="#fnref:2:7" class="reversefootnote" role="doc-backlink">&#8617;<sup>8</sup></a> <a href="#fnref:2:8" class="reversefootnote" role="doc-backlink">&#8617;<sup>9</sup></a></p>
+    </li>
+    <li id="fn:3">
+      <p><a href="https://learn.microsoft.com/en-us/entra/identity/authentication/concept-fido2-hardware-vendor">Microsoft Entra ID attestation for passkey (FIDO2) vendors</a> <a href="#fnref:3" class="reversefootnote" role="doc-backlink">&#8617;</a> <a href="#fnref:3:1" class="reversefootnote" role="doc-backlink">&#8617;<sup>2</sup></a> <a href="#fnref:3:2" class="reversefootnote" role="doc-backlink">&#8617;<sup>3</sup></a> <a href="#fnref:3:3" class="reversefootnote" role="doc-backlink">&#8617;<sup>4</sup></a> <a href="#fnref:3:4" class="reversefootnote" role="doc-backlink">&#8617;<sup>5</sup></a> <a href="#fnref:3:5" class="reversefootnote" role="doc-backlink">&#8617;<sup>6</sup></a></p>
+    </li>
+  </ol>
+</div>
+
+    </div>
+
+    <div style="margin-bottom:20px; display:flex; justify-content:space-between; align-items:center;">
+      <div style="display:flex; gap:12px; align-items:center;">
+        <a href="/ISM-Controls-Guide-preview/" class="back-btn">HOME</a>
+
+        
+          <a class="prev-control back-btn" href="/ISM-Controls-Guide-preview/controls/ISM-1683.html" aria-label="Previous control">← ISM-1683</a>
+        
+      </div>
+
+      <div style="display:flex; gap:12px; align-items:center;">
+        
+          <a class="next-control back-btn" href="/ISM-Controls-Guide-preview/controls/ISM-1686.html" aria-label="Next control">ISM-1686 →</a>
+        
+      </div>
+    </div>
+  </div>
+  <script>
+    // Convert GitHub-style alerts [!NOTE], [!WARNING], etc. to styled callouts
+    document.querySelectorAll('blockquote').forEach(bq => {
+      const text = bq.innerHTML;
+      const match = text.match(/\[!(NOTE|WARNING|TIP|IMPORTANT|CAUTION)\]/i);
+      if (match) {
+        const type = match[1].toLowerCase();
+        const icons = { note: '📝', warning: '⚠️', tip: '💡', important: '📢', caution: '🚨' };
+        const titles = { note: 'Note', warning: 'Warning', tip: 'Tip', important: 'Important', caution: 'Caution' };
+        const content = text.replace(/\[!(NOTE|WARNING|TIP|IMPORTANT|CAUTION)\]\s*/i, '');
+        bq.className = 'callout callout-' + type;
+        bq.innerHTML = '<div class="callout-title">' + icons[type] + ' ' + titles[type] + '</div>' + content;
+      }
+    });
+  </script>
+  <footer class="site-footer" role="contentinfo" aria-label="Site footer" style="background:#161b22;border-top:1px solid #30363d;padding:20px 40px;margin-top:40px;">
+    <div style="max-width:900px;margin:0 auto;display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:space-between;">
+      <div style="color:#94a3b8;font-size:0.9rem;">
+        
+          Last updated: 2026-02-18 21:31 UTC
+        
+      </div>
+      <div style="color:#94a3b8;font-size:0.9rem;text-align:right;max-width:620px;">
+        <strong style="color:#e6edf3;">AI-generated content:</strong> This site contains AI-assisted content created from primary sources and may contain errors or be out of date. Always verify with official documentation. See <a href="https://e8guide.com/about" style="color:#58a6ff;text-decoration:none;">About</a> for details.
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

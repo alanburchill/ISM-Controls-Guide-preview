@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PowerShell is configured to use Constrained Language Mode. - Essential 8 Guide</title>
+  <!-- Canonical URL -->
+<link rel="canonical" href="https://e8guide.com/controls/ISM-1622.html">
+
+<!-- Meta description --><meta name="description" content="PowerShell is configured to use Constrained Language Mode.">
+
+<!-- Google Search Console ownership verification -->
+
+<meta name="google-site-verification" content="">
+
+
+<!-- Open Graph / Social sharing -->
+<meta property="og:title" content="PowerShell is configured to use Constrained Language Mode. - Essential 8 Guide">
+<meta property="og:description" content="PowerShell is configured to use Constrained Language Mode.">
+<meta property="og:url" content="https://e8guide.com/controls/ISM-1622.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Essential 8 Guide">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="PowerShell is configured to use Constrained Language Mode. - Essential 8 Guide">
+<meta name="twitter:description" content="PowerShell is configured to use Constrained Language Mode.">
+
+<!-- Emoji favicon — no image file required -->
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>&#x1F6E1;&#xFE0F;</text></svg>">
+
+  
+<!-- Google Analytics (GA4) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id="></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', '');
+</script>
+
+
+  <link rel="stylesheet" href="/ISM-Controls-Guide-preview/assets/css/main.css">
+  <style>
+    /* Page-specific styles */
+    .container {
+      max-width: 900px;
+    }
+    .content-card {
+      padding: 40px;
+    }
+    .content-card h1 {
+      padding-bottom: 15px;
+      border-bottom: 1px solid #30363d;
+    }
+    /* Footnotes styling */
+    .footnotes {
+      margin-top: 40px;
+      padding-top: 20px;
+      border-top: 1px solid #30363d;
+      font-size: 0.9rem;
+    }
+    .footnotes ol { color: #8b949e; }
+    .footnote { color: #58a6ff; font-size: 0.85em; vertical-align: super; }
+    .reversefootnote { color: #58a6ff; }
+    /* GitHub-style alerts/callouts */
+    .callout {
+      padding: 16px 20px;
+      margin: 20px 0;
+      border-radius: 6px;
+      border-left: 4px solid;
+    }
+    .callout-title {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+    .callout-title svg { flex-shrink: 0; }
+    .callout p { margin: 0; color: #e6edf3; }
+    .callout-note {
+      background: rgba(88, 166, 255, 0.1);
+      border-color: #58a6ff;
+    }
+    .callout-note .callout-title { color: #58a6ff; }
+    .callout-warning {
+      background: rgba(210, 153, 34, 0.1);
+      border-color: #d29922;
+    }
+    .callout-warning .callout-title { color: #d29922; }
+    .callout-tip {
+      background: rgba(63, 185, 80, 0.1);
+      border-color: #3fb950;
+    }
+    .callout-tip .callout-title { color: #3fb950; }
+    .callout-important {
+      background: rgba(168, 113, 255, 0.1);
+      border-color: #a371f7;
+    }
+    .callout-important .callout-title { color: #a371f7; }
+    .callout-caution {
+      background: rgba(248, 81, 73, 0.1);
+      border-color: #f85149;
+    }
+    .callout-caution .callout-title { color: #f85149; }
+  </style>
+  <!-- JSON-LD structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "TechArticle",
+    "name": "ISM-1622",
+    "headline": "PowerShell is configured to use Constrained Language Mode.",
+    "description": "PowerShell is configured to use Constrained Language Mode.",
+    "url": "https://e8guide.com/controls/ISM-1622.html",
+    "dateModified": "2026-02-13",
+    "inLanguage": "en-AU",
+    "author": {
+      "@type": "Organization",
+      "name": "Essential 8 Guide",
+      "url": "https://e8guide.com"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Essential 8 Guide",
+      "url": "https://e8guide.com"
+    },
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": "Essential 8 Guide",
+      "url": "https://e8guide.com"
+    }
+  }
+  </script>
+</head>
+<body><div style="background:#d29922;color:#0d1117;padding:6px 16px;font-size:0.85rem;text-align:center;position:sticky;top:0;z-index:9999;">⚠️ PREVIEW — branch: research-review-controls — <a href="https://e8guide.com" style="color:#0d1117;font-weight:bold;">production site</a></div>
+  <div class="header">
+  <div class="header-content">
+    <h1>🛡️ Essential 8 Guide</h1>
+    <p>Implementation guidance for Australian Essential Eight controls in Microsoft environments - ISM controls with PSPF mappings</p>
+  </div>
+  <a href="/ISM-Controls-Guide-preview/about" class="about-link">About</a>
+</div>
+
+  <div class="container">
+    <div style="margin-bottom:20px; display:flex; justify-content:space-between; align-items:center;">
+      <div style="display:flex; gap:12px; align-items:center;">
+      <a href="/ISM-Controls-Guide-preview/" class="back-btn">HOME</a>
+
+      
+      
+      
+      
+
+
+      
+      
+      
+      
+      
+
+      
+        
+        
+        <a class="prev-control back-btn" href="/ISM-Controls-Guide-preview/controls/ISM-1621.html" aria-label="Previous control">← ISM-1621</a>
+      
+    </div>
+
+    <div style="display:flex; gap:12px; align-items:center;">
+      
+        
+        
+        <a class="next-control back-btn" href="/ISM-Controls-Guide-preview/controls/ISM-1654.html" aria-label="Next control">ISM-1654 →</a>
+      
+    </div>
+  </div>
+    <div class="content-card">
+      <h2 id="powershell-is-configured-to-use-constrained-language-mode">PowerShell is configured to use Constrained Language Mode.</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Property</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>ISM Control</strong></td>
+      <td>ISM-1622</td>
+    </tr>
+    <tr>
+      <td><strong>Revision</strong></td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td><strong>Updated</strong></td>
+      <td>Oct-20</td>
+    </tr>
+    <tr>
+      <td><strong>Guideline</strong></td>
+      <td>Not provided</td>
+    </tr>
+    <tr>
+      <td><strong>Section</strong></td>
+      <td>Operating system hardening</td>
+    </tr>
+    <tr>
+      <td><strong>Topic</strong></td>
+      <td>PowerShell</td>
+    </tr>
+    <tr>
+      <td><strong>Essential Eight</strong></td>
+      <td>ML3</td>
+    </tr>
+    <tr>
+      <td><strong>PSPF Levels</strong></td>
+      <td>NC, OS, P, S, TS</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="summary">Summary</h2>
+
+<p>PowerShell runs in Constrained Language Mode to restrict language elements and reduce misuse risk from untrusted scripts.<sup id="fnref:1"><a href="#fn:1" class="footnote" rel="footnote" role="doc-noteref">1</a></sup> This outcome is achieved by enforcing App Control for Business (formerly WDAC) policies, deployed through Intune for cloud-managed devices and via Group Policy for hybrid-managed environments.<sup id="fnref:2"><a href="#fn:2" class="footnote" rel="footnote" role="doc-noteref">2</a></sup><sup id="fnref:3"><a href="#fn:3" class="footnote" rel="footnote" role="doc-noteref">3</a></sup></p>
+
+<p><strong>Constrained Language Mode (CLM)</strong> restricts access to .NET types, COM objects, reflection APIs, <code class="language-plaintext highlighter-rouge">Add-Type</code>, DSC configuration keywords, and XAML workflows. Basic cmdlets and language constructs (loops, conditionals, string expansion) remain available for trusted operations. CLM is enforced automatically by the PowerShell engine whenever a WDAC policy with <strong>UMCI enabled</strong> and <strong>script enforcement</strong> active (Option 11 not disabled) is in enforcement or audit mode.<sup id="fnref:3:1"><a href="#fn:3" class="footnote" rel="footnote" role="doc-noteref">3</a></sup><sup id="fnref:5"><a href="#fn:5" class="footnote" rel="footnote" role="doc-noteref">4</a></sup></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Feature</th>
+      <th>FullLanguage (default)</th>
+      <th>ConstrainedLanguage (CLM)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>All native cmdlets</td>
+      <td>✅ Available</td>
+      <td>✅ Available</td>
+    </tr>
+    <tr>
+      <td>Arbitrary .NET types (<code class="language-plaintext highlighter-rouge">New-Object</code>, <code class="language-plaintext highlighter-rouge">Add-Type</code>)</td>
+      <td>✅ Allowed</td>
+      <td>❌ Blocked — only whitelisted types</td>
+    </tr>
+    <tr>
+      <td>COM object creation</td>
+      <td>✅ Allowed</td>
+      <td>❌ Blocked</td>
+    </tr>
+    <tr>
+      <td>Reflection / <code class="language-plaintext highlighter-rouge">Assembly.Load</code></td>
+      <td>✅ Allowed</td>
+      <td>❌ Blocked</td>
+    </tr>
+    <tr>
+      <td>DSC <code class="language-plaintext highlighter-rouge">Configuration</code> keyword</td>
+      <td>✅ Allowed</td>
+      <td>❌ Blocked</td>
+    </tr>
+    <tr>
+      <td>XAML workflows</td>
+      <td>✅ Allowed</td>
+      <td>❌ Blocked</td>
+    </tr>
+    <tr>
+      <td>Class definitions</td>
+      <td>✅ Allowed</td>
+      <td>❌ Blocked</td>
+    </tr>
+    <tr>
+      <td>Unsigned scripts from internet</td>
+      <td>✅ Run freely</td>
+      <td>⚠️ Constrained or blocked</td>
+    </tr>
+  </tbody>
+</table>
+
+<blockquote>
+  <p>[!IMPORTANT]
+CLM <strong>does not protect against PowerShell 2.0</strong>. The legacy v2 engine is not subject to WDAC script enforcement and always runs in Full Language mode, providing an easy bypass. You must also implement <strong>ISM-1621</strong> (disable PowerShell 2.0) for CLM to be effective.</p>
+</blockquote>
+
+<h3 id="justification">Justification</h3>
+
+<p>Not provided in source documentation.</p>
+
+<h2 id="design-decision">Design Decision</h2>
+
+<blockquote>
+  <p>[!NOTE]
+The <strong>Windows Defender Application Control</strong> policy will be deployed via <strong>Intune configuration profiles</strong> to enforce the <strong>Constrained Language Mode</strong> setting for PowerShell.</p>
+</blockquote>
+
+<h2 id="prerequisites">Prerequisites</h2>
+
+<ul>
+  <li><strong>Licensing</strong>
+    <ul>
+      <li>Appropriate <strong>Microsoft Intune licensing</strong> is required for devices targeted by App Control for Business deployment via Intune in cloud-managed environments.<sup id="fnref:2:1"><a href="#fn:2" class="footnote" rel="footnote" role="doc-noteref">2</a></sup></li>
+    </ul>
+  </li>
+  <li><strong>Dependencies</strong>
+    <ul>
+      <li><strong>App Control on Windows endpoints:</strong> App Control for Business is configured on supported Windows 10/11 endpoints to enforce policy-based controls.<sup id="fnref:2:2"><a href="#fn:2" class="footnote" rel="footnote" role="doc-noteref">2</a></sup></li>
+      <li><strong>Policy management path:</strong> Policies are managed through <strong>Intune</strong> for cloud-managed devices (with Group Policy commonly used for hybrid-managed endpoints).<sup id="fnref:2:3"><a href="#fn:2" class="footnote" rel="footnote" role="doc-noteref">2</a></sup></li>
+      <li><strong>Audit before enforcement:</strong> Deploy in audit mode before moving to enforcement mode.<sup id="fnref:2:4"><a href="#fn:2" class="footnote" rel="footnote" role="doc-noteref">2</a></sup><sup id="fnref:4"><a href="#fn:4" class="footnote" rel="footnote" role="doc-noteref">5</a></sup></li>
+      <li><strong>Constrained Language Mode behavior:</strong> Under App Control enforcement, untrusted scripts are constrained or blocked based on policy enforcement state.<sup id="fnref:3:2"><a href="#fn:3" class="footnote" rel="footnote" role="doc-noteref">3</a></sup></li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="implementation-steps">Implementation Steps</h2>
+
+<h3 id="enable-constrained-language-mode-via-windows-defender-application-control-using-intune">Enable Constrained Language Mode via Windows Defender Application Control using Intune</h3>
+
+<ol>
+  <li>
+    <p>Deploy WDAC policy via Intune in audit mode to observe PowerShell activity and identify requirements.<sup id="fnref:1:1"><a href="#fn:1" class="footnote" rel="footnote" role="doc-noteref">1</a></sup></p>
+  </li>
+  <li>
+    <p>Enable the WDAC setting <strong>Script Enforcement</strong> to enforce Constrained Language Mode for Windows PowerShell.<sup id="fnref:1:2"><a href="#fn:1" class="footnote" rel="footnote" role="doc-noteref">1</a></sup></p>
+  </li>
+  <li>
+    <p>Deploy WDAC policy to cloud managed devices using Intune (Group Policy for hybrid devices).<sup id="fnref:1:3"><a href="#fn:1" class="footnote" rel="footnote" role="doc-noteref">1</a></sup></p>
+  </li>
+  <li>
+    <p>Configure the policy to allow updates without a reboot using the <strong>Update Policy No Reboot</strong> setting.<sup id="fnref:1:4"><a href="#fn:1" class="footnote" rel="footnote" role="doc-noteref">1</a></sup></p>
+  </li>
+  <li>
+    <p>After validation in audit mode, switch the WDAC policy from audit to enforcement mode to enable Constrained Language Mode for PowerShell.<sup id="fnref:1:5"><a href="#fn:1" class="footnote" rel="footnote" role="doc-noteref">1</a></sup></p>
+  </li>
+  <li>
+    <p>Understand that App Control enforcement can block or run untrusted commands in Constrained Language Mode; refer to App Control documentation for specifics.<sup id="fnref:3:3"><a href="#fn:3" class="footnote" rel="footnote" role="doc-noteref">3</a></sup></p>
+  </li>
+  <li>
+    <p>Verify CLM is active on a managed device:</p>
+
+    <div class="language-powershell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="bp">$ExecutionContext</span><span class="o">.</span><span class="nf">SessionState</span><span class="o">.</span><span class="nf">LanguageMode</span><span class="w">
+</span></code></pre></div>    </div>
+
+    <p>The output should be <code class="language-plaintext highlighter-rouge">ConstrainedLanguage</code>. If it returns <code class="language-plaintext highlighter-rouge">FullLanguage</code> the WDAC policy has not applied correctly.</p>
+  </li>
+  <li>Check event logs for CLM enforcement evidence:
+    <ul>
+      <li><strong>Event 8028</strong> (audit) or <strong>8029</strong> (enforce) in <code class="language-plaintext highlighter-rouge">Microsoft-Windows-AppLocker/MSI and Script</code> — indicates script handshake occurred.</li>
+      <li><strong>Event 3076</strong> (audit) or <strong>3077</strong> (enforce) in <code class="language-plaintext highlighter-rouge">Microsoft-Windows-CodeIntegrity/Operational</code> — confirms WDAC evaluated the script.</li>
+    </ul>
+  </li>
+  <li>To test CLM without moving to full enforcement: deploy the policy in <strong>Audit mode</strong> (Option 3 enabled) with script enforcement active. PowerShell will still run in CLM but no binaries will be blocked, letting you identify required exceptions before the enforcement transition.</li>
+</ol>
+
+<h2 id="additional-related-information">Additional related information</h2>
+
+<ul>
+  <li>App Control policy enforcement details show how PowerShell runs in FullLanguage for trusted scripts and ConstrainedLanguage for untrusted ones <a href="https://learn.microsoft.com/en-us/powershell/scripting/security/app-control/how-app-control-works?view=powershell-7.5">How App Control works with PowerShell</a></li>
+  <li>WDAC and App Control guidance for securing PowerShell with Constrained Language Mode when untrusted scripts are encountered <a href="https://learn.microsoft.com/en-us/powershell/scripting/security/app-control/application-control?view=powershell-7.5">Use App Control to secure PowerShell</a></li>
+  <li>New-PSSessionConfigurationFile LanguageMode parameter description explains ConstrainedLanguage and related options <a href="https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/new-pssessionconfigurationfile?view=powershell-7.5">New-PSSessionConfigurationFile LanguageMode parameter</a></li>
+</ul>
+
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:1">
+      <p><a href="https://learn.microsoft.com/en-us/compliance/anz/e8-app-harden">Essential Eight user application hardening</a> <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a> <a href="#fnref:1:1" class="reversefootnote" role="doc-backlink">&#8617;<sup>2</sup></a> <a href="#fnref:1:2" class="reversefootnote" role="doc-backlink">&#8617;<sup>3</sup></a> <a href="#fnref:1:3" class="reversefootnote" role="doc-backlink">&#8617;<sup>4</sup></a> <a href="#fnref:1:4" class="reversefootnote" role="doc-backlink">&#8617;<sup>5</sup></a> <a href="#fnref:1:5" class="reversefootnote" role="doc-backlink">&#8617;<sup>6</sup></a></p>
+    </li>
+    <li id="fn:2">
+      <p><a href="https://blueprint.asd.gov.au/design/endpoints/windows/security/windows-defender-application-control/">ASD Blueprint: Windows Defender application control - ASD’s Blueprint for Secure Cloud</a> <a href="#fnref:2" class="reversefootnote" role="doc-backlink">&#8617;</a> <a href="#fnref:2:1" class="reversefootnote" role="doc-backlink">&#8617;<sup>2</sup></a> <a href="#fnref:2:2" class="reversefootnote" role="doc-backlink">&#8617;<sup>3</sup></a> <a href="#fnref:2:3" class="reversefootnote" role="doc-backlink">&#8617;<sup>4</sup></a> <a href="#fnref:2:4" class="reversefootnote" role="doc-backlink">&#8617;<sup>5</sup></a></p>
+    </li>
+    <li id="fn:3">
+      <p><a href="https://learn.microsoft.com/en-us/powershell/scripting/security/app-control/how-app-control-works?view=powershell-7.5">How App Control works with PowerShell</a> <a href="#fnref:3" class="reversefootnote" role="doc-backlink">&#8617;</a> <a href="#fnref:3:1" class="reversefootnote" role="doc-backlink">&#8617;<sup>2</sup></a> <a href="#fnref:3:2" class="reversefootnote" role="doc-backlink">&#8617;<sup>3</sup></a> <a href="#fnref:3:3" class="reversefootnote" role="doc-backlink">&#8617;<sup>4</sup></a></p>
+    </li>
+    <li id="fn:5">
+      <p><a href="https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_language_modes?view=powershell-7.5">About PowerShell language modes</a> <a href="#fnref:5" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:4">
+      <p><a href="https://learn.microsoft.com/en-us/powershell/scripting/security/app-control/application-control?view=powershell-7.5">Use App Control to secure PowerShell</a> <a href="#fnref:4" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+
+    </div>
+
+    <div style="margin-bottom:20px; display:flex; justify-content:space-between; align-items:center;">
+      <div style="display:flex; gap:12px; align-items:center;">
+        <a href="/ISM-Controls-Guide-preview/" class="back-btn">HOME</a>
+
+        
+          <a class="prev-control back-btn" href="/ISM-Controls-Guide-preview/controls/ISM-1621.html" aria-label="Previous control">← ISM-1621</a>
+        
+      </div>
+
+      <div style="display:flex; gap:12px; align-items:center;">
+        
+          <a class="next-control back-btn" href="/ISM-Controls-Guide-preview/controls/ISM-1654.html" aria-label="Next control">ISM-1654 →</a>
+        
+      </div>
+    </div>
+  </div>
+  <script>
+    // Convert GitHub-style alerts [!NOTE], [!WARNING], etc. to styled callouts
+    document.querySelectorAll('blockquote').forEach(bq => {
+      const text = bq.innerHTML;
+      const match = text.match(/\[!(NOTE|WARNING|TIP|IMPORTANT|CAUTION)\]/i);
+      if (match) {
+        const type = match[1].toLowerCase();
+        const icons = { note: '📝', warning: '⚠️', tip: '💡', important: '📢', caution: '🚨' };
+        const titles = { note: 'Note', warning: 'Warning', tip: 'Tip', important: 'Important', caution: 'Caution' };
+        const content = text.replace(/\[!(NOTE|WARNING|TIP|IMPORTANT|CAUTION)\]\s*/i, '');
+        bq.className = 'callout callout-' + type;
+        bq.innerHTML = '<div class="callout-title">' + icons[type] + ' ' + titles[type] + '</div>' + content;
+      }
+    });
+  </script>
+  <footer class="site-footer" role="contentinfo" aria-label="Site footer" style="background:#161b22;border-top:1px solid #30363d;padding:20px 40px;margin-top:40px;">
+    <div style="max-width:900px;margin:0 auto;display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:space-between;">
+      <div style="color:#94a3b8;font-size:0.9rem;">
+        
+          Last updated: 2026-02-18 06:16 UTC
+        
+      </div>
+      <div style="color:#94a3b8;font-size:0.9rem;text-align:right;max-width:620px;">
+        <strong style="color:#e6edf3;">AI-generated content:</strong> This site contains AI-assisted content created from primary sources and may contain errors or be out of date. Always verify with official documentation. See <a href="https://e8guide.com/about" style="color:#58a6ff;text-decoration:none;">About</a> for details.
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

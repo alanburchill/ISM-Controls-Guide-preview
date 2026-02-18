@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Patches, updates or other vendor mitigations for vulnerabilities in online services are applied within 48 hours of release when vulnerabilities are assessed as critical by vendors or when working exploits exist. - Essential 8 Guide</title>
+  <!-- Canonical URL -->
+<link rel="canonical" href="https://e8guide.com/controls/ISM-1876.html">
+
+<!-- Meta description --><meta name="description" content="Patches, updates or other vendor mitigations for vulnerabilities in online services are applied within 48 hours of release when vulnerabilities are asse...">
+
+<!-- Google Search Console ownership verification -->
+
+<meta name="google-site-verification" content="">
+
+
+<!-- Open Graph / Social sharing -->
+<meta property="og:title" content="Patches, updates or other vendor mitigations for vulnerabilities in online services are applied within 48 hours of release when vulnerabilities are assessed as critical by vendors or when working exploits exist. - Essential 8 Guide">
+<meta property="og:description" content="Patches, updates or other vendor mitigations for vulnerabilities in online services are applied within 48 hours of release when vulnerabilities are asse...">
+<meta property="og:url" content="https://e8guide.com/controls/ISM-1876.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Essential 8 Guide">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Patches, updates or other vendor mitigations for vulnerabilities in online services are applied within 48 hours of release when vulnerabilities are assessed as critical by vendors or when working exploits exist. - Essential 8 Guide">
+<meta name="twitter:description" content="Patches, updates or other vendor mitigations for vulnerabilities in online services are applied within 48 hours of release when vulnerabilities are asse...">
+
+<!-- Emoji favicon — no image file required -->
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>&#x1F6E1;&#xFE0F;</text></svg>">
+
+  
+<!-- Google Analytics (GA4) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id="></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', '');
+</script>
+
+
+  <link rel="stylesheet" href="/ISM-Controls-Guide-preview/assets/css/main.css">
+  <style>
+    /* Page-specific styles */
+    .container {
+      max-width: 900px;
+    }
+    .content-card {
+      padding: 40px;
+    }
+    .content-card h1 {
+      padding-bottom: 15px;
+      border-bottom: 1px solid #30363d;
+    }
+    /* Footnotes styling */
+    .footnotes {
+      margin-top: 40px;
+      padding-top: 20px;
+      border-top: 1px solid #30363d;
+      font-size: 0.9rem;
+    }
+    .footnotes ol { color: #8b949e; }
+    .footnote { color: #58a6ff; font-size: 0.85em; vertical-align: super; }
+    .reversefootnote { color: #58a6ff; }
+    /* GitHub-style alerts/callouts */
+    .callout {
+      padding: 16px 20px;
+      margin: 20px 0;
+      border-radius: 6px;
+      border-left: 4px solid;
+    }
+    .callout-title {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+    .callout-title svg { flex-shrink: 0; }
+    .callout p { margin: 0; color: #e6edf3; }
+    .callout-note {
+      background: rgba(88, 166, 255, 0.1);
+      border-color: #58a6ff;
+    }
+    .callout-note .callout-title { color: #58a6ff; }
+    .callout-warning {
+      background: rgba(210, 153, 34, 0.1);
+      border-color: #d29922;
+    }
+    .callout-warning .callout-title { color: #d29922; }
+    .callout-tip {
+      background: rgba(63, 185, 80, 0.1);
+      border-color: #3fb950;
+    }
+    .callout-tip .callout-title { color: #3fb950; }
+    .callout-important {
+      background: rgba(168, 113, 255, 0.1);
+      border-color: #a371f7;
+    }
+    .callout-important .callout-title { color: #a371f7; }
+    .callout-caution {
+      background: rgba(248, 81, 73, 0.1);
+      border-color: #f85149;
+    }
+    .callout-caution .callout-title { color: #f85149; }
+  </style>
+  <!-- JSON-LD structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "TechArticle",
+    "name": "ISM-1876",
+    "headline": "Patches, updates or other vendor mitigations for vulnerabilities in online services are applied within 48 h...",
+    "description": "Patches, updates or other vendor mitigations for vulnerabilities in online services are applied within 48 hours of release when vulnerabilities are asse...",
+    "url": "https://e8guide.com/controls/ISM-1876.html",
+    "dateModified": "2026-02-13",
+    "inLanguage": "en-AU",
+    "author": {
+      "@type": "Organization",
+      "name": "Essential 8 Guide",
+      "url": "https://e8guide.com"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Essential 8 Guide",
+      "url": "https://e8guide.com"
+    },
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": "Essential 8 Guide",
+      "url": "https://e8guide.com"
+    }
+  }
+  </script>
+</head>
+<body><div style="background:#d29922;color:#0d1117;padding:6px 16px;font-size:0.85rem;text-align:center;position:sticky;top:0;z-index:9999;">⚠️ PREVIEW — branch: research-review-controls — <a href="https://e8guide.com" style="color:#0d1117;font-weight:bold;">production site</a></div>
+  <div class="header">
+  <div class="header-content">
+    <h1>🛡️ Essential 8 Guide</h1>
+    <p>Implementation guidance for Australian Essential Eight controls in Microsoft environments - ISM controls with PSPF mappings</p>
+  </div>
+  <a href="/ISM-Controls-Guide-preview/about" class="about-link">About</a>
+</div>
+
+  <div class="container">
+    <div style="margin-bottom:20px; display:flex; justify-content:space-between; align-items:center;">
+      <div style="display:flex; gap:12px; align-items:center;">
+      <a href="/ISM-Controls-Guide-preview/" class="back-btn">HOME</a>
+
+      
+      
+      
+      
+
+
+      
+      
+      
+      
+      
+
+      
+        
+        
+        <a class="prev-control back-btn" href="/ISM-Controls-Guide-preview/controls/ISM-1872.html" aria-label="Previous control">← ISM-1872</a>
+      
+    </div>
+
+    <div style="display:flex; gap:12px; align-items:center;">
+      
+        
+        
+        <a class="next-control back-btn" href="/ISM-Controls-Guide-preview/controls/ISM-1896.html" aria-label="Next control">ISM-1896 →</a>
+      
+    </div>
+  </div>
+    <div class="content-card">
+      <h2 id="patches-updates-or-other-vendor-mitigations-for-vulnerabilities-in-online-services-are-applied-within-48-hours-of-release-when-vulnerabilities-are-assessed-as-critical-by-vendors-or-when-working-exploits-exist">Patches, updates or other vendor mitigations for vulnerabilities in online services are applied within 48 hours of release when vulnerabilities are assessed as critical by vendors or when working exploits exist.</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Property</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>ISM Control</strong></td>
+      <td>ISM-1876</td>
+    </tr>
+    <tr>
+      <td><strong>Revision</strong></td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td><strong>Updated</strong></td>
+      <td>Sep-23</td>
+    </tr>
+    <tr>
+      <td><strong>Guideline</strong></td>
+      <td>Not provided</td>
+    </tr>
+    <tr>
+      <td><strong>Section</strong></td>
+      <td>System patching</td>
+    </tr>
+    <tr>
+      <td><strong>Topic</strong></td>
+      <td>Mitigating known vulnerabilities</td>
+    </tr>
+    <tr>
+      <td><strong>Essential Eight</strong></td>
+      <td>ML1, ML2, ML3</td>
+    </tr>
+    <tr>
+      <td><strong>PSPF Levels</strong></td>
+      <td>NC, OS, P, S, TS</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="summary">Summary</h2>
+
+<p>Patches, updates or other vendor mitigations for vulnerabilities in online services are applied within 48 hours of release when vulnerabilities are assessed as critical by vendors or when working exploits exist. This implementation pushes critical OS patches within 48 hours using expedited updates managed by <strong>Intune</strong> and <strong>Windows Autopatch</strong>.<sup id="fnref:1"><a href="#fn:1" class="footnote" rel="footnote" role="doc-noteref">1</a></sup><sup id="fnref:2"><a href="#fn:2" class="footnote" rel="footnote" role="doc-noteref">2</a></sup></p>
+
+<h3 id="justification">Justification</h3>
+
+<p>Online services (SaaS, cloud infrastructure, web-facing applications) present a distinct patching challenge compared to endpoint OS patching: they are continuously internet-exposed, often managing large volumes of sensitive data, and critical vulnerabilities in these services are frequently targeted within hours of public disclosure.</p>
+
+<p>The 48-hour window for critical/exploited vulnerabilities is specifically calibrated to the observed exploitation timeline. CISA KEV (Known Exploited Vulnerabilities Catalog) data shows that the median time-to-exploitation for actively exploited vulnerabilities dropped from 30+ days (2010s) to under 48 hours for many CVEs in 2022–2024. For online services, the attack surface is globally accessible — any delay beyond 48 hours significantly increases the probability of compromise.</p>
+
+<p>Windows Autopatch Hotpatch (available for Windows 11 24H2+, Server 2025, and Azure Arc-enabled VMs) enables kernel-level patches to be applied <em>without a restart</em> on eligible Patch Tuesday months, enabling near-zero downtime patching for critical OS-level vulnerabilities in online service hosts. This is particularly valuable for internet-facing Windows Server workloads where maintenance windows are constrained.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Patching scenario</th>
+      <th>Mechanism</th>
+      <th>Target timeline</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Critical CVE (CVSS ≥9.0)</td>
+      <td>Intune Expedited Quality Update</td>
+      <td>0-day deadline, 1-hr restart grace</td>
+    </tr>
+    <tr>
+      <td>Actively exploited CVE (CISA KEV)</td>
+      <td>Intune Expedited Quality Update</td>
+      <td>0-day deadline, 1-hr restart grace</td>
+    </tr>
+    <tr>
+      <td>Standard Patch Tuesday</td>
+      <td>Autopatch deployment rings</td>
+      <td>Fast ring: T+1 day, Broad: T+7 days</td>
+    </tr>
+    <tr>
+      <td>Server/Azure VM (Hotpatch eligible)</td>
+      <td>Hotpatch (no restart required)</td>
+      <td>T+0 (same-day Patch Tuesday)</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>For non-Windows online services (e.g., network appliances, Linux VMs, third-party SaaS), the 48-hour requirement is met through vendor-specific update mechanisms combined with Azure Update Manager (for Azure/Arc VMs) or manual emergency change procedures governed by the organisation’s change management framework.</p>
+
+<h2 id="design-decision">Design Decision</h2>
+
+<blockquote>
+  <p>[!NOTE]
+The <strong>Quality updates for Windows 10 and later</strong> policy will be deployed via <strong>Intune</strong> to expedite critical OS patches within 48 hours using <strong>Windows Autopatch</strong>. It will leverage expedited update capabilities to ensure timely patch installation on applicable devices. This will meet the <strong>ISM-1876</strong> requirement for rapid patching of critical vulnerabilities.</p>
+</blockquote>
+
+<h2 id="prerequisites">Prerequisites</h2>
+
+<h3 id="licensing">Licensing</h3>
+
+<ul>
+  <li><strong>Microsoft Entra ID</strong> for co-management. <sup id="fnref:1:1"><a href="#fn:1" class="footnote" rel="footnote" role="doc-noteref">1</a></sup></li>
+  <li><strong>Microsoft Entra hybrid joined devices</strong> or <strong>Microsoft Entra joined devices</strong>. <sup id="fnref:1:2"><a href="#fn:1" class="footnote" rel="footnote" role="doc-noteref">1</a></sup></li>
+  <li><strong>Microsoft Intune</strong> (including Configuration Manager via co-management). <sup id="fnref:1:3"><a href="#fn:1" class="footnote" rel="footnote" role="doc-noteref">1</a></sup></li>
+  <li>Windows Autopatch licensing prerequisites:
+    <ul>
+      <li><strong>Windows 10/11 Enterprise E3 or E5</strong> (included in Microsoft 365 F3, E3, or E5)</li>
+      <li><strong>Windows 10/11 Education A3 or A5</strong></li>
+      <li><strong>Windows Virtual Desktop Access E3 or E5</strong></li>
+      <li><strong>Microsoft 365 Business Premium</strong><br />
+These subscriptions enable Windows Autopatch functionality. <sup id="fnref:2:1"><a href="#fn:2" class="footnote" rel="footnote" role="doc-noteref">2</a></sup></li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="dependencies">Dependencies</h3>
+
+<ul>
+  <li><strong>Entra ID joined or Hybrid AD joined</strong> devices for Autopatch to manage. <sup id="fnref:2:2"><a href="#fn:2" class="footnote" rel="footnote" role="doc-noteref">2</a></sup></li>
+  <li><strong>Microsoft Intune</strong> to manage Autopatch deployment. <sup id="fnref:1:4"><a href="#fn:1" class="footnote" rel="footnote" role="doc-noteref">1</a></sup></li>
+  <li><strong>Windows 10/11 version 1709 or later</strong> on target devices. <sup id="fnref:2:3"><a href="#fn:2" class="footnote" rel="footnote" role="doc-noteref">2</a></sup></li>
+  <li>Supported OS editions for Autopatch deployments: <strong>Pro, Enterprise, Education, Pro Education, Pro for Workstations</strong>. <sup id="fnref:2:4"><a href="#fn:2" class="footnote" rel="footnote" role="doc-noteref">2</a></sup></li>
+</ul>
+
+<h2 id="implementation-steps">Implementation Steps</h2>
+
+<h3 id="expedite-os-patches-via-quality-updates-intune">Expedite OS patches via Quality Updates (Intune)</h3>
+
+<ol>
+  <li>Create a <strong>Quality updates for Windows 10 and later (Preview)</strong> profile under Devices &gt; Windows &gt; Quality updates for Windows 10 and later (Preview).<sup id="fnref:1:5"><a href="#fn:1" class="footnote" rel="footnote" role="doc-noteref">1</a></sup></li>
+  <li>Provide a name. It’s suggested that the name of the policy aligns to the quality update version being expedited for ease of reference.<sup id="fnref:1:6"><a href="#fn:1" class="footnote" rel="footnote" role="doc-noteref">1</a></sup></li>
+  <li>Define the quality updates that Windows Update for Business expedites the installation of if the device Operating System version is less than.<sup id="fnref:1:7"><a href="#fn:1" class="footnote" rel="footnote" role="doc-noteref">1</a></sup></li>
+  <li>Define the number of days until a restart of the device is enforced.<sup id="fnref:1:8"><a href="#fn:1" class="footnote" rel="footnote" role="doc-noteref">1</a></sup></li>
+  <li>Assign the profile to a group containing all applicable Windows devices.<sup id="fnref:1:9"><a href="#fn:1" class="footnote" rel="footnote" role="doc-noteref">1</a></sup></li>
+</ol>
+
+<p>Note: If the number of days to wait before a restart is enforced is set to 0, the device will immediately restart upon receiving the update. The user won’t receive the option to delay the reboot.<sup id="fnref:1:10"><a href="#fn:1" class="footnote" rel="footnote" role="doc-noteref">1</a></sup></p>
+
+<h3 id="enroll-devices-to-receive-hotpatch-updates">Enroll devices to receive Hotpatch updates</h3>
+
+<ol>
+  <li>Go to the Intune admin center.<sup id="fnref:2:5"><a href="#fn:2" class="footnote" rel="footnote" role="doc-noteref">2</a></sup></li>
+  <li>Select Devices from the left navigation menu.<sup id="fnref:2:6"><a href="#fn:2" class="footnote" rel="footnote" role="doc-noteref">2</a></sup></li>
+  <li>Under the Manage updates section, select Windows updates.<sup id="fnref:2:7"><a href="#fn:2" class="footnote" rel="footnote" role="doc-noteref">2</a></sup></li>
+  <li>Go to the Quality updates tab.<sup id="fnref:2:8"><a href="#fn:2" class="footnote" rel="footnote" role="doc-noteref">2</a></sup></li>
+  <li>Select Create, and select <strong>Windows quality update policy</strong>.<sup id="fnref:2:9"><a href="#fn:2" class="footnote" rel="footnote" role="doc-noteref">2</a></sup></li>
+  <li>Under the Basics section, enter a name for your new policy and select Next.<sup id="fnref:2:10"><a href="#fn:2" class="footnote" rel="footnote" role="doc-noteref">2</a></sup></li>
+  <li>Under the Settings section, ensure that the option “<strong>When available, apply without restarting the device ("Hotpatch")</strong>” is set to Allow. Then, select Next.<sup id="fnref:2:11"><a href="#fn:2" class="footnote" rel="footnote" role="doc-noteref">2</a></sup></li>
+  <li>Select the appropriate Scope tags or leave as Default. Then, select Next.<sup id="fnref:2:12"><a href="#fn:2" class="footnote" rel="footnote" role="doc-noteref">2</a></sup></li>
+  <li>Assign the devices to the policy and select Next.<sup id="fnref:2:13"><a href="#fn:2" class="footnote" rel="footnote" role="doc-noteref">2</a></sup></li>
+  <li>Review the policy and select Create.<sup id="fnref:2:14"><a href="#fn:2" class="footnote" rel="footnote" role="doc-noteref">2</a></sup></li>
+  <li>You can also Edit the existing Windows quality update policy and set the “<strong>When available, apply without restarting the device ("Hotpatch")</strong>” to Allow.<sup id="fnref:2:15"><a href="#fn:2" class="footnote" rel="footnote" role="doc-noteref">2</a></sup></li>
+</ol>
+
+<p>Note: Turning on Hotpatch updates doesn’t change the existing deadline-driven or scheduled install configurations on your managed devices. Deferral and active hour settings still apply.<sup id="fnref:2:16"><a href="#fn:2" class="footnote" rel="footnote" role="doc-noteref">2</a></sup></p>
+
+<h2 id="additional-related-information">Additional related information</h2>
+
+<ul>
+  <li>
+    <p>ASD Blueprint for Windows update and patching describes best practices for patching in cloud and on-premises environments <a href="https://blueprint.asd.gov.au/design/endpoints/windows/configuration/windows-update-and-patching/">ASD Blueprint: Windows update and patching</a></p>
+  </li>
+  <li>
+    <p>Windows updates API overview explains how Windows Update for Business and the Graph API support patch management <a href="https://learn.microsoft.com/en-us/graph/windowsupdates-concept-overview">Windows updates API overview</a></p>
+  </li>
+  <li>
+    <p>Windows Autopatch Frequently Asked Questions provides prerequisites and capabilities for using Autopatch to manage patches <a href="https://learn.microsoft.com/en-us/windows/deployment/windows-autopatch/overview/windows-autopatch-faq">Windows Autopatch FAQ</a></p>
+  </li>
+  <li>
+    <p>Hotpatch for Windows Server describes patching options and server support for hotpatch deployments <a href="https://learn.microsoft.com/en-us/windows-server/get-started/hotpatch">Hotpatch for Windows Server</a></p>
+  </li>
+  <li>
+    <p>Azure Update Manager offers automated patching guidance for Azure VMs and non-Azure resources <a href="https://learn.microsoft.com/en-us/azure/update-manager/overview">Azure Update Manager</a></p>
+  </li>
+  <li>
+    <p>Windows 11 release information outlines hotpatch and baseline update scheduling by OS version <a href="https://learn.microsoft.com/en-us/windows/release-health/windows11-release-information">Windows 11 release information</a></p>
+  </li>
+</ul>
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:1">
+      <p><a href="https://learn.microsoft.com/en-us/compliance/anz/e8-patch-os">Essential Eight patch operating systems</a> <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a> <a href="#fnref:1:1" class="reversefootnote" role="doc-backlink">&#8617;<sup>2</sup></a> <a href="#fnref:1:2" class="reversefootnote" role="doc-backlink">&#8617;<sup>3</sup></a> <a href="#fnref:1:3" class="reversefootnote" role="doc-backlink">&#8617;<sup>4</sup></a> <a href="#fnref:1:4" class="reversefootnote" role="doc-backlink">&#8617;<sup>5</sup></a> <a href="#fnref:1:5" class="reversefootnote" role="doc-backlink">&#8617;<sup>6</sup></a> <a href="#fnref:1:6" class="reversefootnote" role="doc-backlink">&#8617;<sup>7</sup></a> <a href="#fnref:1:7" class="reversefootnote" role="doc-backlink">&#8617;<sup>8</sup></a> <a href="#fnref:1:8" class="reversefootnote" role="doc-backlink">&#8617;<sup>9</sup></a> <a href="#fnref:1:9" class="reversefootnote" role="doc-backlink">&#8617;<sup>10</sup></a> <a href="#fnref:1:10" class="reversefootnote" role="doc-backlink">&#8617;<sup>11</sup></a></p>
+    </li>
+    <li id="fn:2">
+      <p><a href="https://learn.microsoft.com/en-us/windows/deployment/windows-autopatch/manage/windows-autopatch-hotpatch-updates">Hotpatch updates</a> <a href="#fnref:2" class="reversefootnote" role="doc-backlink">&#8617;</a> <a href="#fnref:2:1" class="reversefootnote" role="doc-backlink">&#8617;<sup>2</sup></a> <a href="#fnref:2:2" class="reversefootnote" role="doc-backlink">&#8617;<sup>3</sup></a> <a href="#fnref:2:3" class="reversefootnote" role="doc-backlink">&#8617;<sup>4</sup></a> <a href="#fnref:2:4" class="reversefootnote" role="doc-backlink">&#8617;<sup>5</sup></a> <a href="#fnref:2:5" class="reversefootnote" role="doc-backlink">&#8617;<sup>6</sup></a> <a href="#fnref:2:6" class="reversefootnote" role="doc-backlink">&#8617;<sup>7</sup></a> <a href="#fnref:2:7" class="reversefootnote" role="doc-backlink">&#8617;<sup>8</sup></a> <a href="#fnref:2:8" class="reversefootnote" role="doc-backlink">&#8617;<sup>9</sup></a> <a href="#fnref:2:9" class="reversefootnote" role="doc-backlink">&#8617;<sup>10</sup></a> <a href="#fnref:2:10" class="reversefootnote" role="doc-backlink">&#8617;<sup>11</sup></a> <a href="#fnref:2:11" class="reversefootnote" role="doc-backlink">&#8617;<sup>12</sup></a> <a href="#fnref:2:12" class="reversefootnote" role="doc-backlink">&#8617;<sup>13</sup></a> <a href="#fnref:2:13" class="reversefootnote" role="doc-backlink">&#8617;<sup>14</sup></a> <a href="#fnref:2:14" class="reversefootnote" role="doc-backlink">&#8617;<sup>15</sup></a> <a href="#fnref:2:15" class="reversefootnote" role="doc-backlink">&#8617;<sup>16</sup></a> <a href="#fnref:2:16" class="reversefootnote" role="doc-backlink">&#8617;<sup>17</sup></a></p>
+    </li>
+  </ol>
+</div>
+
+    </div>
+
+    <div style="margin-bottom:20px; display:flex; justify-content:space-between; align-items:center;">
+      <div style="display:flex; gap:12px; align-items:center;">
+        <a href="/ISM-Controls-Guide-preview/" class="back-btn">HOME</a>
+
+        
+          <a class="prev-control back-btn" href="/ISM-Controls-Guide-preview/controls/ISM-1872.html" aria-label="Previous control">← ISM-1872</a>
+        
+      </div>
+
+      <div style="display:flex; gap:12px; align-items:center;">
+        
+          <a class="next-control back-btn" href="/ISM-Controls-Guide-preview/controls/ISM-1896.html" aria-label="Next control">ISM-1896 →</a>
+        
+      </div>
+    </div>
+  </div>
+  <script>
+    // Convert GitHub-style alerts [!NOTE], [!WARNING], etc. to styled callouts
+    document.querySelectorAll('blockquote').forEach(bq => {
+      const text = bq.innerHTML;
+      const match = text.match(/\[!(NOTE|WARNING|TIP|IMPORTANT|CAUTION)\]/i);
+      if (match) {
+        const type = match[1].toLowerCase();
+        const icons = { note: '📝', warning: '⚠️', tip: '💡', important: '📢', caution: '🚨' };
+        const titles = { note: 'Note', warning: 'Warning', tip: 'Tip', important: 'Important', caution: 'Caution' };
+        const content = text.replace(/\[!(NOTE|WARNING|TIP|IMPORTANT|CAUTION)\]\s*/i, '');
+        bq.className = 'callout callout-' + type;
+        bq.innerHTML = '<div class="callout-title">' + icons[type] + ' ' + titles[type] + '</div>' + content;
+      }
+    });
+  </script>
+  <footer class="site-footer" role="contentinfo" aria-label="Site footer" style="background:#161b22;border-top:1px solid #30363d;padding:20px 40px;margin-top:40px;">
+    <div style="max-width:900px;margin:0 auto;display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:space-between;">
+      <div style="color:#94a3b8;font-size:0.9rem;">
+        
+          Last updated: 2026-02-18 21:21 UTC
+        
+      </div>
+      <div style="color:#94a3b8;font-size:0.9rem;text-align:right;max-width:620px;">
+        <strong style="color:#e6edf3;">AI-generated content:</strong> This site contains AI-assisted content created from primary sources and may contain errors or be out of date. Always verify with official documentation. See <a href="https://e8guide.com/about" style="color:#58a6ff;text-decoration:none;">About</a> for details.
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Successful and unsuccessful multi-factor authentication events are centrally logged. - Essential 8 Guide</title>
+  <!-- Canonical URL -->
+<link rel="canonical" href="https://e8guide.com/controls/ISM-1683.html">
+
+<!-- Meta description --><meta name="description" content="Successful and unsuccessful multi-factor authentication events are centrally logged.">
+
+<!-- Google Search Console ownership verification -->
+
+<meta name="google-site-verification" content="">
+
+
+<!-- Open Graph / Social sharing -->
+<meta property="og:title" content="Successful and unsuccessful multi-factor authentication events are centrally logged. - Essential 8 Guide">
+<meta property="og:description" content="Successful and unsuccessful multi-factor authentication events are centrally logged.">
+<meta property="og:url" content="https://e8guide.com/controls/ISM-1683.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Essential 8 Guide">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Successful and unsuccessful multi-factor authentication events are centrally logged. - Essential 8 Guide">
+<meta name="twitter:description" content="Successful and unsuccessful multi-factor authentication events are centrally logged.">
+
+<!-- Emoji favicon — no image file required -->
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>&#x1F6E1;&#xFE0F;</text></svg>">
+
+  
+<!-- Google Analytics (GA4) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id="></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', '');
+</script>
+
+
+  <link rel="stylesheet" href="/ISM-Controls-Guide-preview/assets/css/main.css">
+  <style>
+    /* Page-specific styles */
+    .container {
+      max-width: 900px;
+    }
+    .content-card {
+      padding: 40px;
+    }
+    .content-card h1 {
+      padding-bottom: 15px;
+      border-bottom: 1px solid #30363d;
+    }
+    /* Footnotes styling */
+    .footnotes {
+      margin-top: 40px;
+      padding-top: 20px;
+      border-top: 1px solid #30363d;
+      font-size: 0.9rem;
+    }
+    .footnotes ol { color: #8b949e; }
+    .footnote { color: #58a6ff; font-size: 0.85em; vertical-align: super; }
+    .reversefootnote { color: #58a6ff; }
+    /* GitHub-style alerts/callouts */
+    .callout {
+      padding: 16px 20px;
+      margin: 20px 0;
+      border-radius: 6px;
+      border-left: 4px solid;
+    }
+    .callout-title {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+    .callout-title svg { flex-shrink: 0; }
+    .callout p { margin: 0; color: #e6edf3; }
+    .callout-note {
+      background: rgba(88, 166, 255, 0.1);
+      border-color: #58a6ff;
+    }
+    .callout-note .callout-title { color: #58a6ff; }
+    .callout-warning {
+      background: rgba(210, 153, 34, 0.1);
+      border-color: #d29922;
+    }
+    .callout-warning .callout-title { color: #d29922; }
+    .callout-tip {
+      background: rgba(63, 185, 80, 0.1);
+      border-color: #3fb950;
+    }
+    .callout-tip .callout-title { color: #3fb950; }
+    .callout-important {
+      background: rgba(168, 113, 255, 0.1);
+      border-color: #a371f7;
+    }
+    .callout-important .callout-title { color: #a371f7; }
+    .callout-caution {
+      background: rgba(248, 81, 73, 0.1);
+      border-color: #f85149;
+    }
+    .callout-caution .callout-title { color: #f85149; }
+  </style>
+  <!-- JSON-LD structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "TechArticle",
+    "name": "ISM-1683",
+    "headline": "Successful and unsuccessful multi-factor authentication events are centrally logged.",
+    "description": "Successful and unsuccessful multi-factor authentication events are centrally logged.",
+    "url": "https://e8guide.com/controls/ISM-1683.html",
+    "dateModified": "2026-02-13",
+    "inLanguage": "en-AU",
+    "author": {
+      "@type": "Organization",
+      "name": "Essential 8 Guide",
+      "url": "https://e8guide.com"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Essential 8 Guide",
+      "url": "https://e8guide.com"
+    },
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": "Essential 8 Guide",
+      "url": "https://e8guide.com"
+    }
+  }
+  </script>
+</head>
+<body><div style="background:#d29922;color:#0d1117;padding:6px 16px;font-size:0.85rem;text-align:center;position:sticky;top:0;z-index:9999;">⚠️ PREVIEW — branch: research-review-controls — <a href="https://e8guide.com" style="color:#0d1117;font-weight:bold;">production site</a></div>
+  <div class="header">
+  <div class="header-content">
+    <h1>🛡️ Essential 8 Guide</h1>
+    <p>Implementation guidance for Australian Essential Eight controls in Microsoft environments - ISM controls with PSPF mappings</p>
+  </div>
+  <a href="/ISM-Controls-Guide-preview/about" class="about-link">About</a>
+</div>
+
+  <div class="container">
+    <div style="margin-bottom:20px; display:flex; justify-content:space-between; align-items:center;">
+      <div style="display:flex; gap:12px; align-items:center;">
+      <a href="/ISM-Controls-Guide-preview/" class="back-btn">HOME</a>
+
+      
+      
+      
+      
+
+
+      
+      
+      
+      
+      
+
+      
+        
+        
+        <a class="prev-control back-btn" href="/ISM-Controls-Guide-preview/controls/ISM-1674.html" aria-label="Previous control">← ISM-1674</a>
+      
+    </div>
+
+    <div style="display:flex; gap:12px; align-items:center;">
+      
+        
+        
+        <a class="next-control back-btn" href="/ISM-Controls-Guide-preview/controls/ISM-1685.html" aria-label="Next control">ISM-1685 →</a>
+      
+    </div>
+  </div>
+    <div class="content-card">
+      <h2 id="successful-and-unsuccessful-multi-factor-authentication-events-are-centrally-logged">Successful and unsuccessful multi-factor authentication events are centrally logged.</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Property</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>ISM Control</strong></td>
+      <td>ISM-1683</td>
+    </tr>
+    <tr>
+      <td><strong>Revision</strong></td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td><strong>Updated</strong></td>
+      <td>Dec-23</td>
+    </tr>
+    <tr>
+      <td><strong>Guideline</strong></td>
+      <td>Not provided</td>
+    </tr>
+    <tr>
+      <td><strong>Section</strong></td>
+      <td>Authentication hardening</td>
+    </tr>
+    <tr>
+      <td><strong>Topic</strong></td>
+      <td>Multi-factor authentication</td>
+    </tr>
+    <tr>
+      <td><strong>Essential Eight</strong></td>
+      <td>ML2, ML3</td>
+    </tr>
+    <tr>
+      <td><strong>PSPF Levels</strong></td>
+      <td>NC, OS, P, S, TS</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="summary">Summary</h2>
+
+<p>Centralized logging of successful and unsuccessful Microsoft Entra MFA events enables auditing, monitoring, and rapid incident response. Entra ID logs can be forwarded to a Log Analytics workspace via Diagnostic Settings for long-term retention and centralized analysis.<sup id="fnref:1"><a href="#fn:1" class="footnote" rel="footnote" role="doc-noteref">1</a></sup><sup id="fnref:3"><a href="#fn:3" class="footnote" rel="footnote" role="doc-noteref">2</a></sup></p>
+
+<h3 id="justification">Justification</h3>
+
+<p>Centralised logging of MFA events is essential for early detection of:</p>
+
+<ul>
+  <li><strong>Credential stuffing / spray attacks</strong> — repeated authentication failures across many accounts.</li>
+  <li><strong>MFA fatigue attacks</strong> — an attacker who already has a password repeatedly triggers push notifications hoping the user approves one.</li>
+  <li><strong>Account compromise follow-up</strong> — successful sign-ins from impossible travel locations or anonymous IPs immediately after a failed MFA series.</li>
+</ul>
+
+<p>Without centralised retention you have no ability to conduct retrospective forensic investigations or satisfy PSPF auditing obligations. The minimum 1-year retention (requiring Audit Premium / E5 licensing) satisfies the ISM event log requirement. For AFDA Express PSPF record-keeping obligations — typically 7 years for security administration records under class 62625 — the <strong>10-Year Audit Log Retention</strong> per-user add-on licence is required in addition to an E5 licence.</p>
+
+<h2 id="design-decision">Design Decision</h2>
+
+<blockquote>
+  <p>[!NOTE]
+The <strong>7 year retention log policy</strong> will be applied to the <strong>Microsoft 365 Unified Audit log</strong>. The <strong>10-Year Audit Log licences</strong> will be enabled and group based assignment will be applied so that all enabled accounts automatically receive these licences, and <strong>Entra ID Diagnostic Settings</strong> will be configured to save all logs to a <strong>log analytics workspace</strong>.</p>
+</blockquote>
+
+<h2 id="prerequisites">Prerequisites</h2>
+
+<ul>
+  <li><strong>Permissions/Roles:</strong>
+    <ul>
+      <li>Access to the Microsoft Entra admin center with at least the <strong>Security Administrator</strong> role to configure diagnostic settings and access log data. <sup id="fnref:1:1"><a href="#fn:1" class="footnote" rel="footnote" role="doc-noteref">1</a></sup></li>
+    </ul>
+  </li>
+  <li><strong>Dependencies:</strong>
+    <ul>
+      <li>A <strong>Log Analytics workspace</strong> in Azure to receive and query Entra ID activity logs. <sup id="fnref:1:2"><a href="#fn:1" class="footnote" rel="footnote" role="doc-noteref">1</a></sup></li>
+      <li>Access to Entra ID <strong>Monitoring &amp; health</strong> &gt; <strong>Diagnostic settings</strong> to stream selected logs to the Log Analytics workspace. <sup id="fnref:1:3"><a href="#fn:1" class="footnote" rel="footnote" role="doc-noteref">1</a></sup></li>
+      <li>Entra logs are forwarded to a Log Analytics workspace for long-term secure retention. <sup id="fnref:3:1"><a href="#fn:3" class="footnote" rel="footnote" role="doc-noteref">2</a></sup></li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="implementation-steps">Implementation Steps</h2>
+
+<h3 id="configure-entra-id-diagnostic-settings-to-save-all-logs-to-a-log-analytics-workspace">Configure Entra ID Diagnostic Settings to Save All Logs to a Log Analytics Workspace</h3>
+
+<ol>
+  <li>Sign in to the Microsoft Entra admin center as a Security Administrator. <sup id="fnref:1:4"><a href="#fn:1" class="footnote" rel="footnote" role="doc-noteref">1</a></sup></li>
+  <li>Create a Log Analytics workspace. <sup id="fnref:1:5"><a href="#fn:1" class="footnote" rel="footnote" role="doc-noteref">1</a></sup></li>
+  <li>Browse to Entra ID &gt; Monitoring &amp; health &gt; Diagnostic settings. <sup id="fnref:1:6"><a href="#fn:1" class="footnote" rel="footnote" role="doc-noteref">1</a></sup></li>
+  <li>Choose the logs you want to stream, select the Send to Log Analytics workspace option, and complete the fields. <sup id="fnref:1:7"><a href="#fn:1" class="footnote" rel="footnote" role="doc-noteref">1</a></sup></li>
+  <li>Browse to Entra ID &gt; Monitoring &amp; health &gt; Log Analytics and begin querying the data. <sup id="fnref:1:8"><a href="#fn:1" class="footnote" rel="footnote" role="doc-noteref">1</a></sup></li>
+</ol>
+
+<h3 id="licensing-and-retention-policy-guidance">Licensing and Retention Policy Guidance</h3>
+
+<p><strong>License requirements for extended audit-log retention:</strong></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Retention duration</th>
+      <th>Licensing requirement</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>180 days</strong> (default; was 90 days before October 17, 2023)</td>
+      <td>Any Microsoft 365 subscription — <strong>Audit (Standard)</strong> included in all plans</td>
+    </tr>
+    <tr>
+      <td>Up to <strong>1 year</strong></td>
+      <td><strong>Microsoft 365 E5</strong> / Office 365 E5 / <strong>Microsoft 365 E5 Compliance</strong> add-on / <strong>E5 eDiscovery &amp; Audit</strong> add-on — requires <strong>Audit (Premium)</strong></td>
+    </tr>
+    <tr>
+      <td><strong>3, 5, 7, or 10 years</strong></td>
+      <td>Audit (Premium) (E5) <strong>plus</strong> the <strong>Microsoft Purview 10-Year Audit Log Retention</strong> per-user add-on licence</td>
+    </tr>
+  </tbody>
+</table>
+
+<blockquote>
+  <p>[!WARNING]
+<strong>E3 licensing provides Audit (Standard) only — 180-day retention maximum.</strong> E3 does not include Audit (Premium) and cannot be extended beyond 180 days without upgrading to E5 or adding the E5 Compliance / E5 eDiscovery &amp; Audit licences.</p>
+
+  <p><strong>E5 without the 10-Year add-on cannot exceed 1-year retention.</strong> The 3, 5, and 7-year retention period options in the policy UI all require the 10-Year Audit Log Retention add-on, not just the 10-year option.</p>
+</blockquote>
+
+<p><strong>Steps to configure 10-year retention:</strong></p>
+
+<ol>
+  <li>Assign each in-scope user both a <strong>Microsoft 365 E5</strong> (or Microsoft 365 E5 Compliance) license <strong>and</strong> the <strong>10-Year Audit Log Retention</strong> add-on in the Microsoft 365 admin center.<sup id="fnref:6"><a href="#fn:6" class="footnote" rel="footnote" role="doc-noteref">3</a></sup></li>
+  <li>In the <a href="https://purview.microsoft.com">Microsoft Purview portal</a>, navigate to <strong>Audit</strong> &gt; <strong>Audit retention policies</strong> &gt; <strong>Create audit retention policy</strong>.</li>
+  <li>Set the workload to <strong>Entra ID</strong> (or “All activities”), the users to the in-scope population, and the duration to <strong>10 years</strong>.</li>
+  <li>Confirm the policy is <strong>Published</strong> and <strong>Active</strong>; retention only applies to events generated <strong>after</strong> the policy takes effect.<sup id="fnref:6:1"><a href="#fn:6" class="footnote" rel="footnote" role="doc-noteref">3</a></sup></li>
+</ol>
+
+<blockquote>
+  <p>[!IMPORTANT]
+Without the 10-Year add-on, the maximum selectable retention period is <strong>1 year</strong>. The add-on is required to unlock the 3, 5, 7, and 10-year options in the policy UI. Assign the add-on licence to all in-scope users <strong>before</strong> creating the retention policy — the policy is not retroactive.</p>
+</blockquote>
+
+<h3 id="view-and-query-entra-id-logs-for-mfa-events">View and Query Entra ID Logs for MFA Events</h3>
+
+<ol>
+  <li>Sign in to the Microsoft Entra admin center as at least an Authentication Policy Administrator. <sup id="fnref:5"><a href="#fn:5" class="footnote" rel="footnote" role="doc-noteref">4</a></sup></li>
+  <li>Browse to Entra ID &gt; Users from the menu on the left. <sup id="fnref:5:1"><a href="#fn:5" class="footnote" rel="footnote" role="doc-noteref">4</a></sup></li>
+  <li>From the menu on the left, select Sign-in logs. <sup id="fnref:5:2"><a href="#fn:5" class="footnote" rel="footnote" role="doc-noteref">4</a></sup></li>
+  <li>A list of sign-in events is shown; you can select an event to view more details. <sup id="fnref:5:3"><a href="#fn:5" class="footnote" rel="footnote" role="doc-noteref">4</a></sup></li>
+  <li>The Authentication Details tab provides MFA related information, including authentication method details and policy triggers. <sup id="fnref:5:4"><a href="#fn:5" class="footnote" rel="footnote" role="doc-noteref">4</a></sup></li>
+</ol>
+
+<h3 id="kql-queries-for-mfa-events-in-log-analytics">KQL queries for MFA events in Log Analytics</h3>
+
+<p>The <code class="language-plaintext highlighter-rouge">SigninLogs</code> table in Azure Log Analytics contains detailed MFA authentication data.</p>
+
+<p><strong>Successful MFA events:</strong></p>
+
+<pre><code class="language-kql">SigninLogs
+| where TimeGenerated &gt;= ago(30d)
+| where ResultType == 0
+| where AuthenticationRequirement == "multiFactorAuthentication"
+| mv-expand AuthenticationDetails = todynamic(AuthenticationDetails)
+| where AuthenticationDetails.succeeded == true
+| extend MFA_Method = tostring(AuthenticationDetails.authenticationMethod)
+| where MFA_Method != "Previously satisfied"
+| project TimeGenerated, UserPrincipalName, IPAddress, MFA_Method, Result = "Success"
+</code></pre>
+
+<p><strong>Failed MFA events:</strong></p>
+
+<pre><code class="language-kql">SigninLogs
+| where TimeGenerated &gt;= ago(30d)
+| where ResultType != 0
+| where AuthenticationRequirement == "multiFactorAuthentication"
+| mv-expand AuthenticationDetails = todynamic(AuthenticationDetails)
+| extend MFA_Method = tostring(AuthenticationDetails.authenticationMethod)
+| extend FailureReason = tostring(ResultDescription)
+| where MFA_Method != "Previously satisfied"
+| project TimeGenerated, UserPrincipalName, IPAddress, MFA_Method, FailureReason, Result = "Failure"
+</code></pre>
+
+<h2 id="additional-related-information">Additional related information</h2>
+
+<ul>
+  <li>ASD Blueprint for Authentication hardening describes design guidance for MFA deployment and long-term log retention <a href="https://blueprint.asd.gov.au/security-and-governance/system-security-plan/system-hardening-authentication/">ASD Blueprint: Authentication hardening</a></li>
+  <li>ASD Blueprint for Multi-factor authentication outlines Essential Eight MFA controls and deployment considerations <a href="https://blueprint.asd.gov.au/security-and-governance/essential-eight/multi-factor-authentication/">ASD Blueprint: Multi-factor authentication</a></li>
+  <li>Configure Essential Eight MFA sign in logs provides guidance on logging and monitoring MFA events <a href="https://learn.microsoft.com/en-us/compliance/anz/e8-mfa-configure-logging">Configure Essential Eight MFA sign in logs</a></li>
+  <li>Security operations for privileged accounts in Microsoft Entra ID explains monitoring of privileged sign-ins and MFA events <a href="https://learn.microsoft.com/en-us/entra/architecture/security-operations-privileged-accounts">Security operations for privileged accounts in Microsoft Entra ID</a></li>
+  <li>Plan a Microsoft Entra multifactor authentication deployment covers planning, monitoring, and reporting for MFA deployment <a href="https://learn.microsoft.com/en-us/entra/identity/authentication/howto-mfa-getstarted">Plan a Microsoft Entra multifactor authentication deployment</a></li>
+  <li>Achieve ACSC Essential Eight MFA Maturity Level 2 outlines MFA requirements for maturity level 2 <a href="https://learn.microsoft.com/en-us/compliance/anz/e8-mfa-maturity-level-2">Achieve ACSC Essential Eight MFA Maturity Level 2</a></li>
+</ul>
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:1">
+      <p><a href="https://learn.microsoft.com/en-us/entra/identity/monitoring-health/howto-access-activity-logs">How to access activity logs in Microsoft Entra ID</a> <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a> <a href="#fnref:1:1" class="reversefootnote" role="doc-backlink">&#8617;<sup>2</sup></a> <a href="#fnref:1:2" class="reversefootnote" role="doc-backlink">&#8617;<sup>3</sup></a> <a href="#fnref:1:3" class="reversefootnote" role="doc-backlink">&#8617;<sup>4</sup></a> <a href="#fnref:1:4" class="reversefootnote" role="doc-backlink">&#8617;<sup>5</sup></a> <a href="#fnref:1:5" class="reversefootnote" role="doc-backlink">&#8617;<sup>6</sup></a> <a href="#fnref:1:6" class="reversefootnote" role="doc-backlink">&#8617;<sup>7</sup></a> <a href="#fnref:1:7" class="reversefootnote" role="doc-backlink">&#8617;<sup>8</sup></a> <a href="#fnref:1:8" class="reversefootnote" role="doc-backlink">&#8617;<sup>9</sup></a></p>
+    </li>
+    <li id="fn:3">
+      <p><a href="https://blueprint.asd.gov.au/security-and-governance/system-security-plan/system-hardening-authentication/">ASD Blueprint: Authentication hardening</a> <a href="#fnref:3" class="reversefootnote" role="doc-backlink">&#8617;</a> <a href="#fnref:3:1" class="reversefootnote" role="doc-backlink">&#8617;<sup>2</sup></a></p>
+    </li>
+    <li id="fn:6">
+      <p><a href="https://learn.microsoft.com/en-us/purview/audit-log-retention-policies">Microsoft Purview Audit retention policies</a> <a href="#fnref:6" class="reversefootnote" role="doc-backlink">&#8617;</a> <a href="#fnref:6:1" class="reversefootnote" role="doc-backlink">&#8617;<sup>2</sup></a></p>
+    </li>
+    <li id="fn:5">
+      <p><a href="https://learn.microsoft.com/en-us/entra/identity/authentication/howto-mfa-reporting">Use the sign-in logs to review Microsoft Entra multifactor authentication events</a> <a href="#fnref:5" class="reversefootnote" role="doc-backlink">&#8617;</a> <a href="#fnref:5:1" class="reversefootnote" role="doc-backlink">&#8617;<sup>2</sup></a> <a href="#fnref:5:2" class="reversefootnote" role="doc-backlink">&#8617;<sup>3</sup></a> <a href="#fnref:5:3" class="reversefootnote" role="doc-backlink">&#8617;<sup>4</sup></a> <a href="#fnref:5:4" class="reversefootnote" role="doc-backlink">&#8617;<sup>5</sup></a></p>
+    </li>
+  </ol>
+</div>
+
+    </div>
+
+    <div style="margin-bottom:20px; display:flex; justify-content:space-between; align-items:center;">
+      <div style="display:flex; gap:12px; align-items:center;">
+        <a href="/ISM-Controls-Guide-preview/" class="back-btn">HOME</a>
+
+        
+          <a class="prev-control back-btn" href="/ISM-Controls-Guide-preview/controls/ISM-1674.html" aria-label="Previous control">← ISM-1674</a>
+        
+      </div>
+
+      <div style="display:flex; gap:12px; align-items:center;">
+        
+          <a class="next-control back-btn" href="/ISM-Controls-Guide-preview/controls/ISM-1685.html" aria-label="Next control">ISM-1685 →</a>
+        
+      </div>
+    </div>
+  </div>
+  <script>
+    // Convert GitHub-style alerts [!NOTE], [!WARNING], etc. to styled callouts
+    document.querySelectorAll('blockquote').forEach(bq => {
+      const text = bq.innerHTML;
+      const match = text.match(/\[!(NOTE|WARNING|TIP|IMPORTANT|CAUTION)\]/i);
+      if (match) {
+        const type = match[1].toLowerCase();
+        const icons = { note: '📝', warning: '⚠️', tip: '💡', important: '📢', caution: '🚨' };
+        const titles = { note: 'Note', warning: 'Warning', tip: 'Tip', important: 'Important', caution: 'Caution' };
+        const content = text.replace(/\[!(NOTE|WARNING|TIP|IMPORTANT|CAUTION)\]\s*/i, '');
+        bq.className = 'callout callout-' + type;
+        bq.innerHTML = '<div class="callout-title">' + icons[type] + ' ' + titles[type] + '</div>' + content;
+      }
+    });
+  </script>
+  <footer class="site-footer" role="contentinfo" aria-label="Site footer" style="background:#161b22;border-top:1px solid #30363d;padding:20px 40px;margin-top:40px;">
+    <div style="max-width:900px;margin:0 auto;display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:space-between;">
+      <div style="color:#94a3b8;font-size:0.9rem;">
+        
+          Last updated: 2026-02-18 21:31 UTC
+        
+      </div>
+      <div style="color:#94a3b8;font-size:0.9rem;text-align:right;max-width:620px;">
+        <strong style="color:#e6edf3;">AI-generated content:</strong> This site contains AI-assisted content created from primary sources and may contain errors or be out of date. Always verify with official documentation. See <a href="https://e8guide.com/about" style="color:#58a6ff;text-decoration:none;">About</a> for details.
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
