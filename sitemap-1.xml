@@ -166,6 +166,9 @@
     <loc>https://e8guide.com/about/</loc><lastmod>2026-01-08T22:09:10+00:00</lastmod><changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>https://e8guide.com/</loc><lastmod>2026-02-02T02:49:36+00:00</lastmod><changefreq>monthly</changefreq>
+    <loc>https://e8guide.com/</loc><lastmod>2026-02-18T23:09:39+00:00</lastmod><changefreq>monthly</changefreq>
     <priority>1.0</priority>
+  </url><url>
+    <loc>https://e8guide.com/view.html</loc><lastmod>2026-02-18T23:09:39+00:00</lastmod><changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url></urlset>
